@@ -871,5 +871,18 @@
       "research_snapshots/revision1/README.md"
     ],
     "source_public_commit": "cc1d823aa77c978fe1d4b4203acaa6eb54c0649f"
+  },
+  "agent_workflow_documentation": {
+    "source_public_commit": "abb81de9021e4edb058e7cc8335728d5a2903076",
+    "scope": "Owner-authorized publication of sanitized historical Codex mission and README narrative.",
+    "explicit_allowed_paths": [
+      "README.md",
+      "docs/AUTONOMOUS_DEVELOPMENT_MISSION.md",
+      "PUBLICATION_ALLOWLIST.json",
+      "PUBLICATION_MANIFEST.json",
+      "PUBLIC_CHECKSUMS.sha256"
+    ],
+    "historical_source": "VERA_DEV_MISSION.md",
+    "redactions": "Workstation name and working directory generalized; original operational document remains private."
   }
 }

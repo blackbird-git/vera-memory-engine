@@ -8,9 +8,21 @@ I wanted to explore how a locally hosted AI application could remember informati
 
 How do you attribute a recollection to the person who told it? What happens when two sources disagree? How do you correct an old memory without losing its history? And how do you prevent a model from inventing details or writing its own assumptions back into the archive?
 
-I built Vera with Python, SQLite and Ollama to work through those questions. I used ChatGPT and Codex for AI-assisted development, with a focus on understanding the architecture, running the experiments, and evaluating what actually works.
+Vera uses Python, SQLite and existing local models through Ollama. For me, the project was as much about working through a problem with AI agents as it was about the application itself.
 
-## What I built
+## How I approached the build
+
+Initially, I used ChatGPT to develop regression tests and write prompts for Codex to follow in VS Code. I was manually passing instructions and results between two AI tools. That was an unnecessary step.
+
+I quickly moved to a goal-driven approach. I gave Codex a defined engineering role, an architecture to work within, operating boundaries and measurable acceptance criteria. It could inspect the repository, implement changes, investigate failures, run tests and commit incremental improvements rather than wait for me to prescribe every code change.
+
+The original mission required local inference, synthetic test data, recoverable Git checkpoints, regression testing, measurement of model behavior and explicit approval before publishing. Later, I separated implementation from holdout design and evaluation by using different development agents.
+
+My role was to define the problem, direct the work, evaluate the results and decide which changes should be accepted. As the project grew, I also learned to limit autonomous refinement loops: more agent activity does not necessarily mean better outcomes, and passing tests alone does not prove that the system works as intended.
+
+[Read the original Codex development mission](docs/AUTONOMOUS_DEVELOPMENT_MISSION.md), including the engineering goals, safeguards and acceptance criteria that set the agent on its development path.
+
+## What the project implements
 
 - A local SQLite archive with full-text search (FTS5) and attributed source records.
 - A conversational retrieval engine that maintains context across questions.

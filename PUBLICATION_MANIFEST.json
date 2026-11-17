@@ -1186,7 +1186,7 @@
     },
     {
       "path": "PUBLICATION_ALLOWLIST.json",
-      "sha256": "3a075325675479c770d53c997d701c536c906e0b049d52f3091bfb2ae92d6b38",
+      "sha256": "28b8d3e470f9967f37a9874936e858ba8caf580c5b869725e97be4badbbef907",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
@@ -1196,13 +1196,18 @@
     },
     {
       "path": "README.md",
-      "sha256": "7908162f6e62f6734c58ec4d787fb47a7db781f2054ab4037738625beb97fce9",
+      "sha256": "f99a008e467ef13f835bf1c21c6f04723800a19a63f326cf8ba63737825362cf",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
       "sha256": "4c7f18d0c0a9ae70cbb4218df4d9b6d10b82a7eecd9c5386f9bccfe02104d8e4",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "docs/AUTONOMOUS_DEVELOPMENT_MISSION.md",
+      "sha256": "7ddc1728ca3a29c36b2e1945f5a63480c770e6a37a68513498db69d1c9217ecd",
+      "origin": "Owner-approved historical development mission from VERA_DEV_MISSION.md; workstation and path generalized; explanatory preface added."
     },
     {
       "path": "docs/DATA_PROVENANCE.md",
@@ -1293,8 +1298,8 @@
     "historical_snapshot_files": 56,
     "sourced_public_outputs": 145,
     "candidate_files_before_manifest_and_checksum": 159,
-    "candidate_regular_files": 170,
-    "generated_public_outputs": 23
+    "candidate_regular_files": 171,
+    "generated_public_outputs": 24
   },
   "redactions": {
     "string_redaction_count": 0,
@@ -1370,5 +1375,16 @@
     "application_behavior_modified": false,
     "existing_test_or_fixture_bytes_modified": false,
     "project_license_selected": false
+  },
+  "agent_workflow_documentation": {
+    "source_public_commit": "abb81de9021e4edb058e7cc8335728d5a2903076",
+    "paths": [
+      "README.md",
+      "docs/AUTONOMOUS_DEVELOPMENT_MISSION.md"
+    ],
+    "redactions": "Workstation name and working directory generalized.",
+    "application_behavior_modified": false,
+    "existing_test_or_fixture_bytes_modified": false,
+    "original_research_evidence_modified": false
   }
 }
