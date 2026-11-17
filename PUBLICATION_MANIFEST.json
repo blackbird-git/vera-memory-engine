@@ -1196,7 +1196,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "f99a008e467ef13f835bf1c21c6f04723800a19a63f326cf8ba63737825362cf",
+      "sha256": "a8e7781674cb657b7e26fdd0e3e33517b1792c0a2ae261ffcbbeef8edfa8ab21",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
@@ -1385,6 +1385,20 @@
     "redactions": "Workstation name and working directory generalized.",
     "application_behavior_modified": false,
     "existing_test_or_fixture_bytes_modified": false,
+    "original_research_evidence_modified": false
+  },
+  "model_comparison_readme_revision": {
+    "source_public_commit": "24715e4b742ed650da038703150feee072944c03",
+    "paths": [
+      "README.md"
+    ],
+    "evidence_sources": [
+      "evidence/model-identities.json",
+      "evidence/oracle/summary-cache512.json",
+      "evidence/oracle/summary-15g.json"
+    ],
+    "description": "Summarize completed fixed-evidence model evaluation and label incomplete stock 27B comparison separately; no changes to research evidence or implementation.",
+    "application_behavior_modified": false,
     "original_research_evidence_modified": false
   }
 }

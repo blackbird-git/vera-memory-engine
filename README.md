@@ -51,6 +51,35 @@ The archive is the source of truth. Earlier assistant replies are not evidence, 
 
 The reference CLI uses `qwen3:4b`. I evaluated several other open-weight models, including GPT-OSS 20B, in a separate research environment. None of those experiments has replaced the CLI's default model.
 
+## Choosing a local model
+
+I didn't want to assume that a larger model would be the right answer. I compared five existing models and a text-only configuration of Qwen3.5 27B to see what each could do with the same source material, how long it took to respond, and whether it was practical to run on my hardware.
+
+In the fixed-evidence experiment, I bypassed Vera's retrieval engine so I could evaluate answer generation separately. The table shows the direct-answer results from the 512 MiB cache experiment, with 16 reviewed answers per completed configuration.
+
+| Model | Model file size | Supported | Unsupported | Needs review | Median / p95 latency |
+|---|---:|---:|---:|---:|---:|
+| Qwen3 4B | 2.50 GB | 5 | 7 | 4 | 2.72 / 4.94 s |
+| Qwen3.5 4B | 3.32 GB | 9 | 4 | 3 | 0.63 / 0.95 s |
+| Ministral 3 3B Instruct | 2.95 GB | 1 | 11 | 4 | 0.48 / 0.86 s |
+| GPT-OSS 20B | 13.79 GB | 9 | 4 | 3 | 2.94 / 4.16 s |
+| Qwen3.5 27B (text-only) | 16.55 GB | 10 | 3 | 3 | 17.35 / 27.80 s |
+
+I also tested the stock Qwen3.5 27B model (17.48 GB) in the earlier runtime configuration. It returned four answers before two 300-second timeouts. The run was stopped under memory pressure, so I excluded it from the completed quality comparison. The text-only configuration omitted the vision projector but retained the language weights.
+
+A few things stood out:
+
+- Qwen3.5 4B produced the same supported/unsupported counts as GPT-OSS 20B on direct answers, at a fraction of the latency.
+- Ministral was fast, but too many direct answers contained unsupported claims.
+- GPT-OSS 20B became my leading experimental candidate when I compared response strategies as well as direct answers. It produced 13 supported answers out of 16 with a supplied reference plan, with a median latency of 3.42 seconds. That plan gives the model an advantage that normal retrieval cannot guarantee.
+- The text-only 27B configuration completed the experiment, but its latency and remaining factual errors made a larger model difficult to justify.
+
+I kept Qwen3 4B as the reference CLI model rather than approve a replacement that had not met the conversational acceptance criteria.
+
+These are whole-answer judgments by development agents on a small synthetic dataset, not independent human validation or a general model ranking. File sizes are recorded model artifacts, not RAM or VRAM requirements. Latencies reflect the local research environment and should not be treated as production performance targets.
+
+[Model inventory and quantization](evidence/model-identities.json) · [Completed comparison](evidence/oracle/summary-cache512.json) · [Earlier runtime and partial 27B run](evidence/oracle/summary-15g.json) · [Additional response-strategy experiments](evidence/model_comparison/)
+
 ## Interesting problems I encountered
 
 ### Retrieving the right record isn't enough
