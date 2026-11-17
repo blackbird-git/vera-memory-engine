@@ -1,17 +1,7 @@
-# Model Comparison — public research sources
+# Model comparison experiments
 
-The Python modules and frozen synthetic fixtures here are reviewed source copies.
-See [reproduction](../../docs/REPRODUCIBILITY.md), [saved findings](../../docs/RESEARCH_RESULTS.md)
-and [public provenance](../../docs/PUBLICATION_PROVENANCE.md). The ordinary CLI and
-these experimental runners have different model/runtime contracts.
+I compared local models and response strategies using fixed synthetic records and evaluation cases. The goal was to understand the tradeoff between factual support, relevance, conversational usefulness and resource requirements rather than pick a model based on a single score.
 
-Historical private operational instructions, host recovery notes, raw wire logs
-and generated reasoning were intentionally omitted. `evidence/` holds sanitized
-inspection datasets, not native runner inputs. Runners can create fresh local logs
-when explicitly invoked later; no runner was invoked to make this publication
-candidate. GPT-OSS remains experimental and natural drafts remain unreleased.
+The code here is separate from the ordinary CLI. Model adapters, candidate records, prompts and evaluation cases are retained for reproducibility. Published summaries are in [the evidence directory](../../evidence/model_comparison/); raw inference logs are excluded.
 
-Use the included version/freeze manifests and snapshot mapping when discussing
-older results. Existing holdouts have been consumed and cannot certify a new
-refinement as unseen. The reference research profile currently requires WSL/Linux,
-Windows and NVIDIA monitoring interfaces; portability is outstanding.
+See [research findings](../../docs/RESEARCH_RESULTS.md), [runtime requirements](../../docs/RUNTIME_REQUIREMENTS.md) and [reproduction instructions](../../docs/REPRODUCIBILITY.md). The current experiment runner is host-specific, and previously used cases should not be treated as unseen holdouts.

@@ -850,5 +850,26 @@
     ],
     "models_or_evaluations_run": false,
     "project_license_selected": false
+  },
+  "public_documentation_revision": {
+    "scope": "Public-facing engineering documentation and publication status; no application, test, fixture or historical research record changes.",
+    "paths": [
+      "CONTRIBUTING.md",
+      "PUBLICATION_CHECK.md",
+      "README.md",
+      "THIRD_PARTY_NOTICES.md",
+      "docs/DATA_PROVENANCE.md",
+      "docs/LICENSING_STATUS.md",
+      "docs/PUBLICATION_PROVENANCE.md",
+      "docs/REPRODUCIBILITY.md",
+      "docs/RESEARCH_RESULTS.md",
+      "docs/RUNTIME_REQUIREMENTS.md",
+      "docs/TESTING.md",
+      "experiments/conversation_architecture/README.md",
+      "experiments/model_comparison/README.md",
+      "experiments/oracle_evidence/README.md",
+      "research_snapshots/revision1/README.md"
+    ],
+    "source_public_commit": "cc1d823aa77c978fe1d4b4203acaa6eb54c0649f"
   }
 }

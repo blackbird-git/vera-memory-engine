@@ -1,9 +1,6 @@
 # Third-party notices
 
-This document identifies external components used by the reference runtime,
-optional experiments and CI. **It does not select or apply a license to Vera's code,
-fixtures or saved evidence.** No third-party binaries, model weights, Python
-packages or GitHub Action implementations are vendored in this candidate.
+These are the external runtimes, optional models and CI tools I used. No third-party binaries, model weights, Python packages or GitHub Action implementations are bundled. Vera's own code, fixtures and saved results do not have a project license yet.
 
 ## Interpreter, database and inference runtime
 
@@ -21,8 +18,7 @@ This source-only inventory does not authorize redistribution of a runtime image.
 
 ## Optional local models
 
-These model references document the existing work, not a request to download or
-run anything. No model weights are shipped. Quantization and content identity are
+These are the models used in the reference implementation and experiments. No weights are shipped. Quantization and content identity are
 recorded in [the sanitized model inventory](evidence/model-identities.json).
 An Ollama tag is mutable; its spelling alone does not reproduce a measured model.
 
@@ -35,11 +31,7 @@ An Ollama tag is mutable; its spelling alone does not reproduce a measured model
 | `ministral-3:3b-instruct-2512-q4_K_M` | Experimental candidate | Mistral AI authors; [Ministral 3 3B Instruct 2512 model card and Apache-2.0 declaration](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512). The Ollama artifact is quantized; it is not the unmodified tensor distribution in the model card. |
 | `gpt-oss:20b` / MXFP4 | Leading experimental candidate, not an approved production replacement | OpenAI authors; [Apache-2.0 license](https://github.com/openai/gpt-oss/blob/main/LICENSE) and separate [upstream usage policy](https://github.com/openai/gpt-oss/blob/main/USAGE_POLICY). |
 
-Preserve the applicable license and any required notices, attribution and change
-identification if redistributing or modifying upstream material. Do not infer that
-a model's license licenses this application, its synthetic data or all generated
-outputs. No ownership or redistribution decision for this project's outputs is made
-here. No vendor endorsement, affiliation or model approval is implied.
+If you redistribute upstream material, review its applicable license, attribution and notice requirements. The licenses listed here do not license Vera itself or automatically establish rights in generated outputs. This research is not affiliated with or endorsed by any model vendor.
 
 ## GitHub Actions used by the regression workflow
 
@@ -66,6 +58,4 @@ system, driver, CUDA toolkit or PowerShell distribution is included. Those insta
 products remain subject to their own distribution terms. Model licenses do not
 replace the terms of GPU drivers, Windows or other runtime software.
 
-Upstream references were consulted while preparing these notices. Exact installed
-artifacts and future dependency changes still need review; this is not a license
-choice for the project or a bundled-runtime compliance inventory.
+These upstream references describe the recorded source-only project. Installed distributions or future bundled runtimes may have additional licensing requirements.

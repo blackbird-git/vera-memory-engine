@@ -1,17 +1,14 @@
-# Conversation Architecture — public research sources
+# Conversation architecture experiments
 
-The Python modules and frozen synthetic fixtures here are reviewed source copies.
-See [reproduction](../../docs/REPRODUCIBILITY.md), [saved findings](../../docs/RESEARCH_RESULTS.md)
-and [public provenance](../../docs/PUBLICATION_PROVENANCE.md). The ordinary CLI and
-these experimental runners have different model/runtime contracts.
+I wanted to understand why Vera could find the right source but still answer an overly broad or incomplete question, particularly in a multi-turn conversation.
 
-Historical private operational instructions, host recovery notes, raw wire logs
-and generated reasoning were intentionally omitted. `evidence/` holds sanitized
-inspection datasets, not native runner inputs. Runners can create fresh local logs
-when explicitly invoked later; no runner was invoked to make this publication
-candidate. GPT-OSS remains experimental and natural drafts remain unreleased.
+These experiments separate the request and context plan, source selection and response composition. I compare the existing engine with an experimental source planner and a natural-language draft. Neither experimental path replaces the reference CLI.
 
-Use the included version/freeze manifests and snapshot mapping when discussing
-older results. Existing holdouts have been consumed and cannot certify a new
-refinement as unseen. The reference research profile currently requires WSL/Linux,
-Windows and NVIDIA monitoring interfaces; portability is outstanding.
+The frozen case sets and manifests preserve the evaluation conditions. The published results include failures as well as improvements. Existing holdouts are already consumed; use new cases to validate a subsequent refinement.
+
+- [Research results](../../docs/RESEARCH_RESULTS.md)
+- [Original architecture audit](INDEPENDENT_AUDIT.md)
+- [Original review method](INDEPENDENT_REVIEW_METHOD.md)
+- [Reproduction instructions](../../docs/REPRODUCIBILITY.md)
+
+The audit and review method are preserved as historical development-agent records, not independent human validation. Native runner logs remain private, and the current live-research profile depends on WSL/Linux, Windows interop and NVIDIA tooling.

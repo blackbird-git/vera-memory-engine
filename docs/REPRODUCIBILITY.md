@@ -1,12 +1,8 @@
-# Reproduction reference and outstanding work
+# Reproducing the experiments
 
-The initial export ran no models, inference, evaluations or tests. A later private-
-review preparation adds one model-independent regression run and a CI definition;
-see TESTING.md for the recorded outcome. No live-model evaluation or clean-install
-walkthrough was performed. Application, existing tests and fixture bytes remain
-unchanged. The CI definition has not been executed on GitHub; there is no packaging
-claim for this source-only candidate.
-Run modules from the repository root; there is no pyproject/installable package yet.
+I kept the original experimental source, synthetic fixtures and selected results so the research can be inspected and repeated independently. The model-independent suite has passed locally and in GitHub Actions. No fresh live-model installation or evaluation was performed during publication.
+
+Run the modules from the repository root. This is a source-only project, not an installable Python package.
 
 ## Source versions
 
@@ -28,14 +24,14 @@ backing mount at `/mnt/c`, Windows PowerShell and NVIDIA tooling. These are plat
 interfaces, not personal paths; they remain unchanged to preserve behavior.
 Do not use the research profile on an unsupported platform without review.
 
-For a future intentional research run, first create the output/runtime directories:
+For a deliberate live research run, create the output and runtime directories:
 
 ```bash
 mkdir -p results/model_comparison results/oracle_evidence results/conversation_architecture
 mkdir -p experiments/model_comparison/runtime experiments/oracle_evidence/runtime experiments/conversation_architecture/runtime
 ```
 
-Start the dedicated daemon in its own terminal (reference only):
+Start the dedicated daemon in its own terminal:
 
 ```bash
 .venv/bin/python -m experiments.oracle_evidence.start_service --cache-mib 512
@@ -54,7 +50,7 @@ Before any live study, review source-specific service PID handling, disk/memory
 floors, output budgets and single-worker ownership. Cache caps must be verified in
 runner logs, not assumed from environment variables.
 
-For later intentional generation with fresh outputs and Windows memory guard:
+To rerun the second conversational benchmark with fresh output and the Windows memory guard:
 
 ```bash
 .venv/bin/python -m experiments.conversation_architecture.run generate --cases experiments/conversation_architecture/holdout-round2.json --output results/conversation_architecture/fresh.json &
@@ -63,11 +59,7 @@ publication_evaluation_pid=$!
 wait "$publication_evaluation_pid"
 ```
 
-This example reruns a consumed benchmark; it is not new acceptance evidence. Use
-fresh independent data for refinement acceptance. Native runs may generate private
-wire/reasoning/resource logs: they are ignored by the public `.gitignore` and must
-not be published without a new privacy review. Never execute those commands merely
-to validate this export. No such commands were executed during export.
+This reruns a benchmark that has already been used in development. It is not new acceptance evidence. Fresh independent cases are needed to evaluate a refinement. Native wire, reasoning and resource logs are ignored by Git; review any evidence before publishing it.
 
 The unchanged native analysis utilities expect native run/review files, not the
 curated inspection format in `evidence/`. Public summaries copy saved scores and
@@ -75,16 +67,11 @@ latencies; checksums verify exported bytes, not model-output repeatability or ne
 semantic correctness. Fixed seeds did not preserve every answer across runtime
 conditions. Retain errors, ambiguous judgments and unhelpful fallbacks.
 
-## Still required before a publication/release claim
+## Remaining verification
 
-- Owner review of the export and an explicit code/data license decision.
-- A clean-install/live-CLI walkthrough on each intended platform; see the documented
-  reference profile and current restrictions in RUNTIME_REQUIREMENTS.md.
-- Execution of the new no-model CI workflow in a future private repository; live
-  model evaluation remains deliberately absent from ordinary CI.
-- Exact runtime/model artifact availability and any new distribution-specific notices;
-  the current source-only external-component inventory is in THIRD_PARTY_NOTICES.md.
-- Independent human data/publication review and stronger conversational acceptance.
+- Fresh live-CLI installation and inference on the intended platform.
+- Exact runtime and model artifact availability; review any new distribution notices.
+- Independent human evaluation and stronger conversational acceptance.
+- Code and data licensing.
 
-These remaining items were not executed by the original export or this private-
-review preparation. No project license, remote repository or deployment is created.
+The public repository is a research project, not a deployment. Live-model evaluation is deliberately absent from ordinary CI.

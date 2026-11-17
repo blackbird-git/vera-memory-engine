@@ -1,35 +1,17 @@
-# Synthetic data and evaluation provenance
+# Data and evaluation provenance
 
-All admitted `samples/*.json` and `experiments/*/*.json` question/record fixtures
-are synthetic development material from the reviewed source project. People,
-relationships, events, dates, memory text and document descriptions are fictional;
-no personal archive, database, recording, photograph or family backup was read or
-copied to create this export. Do not confuse a fictional fixture with real family
-history. Some historical case arrays lack an in-file synthetic marker; this sidecar
-provides the common declaration without changing their evaluated bytes.
+All released memory records, people, relationships, events and conversations are synthetic. I did not copy a personal archive, database, photograph, recording or family backup into this repository. Some older fixtures have no synthetic-data flag, so this document applies to those as well.
 
-Independent development agents authored newer holdouts before inspecting the
-corresponding implementation or outputs. That separation is useful engineering
-process, not independent human validation. High-level briefs/prior-round exposure
-and fixture corrections are retained in public manifests. Oracle/reference plans
-are source-adjudicated evaluation inputs, not a demonstrated automatic semantic
-verifier; legacy human/source wording must not imply an independent human study.
-All released holdouts have been consumed by development/review and are not unseen
-for future refinements.
+## How I prepared the evaluation data
 
-`evidence/` contains selected saved aggregates, source judgments and curated final
-benchmark answers. These fictional question/answer rows are not raw user chat logs
-or native request/response transcripts. Native calls, model-generated request plans,
-internal thinking/reasoning, prompts as wire messages, warmups and per-second host
-state were removed. Literal synthetic evidence units and failed final answers are
-retained to show the real limitations. Suppression tests and runtime source code
-still contain literal thinking-marker strings needed for the unchanged controls;
-those strings are not saved generated reasoning.
+Newer holdouts were authored by separate development agents before they saw the implementation or model outputs being tested. This helped separate test design from implementation, but it is not independent human validation. The fixture manifests record the scope, any corrections and prior exposure.
 
-Judgments and scores are historical and were not recomputed for publication. Answer
-hashes still refer to the same final answer text. Public wrappers/checksums differ
-from private originals and are labeled accordingly. Generic model/source IDs and
-model-blob digests are research provenance, not personal machine identifiers.
+Reference plans and rubrics are aids for evaluating the answers, not automatic proof of semantic correctness. All published holdouts have already been used; new refinements need fresh, unseen cases.
 
-No data license has been selected. Owner approval and independent human publication
-review remain outstanding before any public release.
+## What the evidence contains
+
+The `evidence/` directory includes saved aggregate results, source reviews and selected synthetic final answers. I omitted raw request/response traffic, generated request plans, internal reasoning, runtime logs and per-second host measurements. Literal source excerpts and failed final answers remain included because they are important to understanding the results.
+
+Published scores and judgments are historical. I did not recalculate them during publication. Answer hashes refer to the original final answer text; sanitized wrappers have separate public checksums.
+
+Generic source and model identifiers and model-blob digests are retained for reproducibility. There is no data license at present.

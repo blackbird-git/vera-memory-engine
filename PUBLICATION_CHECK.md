@@ -1,41 +1,26 @@
-# Private-review preparation check
+# Publication checks
 
-The initial export underwent a bounded static privacy/inventory check without
-executing models, tests or evaluations. This subsequent preparation is distinct:
-it adds public documentation/notices, CI and exclusions, then runs the existing
-model-independent regression suite exactly once.
+I prepared this repository from a sanitized copy of the original development project. The private source, work history and original research evidence were left unchanged.
 
-## Current verification
+## Verification
 
-- Python 3.14.4; 122 tests passed, zero failures/errors/skips.
-- Test-only live network/child-process guard recorded no violations.
-- No Ollama service/model launch, model download or evaluation occurred.
-- No application modules, existing tests, synthetic fixtures, curated prior model
-  evidence or historical source snapshots changed. No test failure was repaired.
-- No original repository access, Git initialization, remote creation or push.
-- No project license selected or applied. THIRD_PARTY_NOTICES.md identifies external
-  dependencies without licensing Vera's own code/data.
+- 170 regular files in the initial GitHub commit; no symlinks.
+- Python 3.14.4 local regression run: 122 passed, no failures, errors or skips.
+- The test runner recorded no live network or child-process attempts.
+- [Initial GitHub Actions run](https://github.com/blackbird-git/vera-memory-engine/actions/runs/44184727744): 122 passed, with no blocked live-I/O attempts.
+- No model was downloaded or run as part of publication preparation.
+- Application code, original tests and fixture data were preserved.
 
-See evidence/verification/local-regression-result.json and its sanitized log. The
-GitHub Actions definition has not run on GitHub. Live installation/inference and
-conversational acceptance remain unverified in this candidate.
+See [local verification](evidence/verification/local-regression-result.json) and [test log](evidence/verification/local-regression-tests.txt).
 
-## Publication integrity and privacy
+## Data review
 
-The public allowlist records the new documentation/test-infrastructure paths.
-PUBLICATION_MANIFEST.json retains original-source provenance and describes later
-private-review changes separately. PUBLIC_CHECKSUMS.sha256 covers every regular
-file except itself; it covers the publication manifest, which is not self-hashed.
-No original private artifact or historical review was edited.
+I excluded personal archives, recovery material, raw inference transcripts, generated reasoning, runtime files, model stores and the original Git history. The allowlist records the files admitted to the export, and the publication manifest preserves the relationship between public evidence and private originals.
 
-The bounded final inventory/checksum review covers candidate files only. It checks
-for symlinks, missing/unexpected inventory entries, stale hashes, broken local
-Markdown links and obvious credential/personal-path patterns. Excluded native
-wire/reasoning/resource logs, archives, model stores and runtime files do not belong
-in the candidate. Future native results are private by default under .gitignore.
-This check does not prove the absence of every possible sensitive datum.
+The local check covered inventory, checksums, symlinks, documentation links and obvious credential or personal-path patterns. A subsequent GitHub review examined the inventory, core code, documentation and selected evidence. Neither is a guarantee that every possible sensitive datum has been identified.
 
-Remaining blockers are owner review and code/data licensing decisions, execution
-of the workflow in a future private repository, clean-install/live-model/platform
-verification where intended, and the documented factual/conversational limitations.
-No automatic publication or deployment is authorized.
+`PUBLIC_CHECKSUMS.sha256` covers the repository files other than itself. Historical private hashes and published output hashes have different meanings.
+
+## Remaining work
+
+The project is publicly available as a research prototype. I have not selected a code or data license, verified a fresh live-model installation across platforms, or met conversational acceptance criteria. No deployment or production-readiness claim is made.

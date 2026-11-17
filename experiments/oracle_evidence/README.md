@@ -1,17 +1,9 @@
-# Oracle Evidence — public research sources
+# Oracle evidence experiments
 
-The Python modules and frozen synthetic fixtures here are reviewed source copies.
-See [reproduction](../../docs/REPRODUCIBILITY.md), [saved findings](../../docs/RESEARCH_RESULTS.md)
-and [public provenance](../../docs/PUBLICATION_PROVENANCE.md). The ordinary CLI and
-these experimental runners have different model/runtime contracts.
+To distinguish retrieval problems from generation problems, I tested what happens when a model receives known evidence or a supplied reference plan instead of relying on Vera's normal retrieval path.
 
-Historical private operational instructions, host recovery notes, raw wire logs
-and generated reasoning were intentionally omitted. `evidence/` holds sanitized
-inspection datasets, not native runner inputs. Runners can create fresh local logs
-when explicitly invoked later; no runner was invoked to make this publication
-candidate. GPT-OSS remains experimental and natural drafts remain unreleased.
+A good answer under oracle conditions does not mean the application can select or verify that evidence automatically. I retained the comparison between direct generation, model-generated plans and supplied plans, including unsupported answers and resource-related failures.
 
-Use the included version/freeze manifests and snapshot mapping when discussing
-older results. Existing holdouts have been consumed and cannot certify a new
-refinement as unseen. The reference research profile currently requires WSL/Linux,
-Windows and NVIDIA monitoring interfaces; portability is outstanding.
+Read the [source-review guide](REVIEW_GUIDE.md), [saved results](../../docs/RESEARCH_RESULTS.md) and [reproduction instructions](../../docs/REPRODUCIBILITY.md). The original guide is preserved as a historical development-agent record. Curated results are in [evidence](../../evidence/oracle/).
+
+Live runners depend on the documented WSL/Linux, Windows and NVIDIA environment. GPT-OSS remains experimental and no model change has been approved for the CLI.

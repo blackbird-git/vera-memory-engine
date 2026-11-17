@@ -1,15 +1,7 @@
-# Licensing status — decision pending
+# Licensing
 
-No project code, fixture or evidence license has been selected or applied. There is
-intentionally no root `LICENSE`. Preparing this source for private review does not
-itself grant redistribution or incorporation rights.
+I have not selected a license for Vera's code, fixtures or research evidence. The repository is publicly available for inspection, but there is no general license granting reuse or redistribution beyond the applicable platform terms.
 
-[THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md) now inventories the separately
-installed Python/SQLite/Ollama runtime, optional model families, pinned CI actions
-and platform tools. It links the applicable upstream terms and explains that no
-weights or third-party implementations are bundled. Those upstream licenses do not
-license Vera's code/data or settle the rights in generated outputs.
+The [third-party notices](../THIRD_PARTY_NOTICES.md) describe the separately installed runtimes, optional models and CI actions. Their licenses apply to those components; they do not establish a license for Vera itself or settle rights in generated outputs.
 
-The remaining decision is the owner's choice and approval of project/data terms,
-plus any ownership/output review needed before wider distribution. No such choice
-is made by the notices, documentation, CI workflow or local regression run.
+No model weights or third-party implementations are bundled.

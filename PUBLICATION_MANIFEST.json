@@ -1181,62 +1181,62 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "sha256": "413e42c1a680bedb24233cf955dfb8e7f8b735975033e2bf5369a1ccbd24b16f",
+      "sha256": "55b324e7cbceac243e5c46f6b70240ce5bd4dfb6560ce7b88aaa7ebbf03f31be",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
       "path": "PUBLICATION_ALLOWLIST.json",
-      "sha256": "8926c878afbdded26bfbd46f65ce79d3c300847f64f4c2e5769ba99d4cca0416",
+      "sha256": "3a075325675479c770d53c997d701c536c906e0b049d52f3091bfb2ae92d6b38",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
       "path": "PUBLICATION_CHECK.md",
-      "sha256": "a2fc95202bc82af27bfe32ebb5b5e18af24046296afb4b6f16016849431ce5e4",
+      "sha256": "5b8b2c4a1d9cd14a2c9acfadebba3bb9c556e2a41986daa4b7d41da8952e5360",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
       "path": "README.md",
-      "sha256": "4508183ccf643cd7aa19ad7bad717b81d2533b3864597a91f484d722803a19d9",
+      "sha256": "7908162f6e62f6734c58ec4d787fb47a7db781f2054ab4037738625beb97fce9",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "sha256": "e07cbe59ddba50a034f9ecaed27f2e05a2de4b8050660c644842424e5f1c3e0e",
+      "sha256": "4c7f18d0c0a9ae70cbb4218df4d9b6d10b82a7eecd9c5386f9bccfe02104d8e4",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
       "path": "docs/DATA_PROVENANCE.md",
-      "sha256": "19c1276354b3e2f13ba2019b883634712eee74fbe969ee159347b481a2028d6c",
+      "sha256": "d4b6d26977bbe4bafbdefc5dcd0efe30826c8bb607c0c44887bf0822744416f7",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
       "path": "docs/LICENSING_STATUS.md",
-      "sha256": "c13ec3e313ad937207345703d61f6921e962de595dee2e8b16d261445010ac86",
+      "sha256": "0788f694ea4df8feb441d2ee92328a6c7ca8a31a359e8cca76588678c9e65571",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
       "path": "docs/PUBLICATION_PROVENANCE.md",
-      "sha256": "32e2ea9475b9c89c8e1dc97cdb8689ab45fcd198f6a501b0f27509774de4dd97",
+      "sha256": "a58348984af3ee73af09557cfe2bc4cc6824a2ef747a193beac6c1c7d16c4faf",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
-      "sha256": "3ce6455d0157c6649e99d48b834c70eb087445bf7ae3df10ed886f1e68a05107",
+      "sha256": "9eb7dd339a392e9c16dd4d0ba44a5fb7d6020ef01d7274649a4aa64302a18efc",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
       "path": "docs/RESEARCH_RESULTS.md",
-      "sha256": "08e2707ce753ea0cfe77966bb3320e4fbf2790964943ec0a400dbf63430c30f8",
+      "sha256": "b30845fe51f20f6fb995145eb1648a7ef83a7db2587f4cba36a89805a23de24f",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
       "path": "docs/RUNTIME_REQUIREMENTS.md",
-      "sha256": "1039ea8df51fa5b040776132f1fe0c50c4aa782c5acc0916d746be76a7b3f368",
+      "sha256": "7f8631c332eaadb1531b732973181fc712635e256dd2acc9417d9a83a51685e4",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
       "path": "docs/TESTING.md",
-      "sha256": "2072ffbb71df512b7ce38db1d72b1f0ec3453d0f03899d0ba0a1cc2db83a1204",
+      "sha256": "45db98bd3b2c0f26025ed342259631e6f61f59be287b666ff7494015acc74cff",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
@@ -1256,22 +1256,22 @@
     },
     {
       "path": "experiments/conversation_architecture/README.md",
-      "sha256": "8a4fb5735523efaeccbcd8774670693553a3c0504acbc8014882ce0bafb11f83",
+      "sha256": "092ee7a98e5da86a89dcd9bd2a2aa2792e89050b6983a43d5f87b66ca0db0f42",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
       "path": "experiments/model_comparison/README.md",
-      "sha256": "2137f588aa718b29aa8dea52c60e8048c75051bca5053163ba9bb42188aa438f",
+      "sha256": "33905d5a432f57f9eaf5148d29dfb6945babdadcfc2d1fb282e95f9b5d634b47",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
       "path": "experiments/oracle_evidence/README.md",
-      "sha256": "69ca05247dbf69bedccd2267bb9d37d2d9b90468440eaf57cf5c9434dbd82602",
+      "sha256": "f7a2896b595daaa5803dbdf9ffa7865d3939cfdd61a75744320e45f880172955",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
       "path": "research_snapshots/revision1/README.md",
-      "sha256": "e3a3973800ba5b46d9aa7d03af788dc6a3f7426f06fa24988936a56925d25498",
+      "sha256": "6e863fc1ee6b408cd4ca63d5f5fb1cda474b5f35bb7ce95a5fefb8417a196dc5",
       "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
     },
     {
@@ -1335,6 +1335,40 @@
     "skipped": 0,
     "github_workflow_executed": false,
     "remote_created_or_push": false,
+    "project_license_selected": false
+  },
+  "public_documentation_revision": {
+    "source_public_commit": "cc1d823aa77c978fe1d4b4203acaa6eb54c0649f",
+    "scope": "Editorial revision of generated public documentation; historical source audit/review documents and evidence retained verbatim.",
+    "paths": [
+      "CONTRIBUTING.md",
+      "PUBLICATION_CHECK.md",
+      "README.md",
+      "THIRD_PARTY_NOTICES.md",
+      "docs/DATA_PROVENANCE.md",
+      "docs/LICENSING_STATUS.md",
+      "docs/PUBLICATION_PROVENANCE.md",
+      "docs/REPRODUCIBILITY.md",
+      "docs/RESEARCH_RESULTS.md",
+      "docs/RUNTIME_REQUIREMENTS.md",
+      "docs/TESTING.md",
+      "experiments/conversation_architecture/README.md",
+      "experiments/model_comparison/README.md",
+      "experiments/oracle_evidence/README.md",
+      "research_snapshots/revision1/README.md"
+    ],
+    "initial_hosted_ci": {
+      "run_id": 44184727744,
+      "commit": "cc1d823aa77c978fe1d4b4203acaa6eb54c0649f",
+      "result": "success",
+      "tests_run": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "blocked_live_io_events": []
+    },
+    "application_behavior_modified": false,
+    "existing_test_or_fixture_bytes_modified": false,
     "project_license_selected": false
   }
 }
