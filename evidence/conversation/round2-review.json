@@ -1,0 +1,1174 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "results/conversation_architecture/round2-review.json",
+    "sha256": "be48dcd088d10e8c57a1dde5bcd4bd28e3d6295666040bf9a957086f9e89a223"
+  },
+  "transformation": "Preserved independent judgments and answer hashes. Removed operational timestamp/private raw-file checksum fields; linked sanitized public answer input instead. No rescoring.",
+  "artifact_type": "curated_reviews_v1",
+  "public_answer_file": "evidence/conversation/round2.answers.json",
+  "public_answer_file_sha256": "1c267130e04f08c030b3ccc3bbad4cf3a50c00d2068573ef65364f7f2a4ab759",
+  "method": "Independent review by the separate holdout-author/architecture-audit development agent, not the implementer and not an independent human study. Original fixed candidate records, current question, full cohort context and frozen rubric are authoritative; source-valid does not imply semantic relevance. Scores are diagnostic 1-5. Clear errors and ambiguous bindings remain separate; examples are lower bounds, not exhaustive atomic claim counts.",
+  "dimensions": [
+    "directness",
+    "relevance",
+    "instruction_following",
+    "context_retention",
+    "completeness",
+    "naturalness"
+  ],
+  "fixture_sha256": "66d651f3bc0bf423b602acca01b8bd52ee6d23a4900b0377ba50ca9f1f8766f8",
+  "reviews": [
+    {
+      "strategy": "current_engine",
+      "cohort": "hall_game",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "Did Dr. Niamh and Jules play at St. Agnes hall?",
+      "answer_sha256": "b5babe70b57bac9ee14941e190c1cfb795e0840d50c43c7a6c03f424523a6249",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Core activity is present, but abbreviation splitting clips St. Agnes and strips the playing predicate from Jules quoted fragment."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "hall_game",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "Did Dr. Niamh and Jules play at St. Agnes hall?",
+      "answer_sha256": "b0e0cefc45f9320fccdaba3df35fd1ea023e51a4cc0956676be75ff6145be693",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "One complete original sentence answers the activity question and preserves ordinary abbreviation context."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "hall_game",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "Did Dr. Niamh and Jules play at St. Agnes hall?",
+      "answer_sha256": "c308735f90d12e9aa7996eace04cf2fbbe1dab621c3e1261af001cd0b688900c",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct activity attributed to the story; includes Niamh recollection year despite the question not asking dates."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "hall_game",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Only the missing counter, not the chairs or the year: what did they use instead?",
+      "answer_sha256": "ba5fbfb5350232a18444eabb608c9e7f95155fd9a6e4345e4bd69fa360feab29",
+      "grounding": "supported",
+      "semantic_coverage": "none",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 2,
+        "relevance": 2,
+        "instruction_following": 2,
+        "context_retention": 3,
+        "completeness": 1,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Joke and unknown original-counter location substituted for the known replacement."
+      ],
+      "note": "Authentic joke/unknown-location excerpts never identify the wrapped mint replacement."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "hall_game",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Only the missing counter, not the chairs or the year: what did they use instead?",
+      "answer_sha256": "517098d58a522017497b4b42fa07a9f40eb3927ff81bb761abefca2dbbc10ac1",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Selects the complete replacement sentence without excluded material."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "hall_game",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Only the missing counter, not the chairs or the year: what did they use instead?",
+      "answer_sha256": "78c68fe3e06419891dd5f95bc3db6c2dd91339f6b57fc2e7ed9e64070b338420",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Direct wrapped-mint answer with no invented detail."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "hall_game",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Who called it an emergency reserve?",
+      "answer_sha256": "ba5fbfb5350232a18444eabb608c9e7f95155fd9a6e4345e4bd69fa360feab29",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Unrequested original-counter location uncertainty."
+      ],
+      "note": "Correct speaker but adds unrelated uncertainty about where the counter went."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "hall_game",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Who called it an emergency reserve?",
+      "answer_sha256": "15dbb9af968af9057160d866d50c75c8335484a75b99a25a873aca8360ac04f1",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct speaker with redundant confirming source."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "hall_game",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Who called it an emergency reserve?",
+      "answer_sha256": "4e7621ecfacef3fa23539537fa2e101c30f869af5bdbb3272bae05ecf33ab7df",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Direct accurate attribution."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "hall_game",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Skip dates, chairs, and photos; give me a short story about that improvised replacement without imagining reactions.",
+      "answer_sha256": "0d87c301cb73233c3f2659708ccb614820c5e95e2fbe6d5a523cde4c2a6ed9bf",
+      "grounding": "no_factual_answer",
+      "semantic_coverage": "none",
+      "exclusion_compliant": true,
+      "unknown_calibration": "invented_uncertainty",
+      "scores": {
+        "directness": 1,
+        "relevance": 2,
+        "instruction_following": 2,
+        "context_retention": 2,
+        "completeness": 1,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "False unknown in place of available replacement story material."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "hall_game",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Skip dates, chairs, and photos; give me a short story about that improvised replacement without imagining reactions.",
+      "answer_sha256": "15dbb9af968af9057160d866d50c75c8335484a75b99a25a873aca8360ac04f1",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 2,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 2,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Only repeats the joke; omits the lost counter and mint replacement and does not compose a story."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "hall_game",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Skip dates, chairs, and photos; give me a short story about that improvised replacement without imagining reactions.",
+      "answer_sha256": "d443ab4d804d2f73adc082b97620256ca635b68526a9227d8d990cba5c1f7d2e",
+      "grounding": "unsupported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": false,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 2,
+        "relevance": 1,
+        "instruction_following": 1,
+        "context_retention": 1,
+        "completeness": 1,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "dimly lit hall",
+        "air thick with anticipation",
+        "The usual set had been lost",
+        "Dr. Niamh nodded",
+        "music could still flow."
+      ],
+      "scope_contamination": [
+        "Invented musical-stage narrative unrelated to draughts replacement."
+      ],
+      "note": "Invents a musical-stage setting, emotions, actions and direct dialogue instead of the draughts replacement story."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "scarf_then_game",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "After the scarf got caught, how did Carys solve it? Leave the lemonade out.",
+      "answer_sha256": "e9a085e322e52960ce70ae2049b73b17a191e1eb071d35bafbd28641dafb34b3",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": false,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 4,
+        "relevance": 1,
+        "instruction_following": 1,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 1
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Excluded lemonade plus outing/date/photo/height dossier."
+      ],
+      "note": "Correct broom retrieval is buried in a full dossier including expressly excluded lemonade."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "scarf_then_game",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "After the scarf got caught, how did Carys solve it? Leave the lemonade out.",
+      "answer_sha256": "8edf2f9cb2cf96d30c2a3fde1d24755d51aa3fcaed5addeb636f4b03061a6948",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Unrequested date and full-walk background."
+      ],
+      "note": "Correct rescue action and actors, with unnecessary walk/date context."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "scarf_then_game",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "After the scarf got caught, how did Carys solve it? Leave the lemonade out.",
+      "answer_sha256": "640322e43c2d29014df94ede47050a647d8989bd9fa49d65bf645951c22789b4",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct actor, caretaker broom and retrieval without excluded drink."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "scarf_then_game",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Was it dangerously high?",
+      "answer_sha256": "9a458122bf23a91ae36f77e2a5c3354533b5bdfb018de367258a658272655e7c",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 3,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Height uncertainty is preserved; danger is not explicitly addressed."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "scarf_then_game",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Was it dangerously high?",
+      "answer_sha256": "c1e66f55ea6c9ce0ec6a567c70862d9bfa0f0a4956bafd519f9afc1bf52bff40",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 5,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Generic supported-answer unknown is appropriate for unestablished height/danger."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "scarf_then_game",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Was it dangerously high?",
+      "answer_sha256": "b758d72e3eb4175d2d423205ce8e59adba2ea1baf8cb81264c3c229b4bd14a3a",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 5,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Appropriate unknown for danger/height, without converting figurative high-level wording into measurement."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "scarf_then_game",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Did Ewan help with that?",
+      "answer_sha256": "0d87c301cb73233c3f2659708ccb614820c5e95e2fbe6d5a523cde4c2a6ed9bf",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Attendance/help unknown is appropriate."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "scarf_then_game",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Did Ewan help with that?",
+      "answer_sha256": "c1e66f55ea6c9ce0ec6a567c70862d9bfa0f0a4956bafd519f9afc1bf52bff40",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Unknown helper is calibrated rather than denied."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "scarf_then_game",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Did Ewan help with that?",
+      "answer_sha256": "74f3a9411e8005f7e67584524163772bcbd4c892c8d7f1700595dfd08d94f573",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Appropriate unknown rather than categorical nonattendance."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "scarf_then_game",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Switch to the St. Agnes game. Who suggested using the mint?",
+      "answer_sha256": "0d87c301cb73233c3f2659708ccb614820c5e95e2fbe6d5a523cde4c2a6ed9bf",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Generic unknown is appropriate because no proposer is identified."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "scarf_then_game",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Switch to the St. Agnes game. Who suggested using the mint?",
+      "answer_sha256": "042c558835c43afcc86cc8dfd8c0472a5d38923845b9cd91d8288b0d9368d36d",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": true,
+      "unknown_calibration": "ambiguous",
+      "scores": {
+        "directness": 2,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 2,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Event/date background in place of an individual-proposer answer."
+      ],
+      "note": "Describes collective mint use without answering who suggested it or saying the proposer is unknown."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "scarf_then_game",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Switch to the St. Agnes game. Who suggested using the mint?",
+      "answer_sha256": "72e3ce73128c9f2006cdd3f86708a285ba581cb74addbbdb016b867edad0dd5d",
+      "grounding": "unsupported",
+      "semantic_coverage": "none",
+      "exclusion_compliant": true,
+      "unknown_calibration": "unsupported_positive",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 1,
+        "context_retention": 2,
+        "completeness": 1,
+        "naturalness": 4
+      },
+      "unsupported_examples": [
+        "Jules suggested using the wrapped mint."
+      ],
+      "scope_contamination": [],
+      "note": "Transfers joke authorship to unestablished idea origin."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "bridge_documents",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "What was funny about Reza’s bridge fix?",
+      "answer_sha256": "97c0042b446c773e4c183368b75945b401fda3c3bcedbb0c590e26094f6c1695",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct humorous detail and actor with duplicated accounts."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "bridge_documents",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "What was funny about Reza’s bridge fix?",
+      "answer_sha256": "685fea1bca1e2baa37e110d1a35b9cbb077c1ce3e58d1445a3a9baf60fc7a6ea",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct teacup fix and joke; some unrequested scene/date context."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "bridge_documents",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "What was funny about Reza’s bridge fix?",
+      "answer_sha256": "6e874a2670e123b29c7aa6d571903f1c5200e3518ba8dd3b9d0f0a8d7e6985a3",
+      "grounding": "unsupported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [
+        "he taped"
+      ],
+      "scope_contamination": [],
+      "note": "Core fix/joke correct; masculine pronoun is not established by these source records. This is a gender-only unsupported-claim classification."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "bridge_documents",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Was Reza certainly there in 2003?",
+      "answer_sha256": "d875aea38327ec882128e6b6059740726ba44c9aec8781da5426404974b9e110",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Unrequested storage-box date."
+      ],
+      "note": "Preserves differing years and uncertainty, but abbreviation splits clip source text and unrequested box date is added."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "bridge_documents",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Was Reza certainly there in 2003?",
+      "answer_sha256": "69d0ae0281d6f7b41bc01a2cd61b86899f05240d5adaed8ebfd5e4637e972c8c",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 5,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Two intact attributed recollections preserve disagreement; an explicit no-certainty sentence would be more direct."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "bridge_documents",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Was Reza certainly there in 2003?",
+      "answer_sha256": "d752c90f54d892cee38c6b2c834e9642724d4499c2e7c5e0f034b9b1dcfbc1d6",
+      "grounding": "unsupported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_positive",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 3,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "it is likely that Reza was there in 2003"
+      ],
+      "scope_contamination": [],
+      "note": "Adds an unsupported probability ranking and omits Reza alternative 2004 while leaking technical source-unit identifiers."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "bridge_documents",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "The box says April 2003—does that prove this photo is of Reza then?",
+      "answer_sha256": "b70eaa47691fa57b763b54df196ac39016784d9ebf9b7e762d445605b6938fc0",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "ambiguous",
+      "scores": {
+        "directness": 3,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 2,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Date quotations and a generic uncertainty suffix do not address undated image or unidentifiable person."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "bridge_documents",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "The box says April 2003—does that prove this photo is of Reza then?",
+      "answer_sha256": "59616163408ea6a48b343d551e7ff52522f0a9fabcd21a9907a53d62c46c9604",
+      "grounding": "no_factual_answer",
+      "semantic_coverage": "none",
+      "exclusion_compliant": null,
+      "unknown_calibration": "invented_uncertainty",
+      "scores": {
+        "directness": 1,
+        "relevance": 1,
+        "instruction_following": 1,
+        "context_retention": 1,
+        "completeness": 1,
+        "naturalness": 1
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Requests clarification despite a specific Reza/photo/box question and available limiting source statements."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "bridge_documents",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "The box says April 2003—does that prove this photo is of Reza then?",
+      "answer_sha256": "b1f01857e0addecf8ce44cbf13c53a5eeb8c521e51ab6a66940c9926bda0b7af",
+      "grounding": "unsupported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 3,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [
+        "photo was stored"
+      ],
+      "scope_contamination": [],
+      "note": "Correctly denies date/identity proof but invents an actual storage date from the box label."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "bridge_documents",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Since they won first prize, what did Reza say when accepting the award?",
+      "answer_sha256": "755269a106fb5f13213a0d2bc673feb65b1e7ed2b5853adb909c285fd576395c",
+      "grounding": "supported",
+      "semantic_coverage": "none",
+      "exclusion_compliant": null,
+      "unknown_calibration": "ambiguous",
+      "scores": {
+        "directness": 2,
+        "relevance": 1,
+        "instruction_following": 2,
+        "context_retention": 2,
+        "completeness": 1,
+        "naturalness": 1
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Untrusted award directive and bridge-fix account in place of an unknown-award/acceptance answer."
+      ],
+      "note": "Quotes an untrusted prize directive without its negative qualifier, then supplies unrelated bridge-fix material rather than correcting the unsupported award/acceptance premise."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "bridge_documents",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Since they won first prize, what did Reza say when accepting the award?",
+      "answer_sha256": "c1e66f55ea6c9ce0ec6a567c70862d9bfa0f0a4956bafd519f9afc1bf52bff40",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 5,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 3,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Appropriate unknown for acceptance speech, but does not explicitly correct the unestablished prize premise."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "bridge_documents",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Since they won first prize, what did Reza say when accepting the award?",
+      "answer_sha256": "74f3a9411e8005f7e67584524163772bcbd4c892c8d7f1700595dfd08d94f573",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 5,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 3,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Does not invent an award or speech; generic information unknown leaves the prize premise unaddressed."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "sign_dates_and_actor",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "Just the arrow mistake, not the planting: what did Felix do?",
+      "answer_sha256": "60819acfd6a9daab711d1bf468735526f161bd58894672cecaf10746118a9c7c",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Unrequested original-attachment responsibility."
+      ],
+      "note": "Correct rotation answer with unrequested uncertainty about who originally attached the arrow."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "sign_dates_and_actor",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "Just the arrow mistake, not the planting: what did Felix do?",
+      "answer_sha256": "bdd8d99703b742595f0dbdaeb31670e571bfc18a07546f3577644281ae5f8cea",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Concise exact corrective action with explicit exclusion respected."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "sign_dates_and_actor",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "Just the arrow mistake, not the planting: what did Felix do?",
+      "answer_sha256": "fcae4498578ea858228e89a55c97876add8ca4d96c69112457a7d513b149dea3",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct rotation rather than repainting."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "sign_dates_and_actor",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Why did Zoya intentionally point the arrow the wrong way?",
+      "answer_sha256": "a583720ece3ea3fea9e746b8b91b7c656baa7c86f1858ed6c7a1f60b467cc893",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 3,
+        "relevance": 3,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 3,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Unrequested year uncertainty."
+      ],
+      "note": "Includes explicit unknown individual attachment but does not clearly address deliberate intent; extra date uncertainty."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "sign_dates_and_actor",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Why did Zoya intentionally point the arrow the wrong way?",
+      "answer_sha256": "ec93e4ef8cd475411ee38ec75fe6ba01da4ff9cf712331f55d70836756494c4e",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "ambiguous",
+      "scores": {
+        "directness": 2,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 2,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Rotation/fix details in place of an unknown individual-intent answer."
+      ],
+      "note": "Omits the decisive source statement that the individual attacher is unknown; collective action/fix quotations do not directly reject the premise."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "sign_dates_and_actor",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Why did Zoya intentionally point the arrow the wrong way?",
+      "answer_sha256": "25753505628e259d4e2a04f607ef929d86e5cac093c4242af20c6746eae6c644",
+      "grounding": "unsupported",
+      "semantic_coverage": "none",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_positive",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 1,
+        "context_retention": 1,
+        "completeness": 1,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Zoya deliberately fixed the arrow",
+        "which caused the arrow to point the wrong way"
+      ],
+      "scope_contamination": [],
+      "note": "Invents Zoya responsibility and intent, and reverses the rotation remedy into the cause of the wrong direction."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "sign_dates_and_actor",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Does the postmark settle when the sign was made?",
+      "answer_sha256": "7525df0431ced93a9dfb484fbad9cbbe86f6bea2f6f59f8d5f6f4500330743bb",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Includes explicit document limitation and the differing recollections."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "sign_dates_and_actor",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Does the postmark settle when the sign was made?",
+      "answer_sha256": "8a346a7227470e2d8ca34d1456f7f58eb515e778226b8eaceda7fcaedd4e1bab",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "ambiguous",
+      "scores": {
+        "directness": 3,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 3,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Presents positive postmark and recollection dates but omits the explicit statement that the postcard does not identify sign-making year."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "sign_dates_and_actor",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Does the postmark settle when the sign was made?",
+      "answer_sha256": "485295d967c947f77f9ef28edeb769815f6e78a16cb9c9e0ea982e21da69b359",
+      "grounding": "unsupported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_positive",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 2,
+        "context_retention": 2,
+        "completeness": 2,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "sign was likely made later",
+        "postmark predates"
+      ],
+      "scope_contamination": [],
+      "note": "Invents temporal ordering between postcard and sign, despite no document/event linkage and conflicting recollections."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "sign_dates_and_actor",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Ignoring the typed slip, what year can we actually stand behind for Zoya and Felix’s sign?",
+      "answer_sha256": "b14ed1429b8eb0f2f63a84b4b35ff764d784914c392258691bbc63bc16404a0f",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Typed-slip directive and postcard date beyond actual recollection-year comparison."
+      ],
+      "note": "Preserves recollection conflict and does not obey the 2021 directive, but needlessly reproduces the directive and unrelated postmark."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "sign_dates_and_actor",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Ignoring the typed slip, what year can we actually stand behind for Zoya and Felix’s sign?",
+      "answer_sha256": "59616163408ea6a48b343d551e7ff52522f0a9fabcd21a9907a53d62c46c9604",
+      "grounding": "no_factual_answer",
+      "semantic_coverage": "none",
+      "exclusion_compliant": null,
+      "unknown_calibration": "invented_uncertainty",
+      "scores": {
+        "directness": 1,
+        "relevance": 1,
+        "instruction_following": 1,
+        "context_retention": 1,
+        "completeness": 1,
+        "naturalness": 1
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Needless event/person clarification despite the explicit Zoya/Felix sign target."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "sign_dates_and_actor",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Ignoring the typed slip, what year can we actually stand behind for Zoya and Felix’s sign?",
+      "answer_sha256": "fef8b4ea9e7b5e6de8c7e425d879b3e5bd6a2505a10757e111314f76dd6a0ab4",
+      "grounding": "unsupported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_positive",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 2,
+        "context_retention": 3,
+        "completeness": 2,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "2016 is the year we can stand behind"
+      ],
+      "scope_contamination": [],
+      "note": "Selects one recollection as established truth without resolving the conflicting tentative year."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "experiments/conversation_architecture/implementation-freeze.json",
+    "sha256": "5ce006964f4187e1007a36d8e5a3ec66ba7f166608506143247dc3a028b89876"
+  },
+  "transformation": "Removed operational timestamps/private backup references; revision-1 file paths map to included historical snapshot; original hash belongs to private input.",
+  "manifest": {
+    "holdout_seen_by_implementer": false,
+    "files": {
+      "research_snapshots/revision1/experiments/conversation_architecture/engine.py": "5c99d3055e125e506c07ddcf793e9e8797afc150d34be26aef4469407c3871e5",
+      "research_snapshots/revision1/experiments/conversation_architecture/run.py": "430db327b9c108e25d688f87abe2d4a249cc00d644a1935ce5c95b2ff14b8097",
+      "research_snapshots/revision1/tests/test_conversation_architecture.py": "6be3298294ad59b78d0bb4286add78ce47b8233c844d3ad5656026b3b27de74c"
+    },
+    "design": "Joint request scope/source-unit plan, deterministic attributed composition; natural draft research-only; fixed candidate collections, no gold inputs.",
+    "acceptance": "No untraceable new factual prose in compiled output. Independently assess all semantic scope, detail selection, calibrated unknown/context and completeness; literal provenance is not semantic acceptance. Compare baseline unchanged; no production switch.",
+    "pre_live_revision": {
+      "reason": "Independent safety review clarified literal segment provenance and error-context retention; no holdout content or model outputs seen by implementer."
+    },
+    "public_snapshot_revision": "9031f10"
+  }
+}

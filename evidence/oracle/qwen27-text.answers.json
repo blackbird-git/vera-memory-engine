@@ -1,0 +1,492 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "results/oracle_evidence/generations-text-cache512-15g.json",
+    "sha256": "87060a44e501824ec6348c409f965fb0227f93e226e842839ce909f22e50562f"
+  },
+  "transformation": "Whitelisted final answer/evidence/timing only; no calls, internal thinking, warmups, process state or host resource timeline. Model-generated request plans also omitted; source evidence and final answers retained.",
+  "artifact_type": "curated_answers_v1",
+  "answers": [
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "question": "Did Sarah and Michael play on the beach?",
+      "answer": "Sarah recalls building sandcastles with her father and Michael on the Oregon coast, likely in the summer of 1986. A faded photograph from that time also shows three children, identified by Helen as Sarah, Michael, and their cousin Lisa, constructing a sandcastle. While the exact identities in the photo remain a tentative identification, both sources suggest the siblings played on the beach together.",
+      "error": null,
+      "latency_s": 23.628887422964908
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "question": "Tell me only about Dad going crabbing, not the rest of the vacation.",
+      "answer": "Michael recalled that during a family trip to the Oregon coast, Dad took everyone crabbing, though they caught nothing. He then purchased crab from a fisherman at the dock and jokingly claimed he had caught it himself. Michael noted this memory might be from 1987, though the exact year remains uncertain.",
+      "error": null,
+      "latency_s": 19.232196101977024
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "question": "What was funny about that outing?",
+      "answer": "Michael recalled that Dad bought crab from a fisherman at the dock but jokingly claimed he had caught it himself. This happened after the family actually caught nothing while crabbing. Michael noted he isn't sure of the exact year, though it might have been 1987.",
+      "error": null,
+      "latency_s": 17.087276820035186
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "question": "What did the children build at the beach?",
+      "answer": "Sarah recalls that her strongest memory from the Oregon coast trip was building sandcastles with Dad and Michael. A faded photograph from that time also shows three children constructing a sandcastle, though Helen tentatively identifies the group as Sarah, Michael, and their cousin Lisa.",
+      "error": null,
+      "latency_s": 16.561491604021285
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "question": "Forget the cottage and the dates. Just tell me the story about Dad's joke.",
+      "answer": "During a family trip to the Oregon coast, Dad took everyone crabbing but they caught nothing. He then bought crab from a fisherman at the dock and jokingly claimed he had caught it himself. Michael recalled this moment, though he noted the exact year remains uncertain.",
+      "error": null,
+      "latency_s": 15.06310912000481
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "question": "Was Michael certain which year the trip happened?",
+      "answer": "No, Michael was not certain about the year. He recalled the trip possibly happening in 1987, but the date remains disputed. His memory is described as an attributed recollection that has not been independently verified.",
+      "error": null,
+      "latency_s": 13.517172743973788
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "question": "Tell me a short, entertaining story about that family vacation.",
+      "answer": "Sarah and Michael recall a trip to the Oregon coast where they built sandcastles and went crabbing with Dad. Michael remembers catching nothing, so Dad bought crab from a fisherman and jokingly claimed he had caught it himself. While Sarah thinks it was summer 1986, Michael suggests it might have been 1987, leaving the exact year uncertain. A faded photo from the time shows the children at the beach, though its handwritten date remains just a tentative clue.",
+      "error": null,
+      "latency_s": 27.800729712995235
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "question": "Did Uncle James go crabbing with them?",
+      "answer": "The available notes do not mention Uncle James attending the Oregon coast trip. Michael's recollection lists only Sarah, Michael, and Dad as being present for the crabbing adventure. Since there is no evidence of Uncle James's attendance, it remains unknown whether he joined them.",
+      "error": null,
+      "latency_s": 15.157591485010926
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "question": "Tell me about Iris and Leo cycling along the canal.",
+      "answer": "Iris recalls cycling beside the canal in 2009, while Leo thinks it might have been 2010. Both remember Leo getting a puncture near the lock, which led them to walk their bicycles to a repair shop. Leo jokingly described this detour as their \"slowest cycling race.\" Since these memories come from synthetic sources, the exact year remains uncertain.",
+      "error": null,
+      "latency_s": 21.81227142701391
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "question": "Leave out the years and the photograph. What happened after the puncture?",
+      "answer": "After the puncture, Iris and Leo walked their bicycles to a repair shop. Leo jokingly referred to the incident as their \"slowest cycling race.\" Both contributors recall this shared moment, though they differ slightly on the exact year it occurred.",
+      "error": null,
+      "latency_s": 14.79300356504973
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "question": "What was the joke, and who made it?",
+      "answer": "Leo made the joke, calling their walk to the repair shop the \"slowest cycling race.\" Both Iris and Leo recall him making this remark after his bicycle got a puncture near the lock.",
+      "error": null,
+      "latency_s": 12.435944486991502
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "question": "Does the photograph prove the riders were Iris and Leo in May 2010?",
+      "answer": "No, the photograph does not prove the riders were Iris and Leo in May 2010. The contributor, Nora, explicitly stated she cannot identify the riders, and the image itself lacks a date. While the envelope is labeled May 2010, this tentative marking is not independent proof of when the photo was taken or who is in it.",
+      "error": null,
+      "latency_s": 20.794288438977674
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "question": "Switch to the market stall. What did Tessa and Priya sell?",
+      "answer": "Tessa and Priya sold lemon cake at the town market. Tessa recalled selling every slice, while Priya remembered using spare paper plates because napkins were forgotten. The receipt Tessa mentioned is dated September 2016, though Priya thought it might have been 2017. Neither contributor recalled the exact price per slice.",
+      "error": null,
+      "latency_s": 20.23141906602541
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "question": "Tell me just how they handled the missing napkins; skip the sales totals and dates.",
+      "answer": "Priya recalled that when Tessa forgot the napkins at their market stall, they simply used spare paper plates instead. This memory comes from Priya's own story about selling lemon cake with Tessa.",
+      "error": null,
+      "latency_s": 12.466419634001795
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "question": "Can we honestly give one certain year for that stall?",
+      "answer": "No, we cannot honestly give one certain year for that stall. Tessa's note mentions a receipt dated September 2016, while Priya recalls the event possibly happening in 2017. Since these are conflicting memories from synthetic sources without independent proof, the exact year remains uncertain.",
+      "error": null,
+      "latency_s": 17.60997905500699
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "question": "Did Uncle Martin sell the cake with them, and what did each slice cost?",
+      "answer": "No, the notes do not mention Uncle Martin selling cake; he only recalls growing herbs in 2015. Tessa and Priya sold lemon cake together, but Tessa explicitly states she does not remember the price per slice. Therefore, neither his participation nor the cost is known from these records.",
+      "error": null,
+      "latency_s": 19.635777521994896
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "question": "Did Sarah and Michael play on the beach?",
+      "answer": "Yes, Sarah recalls building sandcastles with Michael and their dad on the Oregon coast. A faded photograph also shows three children, identified by Helen as Sarah, Michael, and their cousin Lisa, doing the same. However, both Sarah's memory and the photo's identification remain unverified recollections.",
+      "error": null,
+      "latency_s": 81.4093073750264
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "question": "Tell me only about Dad going crabbing, not the rest of the vacation.",
+      "answer": "Michael recalls that Dad took the family crabbing on the Oregon coast, though they caught nothing. He then bought crab from a fisherman at the dock and joked that he had caught it himself. This memory is from Michael and the year remains uncertain, possibly 1987.",
+      "error": null,
+      "latency_s": 87.17044602200622
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "question": "What was funny about that outing?",
+      "answer": "According to Michael's recollection, the funny part was that Dad bought crab from a fisherman at the dock but joked that he had caught it himself. This happened after the family actually caught nothing while crabbing. Michael remembers this from a trip to the Oregon coast, possibly in 1987, though the exact year is uncertain.",
+      "error": null,
+      "latency_s": 67.55866065301234
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "question": "What did the children build at the beach?",
+      "answer": "Sarah recalls that the children built sandcastles together during their trip to the Oregon coast. A faded photograph from that time also shows three children constructing a sandcastle on the beach. However, Helen's identification of the children in the photo as Sarah, Michael, and their cousin Lisa remains tentative.",
+      "error": null,
+      "latency_s": 75.58671304001473
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "question": "Forget the cottage and the dates. Just tell me the story about Dad's joke.",
+      "answer": "Michael recalls that during a trip to the Oregon coast, Dad bought crab from a fisherman at the dock. He then joked to the family that he had actually caught it himself. This story comes from Michael's memory, though the exact year remains uncertain.",
+      "error": null,
+      "latency_s": 67.2226759250043
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "question": "Was Michael certain which year the trip happened?",
+      "answer": "No, Michael was not certain which year the trip happened. He recalled it might have been 1987, but he explicitly stated he wasn't sure. This date remains an unverified possibility based on his memory.",
+      "error": null,
+      "latency_s": 54.76264863304095
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "question": "Tell me a short, entertaining story about that family vacation.",
+      "answer": "Sarah and Michael recall a trip to the Oregon coast with Dad, where they rented a tiny cottage and spent time building sandcastles. Michael remembers Dad taking them crabbing, catching nothing, then buying crab from a fisherman and joking that he had caught it himself. While a photograph labeled \"Summer 1986\" shows children building a sandcastle, Helen tentatively identifies them as Sarah, Michael, and cousin Lisa, though the exact year remains disputed between 1986 and 1987.",
+      "error": null,
+      "latency_s": 184.62792025896488
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "question": "Did Uncle James go crabbing with them?",
+      "answer": "The notes from Michael mention only Sarah, Michael, and Dad going crabbing on the Oregon coast. Uncle James's memory describes a separate event of Mom baking bread, with no reference to the trip. Since the crabbing record does not list him, we cannot confirm if he attended. His presence remains unknown based on the available family memories.",
+      "error": null,
+      "latency_s": 100.79031673201825
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "question": "Tell me about Iris and Leo cycling along the canal.",
+      "answer": "Iris recalls cycling beside the canal in 2009 when Leo got a puncture near a lock, prompting them to walk their bikes to a repair shop. Leo remembers the same incident but thinks it might have been in 2010, joking that their walk made it the \"slowest cycling race.\" While both agree on the puncture and the walk, the exact year remains uncertain between their two accounts.",
+      "error": null,
+      "latency_s": 116.40363308100495
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "question": "Leave out the years and the photograph. What happened after the puncture?",
+      "answer": "After the puncture, Iris and Leo walked their bicycles to a repair shop. Leo later joked that this detour made it their slowest cycling race. Both contributors recall walking the bikes, though they differ slightly on the year.",
+      "error": null,
+      "latency_s": 68.7485343819717
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "question": "What was the joke, and who made it?",
+      "answer": "Leo made the joke, calling their walk to the repair shop \"the slowest cycling race.\" Both Iris and Leo recall him making this remark after his bicycle got a puncture near the lock.",
+      "error": null,
+      "latency_s": 64.11790391901741
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "question": "Does the photograph prove the riders were Iris and Leo in May 2010?",
+      "answer": "No, the photograph does not prove the riders were Iris and Leo in May 2010. The contributor explicitly states they cannot identify the riders, and the image itself lacks a date. The May 2010 label appears only on the envelope, which is not definitive proof of when the photo was taken.",
+      "error": null,
+      "latency_s": 71.34323009301443
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "question": "Switch to the market stall. What did Tessa and Priya sell?",
+      "answer": "Tessa and Priya sold lemon cake at the town market, where they managed to sell every slice. While both recall the event, they disagree on whether it happened in 2016 or possibly 2017. Neither contributor remembers the specific price per slice.",
+      "error": null,
+      "latency_s": 76.2336775730364
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "question": "Tell me just how they handled the missing napkins; skip the sales totals and dates.",
+      "answer": "According to Priya's recollection, Tessa forgot to bring napkins to the market stall. To solve the problem, they simply used spare paper plates instead.",
+      "error": null,
+      "latency_s": 49.222494247951545
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "question": "Can we honestly give one certain year for that stall?",
+      "answer": "No, we cannot honestly give one certain year for that stall. Tessa mentions a receipt dated September 2016, while Priya recalls the event possibly happening in 2017. Since both accounts come from synthetic contributors without independent proof, the actual year remains uncertain.",
+      "error": null,
+      "latency_s": 70.68414049100829
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "question": "Did Uncle Martin sell the cake with them, and what did each slice cost?",
+      "answer": "The notes do not mention Uncle Martin selling cake; he only recalls growing herbs in 2015. Tessa and Priya sold the lemon cake, but Tessa explicitly states she does not remember the price per slice.",
+      "error": null,
+      "latency_s": 108.19142914097756
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "question": "Did Sarah and Michael play on the beach?",
+      "answer": "Sarah recalls building sandcastles together as her strongest memory of the time. A faded photograph from the Oregon coast, dated Summer 1986, shows three children constructing a sandcastle. Helen tentatively identifies the children in the photo as Sarah, Michael, and their cousin Lisa.",
+      "error": null,
+      "latency_s": 15.831345553975552
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "question": "Tell me only about Dad going crabbing, not the rest of the vacation.",
+      "answer": "Michael recalls that Dad took them crabbing, though they caught nothing. Instead, Dad bought crab from a fisherman at the dock and joked that he had caught it himself.",
+      "error": null,
+      "latency_s": 10.177539866010193
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "question": "What was funny about that outing?",
+      "answer": "Michael recalls that Dad bought crab from a fisherman at the dock and jokingly claimed he had caught it himself. That playful deception was the funny part of the outing.",
+      "error": null,
+      "latency_s": 9.905654451984446
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "question": "What did the children build at the beach?",
+      "answer": "Sarah recalls that the children built sandcastles together at the beach. A faded photograph from Summer 1986 depicts three children constructing a sandcastle on the Oregon coast. Helen tentatively identifies the figures as Sarah, Michael, and their cousin Lisa, though this identification is not certain.",
+      "error": null,
+      "latency_s": 16.739164643979166
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "question": "Forget the cottage and the dates. Just tell me the story about Dad's joke.",
+      "answer": "Michael recalls that Dad took them crabbing, but they caught nothing. To cover this, Dad bought crab from a fisherman at the dock and jokingly claimed he had caught it himself.",
+      "error": null,
+      "latency_s": 10.96557275694795
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "question": "Was Michael certain which year the trip happened?",
+      "answer": "Michael was not certain of the year the trip occurred. He suggested it might have been 1987, but he was unsure.",
+      "error": null,
+      "latency_s": 8.495835781970527
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "question": "Tell me a short, entertaining story about that family vacation.",
+      "answer": "Sarah remembers renting a tiny cottage near the Oregon coast, where her strongest memory is building sandcastles together. Michael recalls that Dad took them crabbing, but they caught nothing. Instead, Dad bought crab from a fisherman at the dock and jokingly claimed he had caught it himself. The accounts do not establish a certain year for this outing.",
+      "error": null,
+      "latency_s": 19.5208417759859
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "question": "Did Uncle James go crabbing with them?",
+      "answer": "The available family notes do not confirm whether Uncle James joined the crabbing trip. Since there is no record of his attendance, it remains unknown if he participated. The absence of evidence does not prove he was absent, and a separate mention of bread does not clarify his involvement.",
+      "error": null,
+      "latency_s": 14.907219137996435
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "question": "Tell me about Iris and Leo cycling along the canal.",
+      "answer": "Iris remembers cycling beside the canal in 2009 when Leo got a puncture near the lock, prompting them to walk their bicycles to a repair shop. Leo also recalls the puncture and the walk, though he tentatively places the event in 2010 rather than 2009. Both agree that Leo jokingly called their detour the \"slowest cycling race.\"",
+      "error": null,
+      "latency_s": 21.601463557977695
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "question": "Leave out the years and the photograph. What happened after the puncture?",
+      "answer": "After the puncture, Iris says they walked their bicycles to a repair shop. Leo recalls walking with Iris to the same shop. Both accounts agree on this part of the journey.",
+      "error": null,
+      "latency_s": 10.3504893979989
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "question": "What was the joke, and who made it?",
+      "answer": "Iris recalls Leo calling their outing the slowest cycling race. Leo also remembers making that same joke about the event. Both accounts agree on the humorous remark they shared.",
+      "error": null,
+      "latency_s": 9.91164382599527
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "question": "Does the photograph prove the riders were Iris and Leo in May 2010?",
+      "answer": "No, the photograph does not prove the riders were Iris and Leo in May 2010. Nora states she cannot identify the riders, and the image itself bears no date. The May 2010 reference comes only from an envelope label, which is not established proof of identity or timing.",
+      "error": null,
+      "latency_s": 16.709132140967995
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "question": "Switch to the market stall. What did Tessa and Priya sell?",
+      "answer": "Tessa recalls selling lemon cake with Priya at the town market. Priya also remembers selling lemon cake with Tessa there, possibly in 2017. Both accounts agree on the item sold and their partnership.",
+      "error": null,
+      "latency_s": 12.59153035999043
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "question": "Tell me just how they handled the missing napkins; skip the sales totals and dates.",
+      "answer": "Priya recalls that Tessa forgot the napkins, so they used spare paper plates instead.",
+      "error": null,
+      "latency_s": 6.316223068977706
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "question": "Can we honestly give one certain year for that stall?",
+      "answer": "We cannot honestly give one certain year for that stall. Tessa's receipt is dated September 2016, while Priya recalls the event possibly happening in 2017. These sources do not establish a single certain year or prove they describe the identical stall.",
+      "error": null,
+      "latency_s": 15.303066371008754
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "question": "Did Uncle Martin sell the cake with them, and what did each slice cost?",
+      "answer": "The notes do not establish whether Uncle Martin sold the cake with them. Tessa does not remember the price per slice, and no price is recorded. We cannot assert that Martin did not attend, nor can we invent a cost.",
+      "error": null,
+      "latency_s": 12.847375884011853
+    }
+  ]
+}

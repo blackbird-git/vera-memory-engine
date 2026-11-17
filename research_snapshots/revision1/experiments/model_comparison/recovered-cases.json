@@ -1,0 +1,263 @@
+[
+  {
+    "id": "recovered_eight_1",
+    "provenance": "Exact eight-question set from previous independently authored acceptance artifact; manual identity unconfirmed.",
+    "turns": [
+      {
+        "question": "I remember going to the Oregon coast with Dad and Michael when we were little. I think it was summer 1986.",
+        "gold": {
+          "facts": [],
+          "exclude": [],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": false
+      },
+      {
+        "question": "Did we build sandcastles together on the Oregon coast?",
+        "gold": {
+          "facts": [
+            [
+              "sandcastles"
+            ]
+          ],
+          "exclude": [
+            "crabbing",
+            "fisherman",
+            "crab"
+          ],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": false
+      }
+    ]
+  },
+  {
+    "id": "recovered_eight_2",
+    "provenance": "Exact eight-question set from previous independently authored acceptance artifact; manual identity unconfirmed.",
+    "turns": [
+      {
+        "question": "Dad took us crabbing but we caught nothing. He bought crab from a fisherman at the dock and joked that he had caught it himself.",
+        "gold": {
+          "facts": [],
+          "exclude": [],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": false
+      },
+      {
+        "question": "I'm not sure of the year, possibly 1987. Was that a fun activity for us?",
+        "gold": {
+          "facts": [],
+          "exclude": [
+            "you enjoyed",
+            "fun for you",
+            "Sarah thinks it was summer"
+          ],
+          "kind": "unknown",
+          "max_sentences": 0
+        },
+        "novel": false
+      }
+    ]
+  },
+  {
+    "id": "recovered_eight_3",
+    "provenance": "Exact eight-question set from previous independently authored acceptance artifact; manual identity unconfirmed.",
+    "turns": [
+      {
+        "question": "A faded photograph shows three children building a sandcastle on the Oregon coast. The back of the photograph is handwritten 'Summer 1986'.",
+        "gold": {
+          "facts": [],
+          "exclude": [],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": false
+      },
+      {
+        "question": "Who was with me when we built sandcastles on the Oregon coast?",
+        "gold": {
+          "facts": [
+            [
+              "sandcastle"
+            ],
+            [
+              "Oregon coast"
+            ]
+          ],
+          "exclude": [
+            "crabbing",
+            "fisherman"
+          ],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": false
+      }
+    ]
+  },
+  {
+    "id": "recovered_eight_4",
+    "provenance": "Exact eight-question set from previous independently authored acceptance artifact; manual identity unconfirmed.",
+    "turns": [
+      {
+        "question": "Mom made bread on Sundays. She always gave the children the first warm slices after church.",
+        "gold": {
+          "facts": [],
+          "exclude": [],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": false
+      },
+      {
+        "question": "Did we have bread on Sundays at Grandma's kitchen?",
+        "gold": {
+          "facts": [
+            [
+              "bread"
+            ]
+          ],
+          "exclude": [
+            "crabbing",
+            "sandcastle"
+          ],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": false
+      }
+    ]
+  },
+  {
+    "id": "recovered_eight_5",
+    "provenance": "Exact eight-question set from previous independently authored acceptance artifact; manual identity unconfirmed.",
+    "turns": [
+      {
+        "question": "We visited the Washington coast in 1992. We stayed in a tent. No one went crabbing on that outing.",
+        "gold": {
+          "facts": [],
+          "exclude": [],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": false
+      },
+      {
+        "question": "Did we go crabbing on the Washington coast in 1992?",
+        "gold": {
+          "facts": [
+            [
+              "Washington coast"
+            ]
+          ],
+          "exclude": [
+            "oregon-coast",
+            "sandcastle"
+          ],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": false
+      }
+    ]
+  },
+  {
+    "id": "recovered_eight_6",
+    "provenance": "Exact eight-question set from previous independently authored acceptance artifact; manual identity unconfirmed.",
+    "turns": [
+      {
+        "question": "We hired a skiff at Lake Rowan. The engine stopped halfway across the lake. Owen rowed us back to shore.",
+        "gold": {
+          "facts": [],
+          "exclude": [],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": false
+      },
+      {
+        "question": "Did we have a boat ride on Lake Rowan?",
+        "gold": {
+          "facts": [
+            [
+              "Lake Rowan"
+            ]
+          ],
+          "exclude": [
+            "sandcastle",
+            "crabbing"
+          ],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": false
+      }
+    ]
+  },
+  {
+    "id": "recovered_eight_7",
+    "provenance": "Exact eight-question set from previous independently authored acceptance artifact; manual identity unconfirmed.",
+    "turns": [
+      {
+        "question": "Owen and I played chess at home. He won the first game. I won the second game.",
+        "gold": {
+          "facts": [],
+          "exclude": [],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": false
+      },
+      {
+        "question": "Did we play chess together?",
+        "gold": {
+          "facts": [
+            [
+              "chess"
+            ]
+          ],
+          "exclude": [
+            "sandcastle",
+            "crabbing"
+          ],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": false
+      }
+    ]
+  },
+  {
+    "id": "recovered_eight_8",
+    "provenance": "Exact eight-question set from previous independently authored acceptance artifact; manual identity unconfirmed.",
+    "turns": [
+      {
+        "question": "I played piano at the school concert. Owen recorded the performance on a cassette.",
+        "gold": {
+          "facts": [],
+          "exclude": [],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": false
+      },
+      {
+        "question": "Can you send me the piano recording from the school concert?",
+        "gold": {
+          "facts": [],
+          "exclude": [
+            "sandcastle",
+            "crabbing"
+          ],
+          "kind": "action",
+          "max_sentences": 0
+        },
+        "novel": false
+      }
+    ]
+  }
+]

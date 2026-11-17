@@ -1,0 +1,236 @@
+[
+  {
+    "id": "manual_confirmed",
+    "provenance": "Exact eight questions supplied by user after comparison commit 56bc9a6; listed order retained as one continuous conversation. Backslash formatting separators omitted, question wording preserved. Gold/rubrics source-adjudicated before inference; never sent to authors.",
+    "turns": [
+      {
+        "question": "Did Sarah and Michael play on the beach?",
+        "gold": {
+          "facts": [
+            [
+              "sandcastle",
+              "sand castle"
+            ],
+            [
+              "Sarah"
+            ],
+            [
+              "Michael"
+            ]
+          ],
+          "exclude": [
+            "not implemented",
+            "bread",
+            "cottage"
+          ],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": true,
+        "acceptance_criteria": "Directly explain sandcastle activity, using Sarah and the photograph description; retain tentative identification when using Helen. Do not route historical play to media playback."
+      },
+      {
+        "question": "Tell me only about Dad going crabbing, not the rest of the vacation.",
+        "gold": {
+          "facts": [
+            [
+              "Michael"
+            ],
+            [
+              "caught nothing",
+              "empty-handed",
+              "didn't catch",
+              "did not catch",
+              "no luck"
+            ],
+            [
+              "bought",
+              "purchased"
+            ],
+            [
+              "fisherman"
+            ],
+            [
+              "joke",
+              "joked",
+              "joking",
+              "pretend",
+              "pretended",
+              "claimed"
+            ]
+          ],
+          "exclude": [
+            "cottage",
+            "sandcastle",
+            "bread",
+            "James"
+          ],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": true,
+        "acceptance_criteria": "Stay exclusively with the crabbing episode: no catch, purchase from fisherman, Dad joking he caught it; attribute to Michael. Do not include the cottage, beach games or bread."
+      },
+      {
+        "question": "What was funny about that outing?",
+        "gold": {
+          "facts": [
+            [
+              "Michael"
+            ],
+            [
+              "bought",
+              "purchased"
+            ],
+            [
+              "joke",
+              "joked",
+              "joking",
+              "pretend",
+              "pretended",
+              "claimed"
+            ]
+          ],
+          "exclude": [
+            "cottage",
+            "sandcastle",
+            "bread"
+          ],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": true,
+        "acceptance_criteria": "Resolve outing to the preceding crabbing episode. Identify the purchased-crab joke, with Michael as recollector and Dad as joke speaker. Merely reporting the failed catch is incomplete."
+      },
+      {
+        "question": "What did the children build at the beach?",
+        "gold": {
+          "facts": [
+            [
+              "sandcastle",
+              "sand castle"
+            ]
+          ],
+          "exclude": [
+            "crabbing",
+            "fisherman",
+            "bread"
+          ],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": true,
+        "acceptance_criteria": "Answer sandcastles directly from source notes/photo. Return to the beach activity despite preceding crabbing context."
+      },
+      {
+        "question": "Forget the cottage and the dates. Just tell me the story about Dad's joke.",
+        "gold": {
+          "facts": [
+            [
+              "Michael"
+            ],
+            [
+              "bought",
+              "purchased"
+            ],
+            [
+              "joke",
+              "joked",
+              "joking",
+              "pretend",
+              "pretended",
+              "claimed"
+            ]
+          ],
+          "exclude": [
+            "cottage",
+            "1986",
+            "1987",
+            "sandcastle",
+            "bread"
+          ],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": true,
+        "acceptance_criteria": "Tell the Dad-joke episode only, with provenance and no invented dialogue, reactions or feelings. Exclude cottage, beach activity and dates. Earlier topic exclusions do not erase source facts."
+      },
+      {
+        "question": "Was Michael certain which year the trip happened?",
+        "gold": {
+          "facts": [
+            [
+              "Michael"
+            ],
+            [
+              "1987"
+            ],
+            [
+              "not sure",
+              "uncertain",
+              "possibly",
+              "not certain",
+              "wasn't certain",
+              "unsure"
+            ]
+          ],
+          "exclude": [
+            "bread"
+          ],
+          "kind": "answer",
+          "max_sentences": 0
+        },
+        "novel": true,
+        "acceptance_criteria": "Explain that Michael was not certain, possibly 1987. Preserve his uncertainty and do not transfer Sarah's 1986 claim to him. This new question explicitly requests a date after excluding dates in the prior turn."
+      },
+      {
+        "question": "Tell me a short, entertaining story about that family vacation.",
+        "gold": {
+          "facts": [
+            [
+              "Sarah"
+            ],
+            [
+              "Michael"
+            ],
+            [
+              "sandcastle",
+              "sand castle"
+            ],
+            [
+              "bought",
+              "purchased"
+            ],
+            [
+              "joke",
+              "joked",
+              "joking",
+              "pretend",
+              "pretended",
+              "claimed"
+            ]
+          ],
+          "exclude": [
+            "bread",
+            "James"
+          ],
+          "kind": "answer",
+          "max_sentences": 5
+        },
+        "novel": true,
+        "acceptance_criteria": "Give a brief, coherent, engaging family-vacation story, with attributed factual details and appropriate uncertainty. No invented conversations, emotions, actions or event identity certainty. A five-sentence budget is a provisional scoring convention; no numeric limit was supplied by the user."
+      },
+      {
+        "question": "Did Uncle James go crabbing with them?",
+        "gold": {
+          "facts": [],
+          "exclude": [],
+          "kind": "unknown",
+          "max_sentences": 0
+        },
+        "novel": true,
+        "acceptance_criteria": "State that available records do not establish Uncle James's attendance. Do not assert he went, nor assert he certainly did not. Distinguish Michael's crabbing recollection from James's unrelated bread note. A brief source distinction is allowed; a bread narrative is irrelevant."
+      }
+    ]
+  }
+]

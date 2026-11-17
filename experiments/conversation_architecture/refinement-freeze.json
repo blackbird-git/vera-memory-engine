@@ -1,0 +1,31 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "experiments/conversation_architecture/refinement-freeze.json",
+    "sha256": "4dad801da6b3890a913a8cc7a9ea36779caa23e3a1cd7756e36017b3e5bae8aa"
+  },
+  "transformation": "Removed operational timestamps/private backup references; revision-1 file paths map to included historical snapshot; original hash belongs to private input.",
+  "manifest": {
+    "revision": 2,
+    "development_basis": "Completed independent round1 review and separate reviewer boundary counterexample; original holdout now development evidence.",
+    "new_holdout_content_seen_by_implementer": false,
+    "new_holdouts": [
+      "holdout-round2.json",
+      "boundary-holdout.json"
+    ],
+    "files": {
+      "experiments/conversation_architecture/engine.py": "6164954d86df902f3fa313ea62fe7d29d2f0bad6ff86c7f231b8df92356d8158",
+      "experiments/conversation_architecture/run.py": "8e0895ba3c35a0d863d308113012b73c92158936d38df6faba62cd48a0fe7209",
+      "tests/test_conversation_architecture.py": "9446f2aa20b75ff91f2bc72d0cc74d95253a7ab74948da6ad8777965aa6d9c69"
+    },
+    "changes": [
+      "Conservative segmentation across short capitalized/dotted tokens; exact original whitespace retained.",
+      "Explicit per-answer-unit context bindings, same-source checked and source-order composed.",
+      "Question answerability distinguished from independent historical certainty.",
+      "Untrusted status no longer adds generic uncertainty/conflict claims to supported quotations."
+    ],
+    "limits": "Context dependencies are model selected, not independently semantically certified; no free prose release or production change.",
+    "pre_live_harness_revision": "Added --boundary adapter after schema-only inspection of independent fixture; no case content, expected meanings or outputs inspected; engine prompts unchanged."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "status": "previously verified, not executed for this export",
+  "previous_passing_test_count": 122,
+  "private_test_log_sha256": "5198691547c048a5fb67c60df3f6ab0d5de47bb242d2ca707f07b676bdc3a472",
+  "application_code_changed_during_export": false,
+  "candidate_tests_executed": false
+}

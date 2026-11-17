@@ -1,0 +1,204 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "results/conversation_architecture/boundary-round2.json",
+    "sha256": "c25ebd3b29b030bd8789d78dab1af3f5a406ebe426047ff2d46702f777489555"
+  },
+  "transformation": "Whitelisted final answer/evidence/plan/timing fields only. Removed native calls, generated reasoning, warmups, model-server inventory and all per-second resource records. Not a native analysis-runner input. Model-generated request plans also omitted; source evidence and final answers retained.",
+  "artifact_type": "curated_answers_v1",
+  "model": "gpt-oss:20b",
+  "source_configuration": {
+    "model": "gpt-oss:20b",
+    "engine_revision": 2,
+    "seed": 17,
+    "case_sha256": "40499f64dbdd6057b52b7f62333ba2a576bdb43ec840ca5f486cbe75d8be5a74",
+    "engine_sha256": "6164954d86df902f3fa313ea62fe7d29d2f0bad6ff86c7f231b8df92356d8158",
+    "runner_sha256": "8e0895ba3c35a0d863d308113012b73c92158936d38df6faba62cd48a0fe7209",
+    "candidate_evidence": "Fixed cohort-level candidate_source_ids; per-turn oracle/rubric/reference_plan NEVER supplied to inference.",
+    "compiled_guarantee": "Original punctuation-delimited segments with attribution. Semantic selection, qualifiers, exclusions and antecedents remain fallible.",
+    "natural_draft": "Research only; never accepted as a released or validated response."
+  },
+  "answers": [
+    {
+      "strategy": "source_plan",
+      "cohort": "title_and_unknown_attendance",
+      "turn": 0,
+      "question": "Can we establish whether Dr. Alvarez was aboard?",
+      "answer": "Asha (synthetic) recalls: “No one recorded whether Dr. Alvarez boarded the ferry.”",
+      "error": null,
+      "latency_s": 4.075055639999846,
+      "inference_s": 4.074737785999787,
+      "deterministic_s": 0.00031785400005901465,
+      "selected_units": [
+        {
+          "unit_id": "b1:0",
+          "source_id": "b1",
+          "contributor": "Asha (synthetic)",
+          "kind": "story",
+          "text": "No one recorded whether Dr. Alvarez boarded the ferry."
+        }
+      ],
+      "model_call_count": 1
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "initials_and_negated_actor",
+      "turn": 0,
+      "question": "Who rang the bell? Was it J. P. Sen?",
+      "answer": "Noel (synthetic) recalls: “It was not J. P. Sen who rang the bell; Mina rang it.”",
+      "error": null,
+      "latency_s": 3.9061604389999047,
+      "inference_s": 3.9058772520002094,
+      "deterministic_s": 0.00028318699969531735,
+      "selected_units": [
+        {
+          "unit_id": "b2:0",
+          "source_id": "b2",
+          "contributor": "Noel (synthetic)",
+          "kind": "story",
+          "text": "It was not J. P. Sen who rang the bell; Mina rang it."
+        }
+      ],
+      "model_call_count": 1
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "measurement_and_later_qualifier",
+      "turn": 0,
+      "question": "Is 1.8 cm a verified measurement here?",
+      "answer": "Which event or person do you mean?",
+      "error": null,
+      "latency_s": 4.840858049999952,
+      "inference_s": 4.840588407999803,
+      "deterministic_s": 0.0002696420001484512,
+      "selected_units": [
+        {
+          "unit_id": "b3:0",
+          "source_id": "b3",
+          "contributor": "Owen (synthetic)",
+          "kind": "story",
+          "text": "The gauge read 1.8 cm."
+        },
+        {
+          "unit_id": "b3:1",
+          "source_id": "b3",
+          "contributor": "Owen (synthetic)",
+          "kind": "story",
+          "text": "I guessed at the reading; the instrument had not been calibrated."
+        }
+      ],
+      "model_call_count": 1
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "example_abbreviation_and_non_event_date",
+      "turn": 0,
+      "question": "Does the document date the excursion to 2018?",
+      "answer": "Luz (synthetic) recalls: “The pencilled instruction says e.g. 2018 as an example of how to fill in the form.” “It is not the date of the excursion.”",
+      "error": null,
+      "latency_s": 6.844967419999648,
+      "inference_s": 6.84464589900017,
+      "deterministic_s": 0.0003215209994777979,
+      "selected_units": [
+        {
+          "unit_id": "b4:0",
+          "source_id": "b4",
+          "contributor": "Luz (synthetic)",
+          "kind": "document_note",
+          "text": "The pencilled instruction says e.g. 2018 as an example of how to fill in the form."
+        },
+        {
+          "unit_id": "b4:1",
+          "source_id": "b4",
+          "contributor": "Luz (synthetic)",
+          "kind": "document_note",
+          "text": "It is not the date of the excursion."
+        }
+      ],
+      "model_call_count": 1
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "initials_without_identity",
+      "turn": 0,
+      "question": "Do those initials tell us who travelled?",
+      "answer": "Sumi (synthetic) recalls: “A ticket has the initials L. M. on it.” “Those marks do not identify a passenger.”",
+      "error": null,
+      "latency_s": 5.7236168529998395,
+      "inference_s": 5.723330519999763,
+      "deterministic_s": 0.0002863330000764108,
+      "selected_units": [
+        {
+          "unit_id": "b5:0",
+          "source_id": "b5",
+          "contributor": "Sumi (synthetic)",
+          "kind": "document_note",
+          "text": "A ticket has the initials L. M. on it."
+        },
+        {
+          "unit_id": "b5:1",
+          "source_id": "b5",
+          "contributor": "Sumi (synthetic)",
+          "kind": "document_note",
+          "text": "Those marks do not identify a passenger."
+        }
+      ],
+      "model_call_count": 1
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "acronym_and_location_limits",
+      "turn": 0,
+      "question": "Which town does that photograph show?",
+      "answer": "I haven't found a supported answer in the notes available for this question.",
+      "error": null,
+      "latency_s": 3.4620399750001525,
+      "inference_s": 3.461729064999872,
+      "deterministic_s": 0.0003109100002802734,
+      "selected_units": [],
+      "model_call_count": 1
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "ellipsis_and_unfinished_identification",
+      "turn": 0,
+      "question": "Who was the witness mentioned in the note?",
+      "answer": "I haven't found a supported answer in the notes available for this question.",
+      "error": null,
+      "latency_s": 3.536222799999905,
+      "inference_s": 3.535900988999856,
+      "deterministic_s": 0.0003218110000489105,
+      "selected_units": [],
+      "model_call_count": 1
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "cross_sentence_uncertainty_scope",
+      "turn": 0,
+      "question": "Who planted the cedar, and is the year certain?",
+      "answer": "Nell (synthetic) recalls: “Bea planted the cedar in 1992.” “I am only guessing about the year, not who planted it.”",
+      "error": null,
+      "latency_s": 8.01971360000016,
+      "inference_s": 8.019322197999827,
+      "deterministic_s": 0.0003914020003321639,
+      "selected_units": [
+        {
+          "unit_id": "b8:0",
+          "source_id": "b8",
+          "contributor": "Nell (synthetic)",
+          "kind": "story",
+          "text": "Bea planted the cedar in 1992."
+        },
+        {
+          "unit_id": "b8:1",
+          "source_id": "b8",
+          "contributor": "Nell (synthetic)",
+          "kind": "story",
+          "text": "I am only guessing about the year, not who planted it."
+        }
+      ],
+      "model_call_count": 1
+    }
+  ]
+}

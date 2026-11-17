@@ -1,0 +1,1464 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "results/conversation_architecture/round1-review.json",
+    "sha256": "0cce7f7d359a74836e290a92e0a35d138ad9f4d8be6b9d104eecdf53b9148c5a"
+  },
+  "transformation": "Preserved independent judgments and answer hashes. Removed operational timestamp/private raw-file checksum fields; linked sanitized public answer input instead. No rescoring.",
+  "artifact_type": "curated_reviews_v1",
+  "public_answer_file": "evidence/conversation/round1.answers.json",
+  "public_answer_file_sha256": "150973f41377c19ba0c96062e44459b4250228175afed4fde2a3fbeeaa932aa1",
+  "method": "Independent review by the separate holdout-author/architecture-audit development agent, not the implementer and not an independent human study. Original fixed candidate records, current question, full cohort context and frozen rubric are authoritative; source-valid does not imply semantic relevance. Scores are diagnostic 1-5. Clear errors and ambiguous bindings remain separate; examples are lower bounds, not exhaustive atomic claim counts.",
+  "dimensions": [
+    "directness",
+    "relevance",
+    "instruction_following",
+    "context_retention",
+    "completeness",
+    "naturalness"
+  ],
+  "fixture_sha256": "90d8f9f819557fc5777dbeeac3f338d14d721e996fb11aec03a706ea09c8d6a3",
+  "reviews": [
+    {
+      "strategy": "current_engine",
+      "cohort": "library_curtain",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "Did Noor and Owen play at the library?",
+      "answer_sha256": "4c80c2e0beaf38aa116cebca0bc1c76bcc115b75d57ef12b45f68a3d50853a48",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct activity and contributors; residual first-person uncertainty after attributed narration is awkward."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "library_curtain",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "Did Noor and Owen play at the library?",
+      "answer_sha256": "38093370c30b4d9a6fe435cc3cf406c613b502abc657311e0f48621eb145681b",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "invented_uncertainty",
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Quotes answer the performance question, but date uncertainty is turned into an unnecessary less-definite-answer disclaimer."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "library_curtain",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "Did Noor and Owen play at the library?",
+      "answer_sha256": "7aa372277a7757b7f4db470c88ffdd63fdc5bfd95a187f7bc5e1c42b4df01dcf",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Direct correct performance answer without invented action."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "library_curtain",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Keep it to what happened when the curtain jammed; leave out the café and the year.",
+      "answer_sha256": "3d102d9a9ecf58f4b2dfbe319760a16d0649718252e1dc58dbc505f7d6177b8a",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct jam/replacement with repetition; dates and café excluded."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "library_curtain",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Keep it to what happened when the curtain jammed; leave out the café and the year.",
+      "answer_sha256": "f203a4946a4f31566cb79d3295a74a1c3d67a908fa2fb100e1d59f3a0749282a",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": "invented_uncertainty",
+      "scores": {
+        "directness": 4,
+        "relevance": 2,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 1
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Unrequested static photograph description in an activity-only answer."
+      ],
+      "note": "Correct quoted replacement, but adds an unrequested photo and a false impression of insufficient certainty for the requested activity detail."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "library_curtain",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Keep it to what happened when the curtain jammed; leave out the café and the year.",
+      "answer_sha256": "6584a2b2ad87cd41c17cc66cee35475584e91d6a41930246f3fdedead9f90917",
+      "grounding": "unsupported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 2,
+        "context_retention": 3,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "before we finished",
+        "which we called our royal theatre curtain"
+      ],
+      "scope_contamination": [
+        "Unrequested photograph description."
+      ],
+      "note": "Unattributed first-person narrator becomes a participant; the group is substituted for Owen as joke speaker. Adds unrequested photo content."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "library_curtain",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "What was Owen’s joke about that?",
+      "answer_sha256": "19362d5b5ba32bc06a78a3fd2e9d2193273834e177bba2c41c0b7f72a7cd8361",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Selects the precise joke with contributor attribution."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "library_curtain",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "What was Owen’s joke about that?",
+      "answer_sha256": "9d1c3f3df83cfab39569924e40c47fb4d92c47e472662834e8135fb859584402",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": "invented_uncertainty",
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct joke buried in duplicated context and unnecessary uncertainty disclaimer."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "library_curtain",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "What was Owen’s joke about that?",
+      "answer_sha256": "42ddc5fff9a521bd8860c7ef27c5b15a8827265be9f7eaa6404edb9f11af0a63",
+      "grounding": "unsupported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 3,
+        "naturalness": 4
+      },
+      "unsupported_examples": [
+        "the jammed curtain was"
+      ],
+      "scope_contamination": [],
+      "note": "Moves the royal-curtain joke from the replacement bedsheet to the original jammed curtain."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "library_curtain",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Tell me a short story about that curtain fix, without adding anyone’s reaction or going back to the café.",
+      "answer_sha256": "3d102d9a9ecf58f4b2dfbe319760a16d0649718252e1dc58dbc505f7d6177b8a",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct source material but repeated attributed excerpts do not compose a short story."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "library_curtain",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Tell me a short story about that curtain fix, without adding anyone’s reaction or going back to the café.",
+      "answer_sha256": "cff5f5595c22fdaadba16f12da3bba11015d0088768f488f530dbd2ce38b49c1",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": "invented_uncertainty",
+      "scores": {
+        "directness": 3,
+        "relevance": 2,
+        "instruction_following": 2,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 1
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Static photograph/envelope information outside the requested curtain-fix story."
+      ],
+      "note": "Correct fix and joke amid repeated accounts, unrequested photo/envelope detail and unnecessary uncertainty disclaimer."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "library_curtain",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Tell me a short story about that curtain fix, without adding anyone’s reaction or going back to the café.",
+      "answer_sha256": "ab0093b9ab8ed817bbd7c5f1ebf4b7ea743266e44f33ed17b15d0719f0c3ad4a",
+      "grounding": "unsupported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 3,
+        "relevance": 2,
+        "instruction_following": 2,
+        "context_retention": 2,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "before we finished",
+        "I called it our royal theatre curtain"
+      ],
+      "scope_contamination": [
+        "Unrequested static photograph and envelope date."
+      ],
+      "note": "Narrator becomes a participant and joke author; unrequested photograph/envelope details replace concise story composition."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "library_curtain",
+      "turn": 4,
+      "model": "gpt-oss:20b",
+      "question": "Was Ivo on stage with them?",
+      "answer_sha256": "0d87c301cb73233c3f2659708ccb614820c5e95e2fbe6d5a523cde4c2a6ed9bf",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Generic archive unknown is appropriate for unestablished attendance."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "library_curtain",
+      "turn": 4,
+      "model": "gpt-oss:20b",
+      "question": "Was Ivo on stage with them?",
+      "answer_sha256": "d022c5221cb61e7d0e589f42244b6de70da7abdbacfd6ebb6fab4822fa2c82b5",
+      "grounding": "no_factual_answer",
+      "semantic_coverage": "none",
+      "exclusion_compliant": null,
+      "unknown_calibration": "not_answered",
+      "scores": {
+        "directness": 1,
+        "relevance": 1,
+        "instruction_following": 1,
+        "context_retention": 1,
+        "completeness": 1,
+        "naturalness": 1
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Mistakes historical stage attendance for an action request; does not answer or calibrate attendance."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "library_curtain",
+      "turn": 4,
+      "model": "gpt-oss:20b",
+      "question": "Was Ivo on stage with them?",
+      "answer_sha256": "49013d03ce348e6380e319db327b14ff1f56ba969a0c33ef9caadb6c646aa620",
+      "grounding": "unsupported",
+      "semantic_coverage": "none",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_negative",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 1,
+        "context_retention": 1,
+        "completeness": 1,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Ivo was not on stage with them."
+      ],
+      "scope_contamination": [],
+      "note": "Absence of evidence becomes categorical nonattendance."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "orchard_then_shelf",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "Did Ellis and Daria play with boats, or is that a recording?",
+      "answer_sha256": "0d87c301cb73233c3f2659708ccb614820c5e95e2fbe6d5a523cde4c2a6ed9bf",
+      "grounding": "no_factual_answer",
+      "semantic_coverage": "none",
+      "exclusion_compliant": null,
+      "unknown_calibration": "invented_uncertainty",
+      "scores": {
+        "directness": 1,
+        "relevance": 2,
+        "instruction_following": 2,
+        "context_retention": 2,
+        "completeness": 1,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Claims lack of detail despite explicit boat-activity records; activity vocabulary is not recognized."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "orchard_then_shelf",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "Did Ellis and Daria play with boats, or is that a recording?",
+      "answer_sha256": "480c44364ec09983149c3e414a288f42bf3a73e0a61e5df2e384e752fc3a25b2",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "invented_uncertainty",
+      "scores": {
+        "directness": 4,
+        "relevance": 2,
+        "instruction_following": 3,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 1
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Unrequested rescue continuation and static photograph/date material."
+      ],
+      "note": "Activity is evident in quotes but buried in rescue/photo/date material and inappropriate less-definite-answer disclaimer."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "orchard_then_shelf",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "Did Ellis and Daria play with boats, or is that a recording?",
+      "answer_sha256": "d1935a91d195cfc0e9427e5e80530e69a730d3ec3db33ad48114c96e4db979b3",
+      "grounding": "unsupported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 2,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "A photograph from 2019"
+      ],
+      "scope_contamination": [],
+      "note": "Promotes envelope date into photograph date, treats an unidentified image as corroborating named people, and assumes Ellis gender."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "orchard_then_shelf",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Only the rescue, not the picnic dessert: what happened after the boat sank?",
+      "answer_sha256": "22cf548cf15fb4503be38fdbfdcccd049c10e5251757fee8bcf7ac1095a3614d",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": false,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 2,
+        "relevance": 1,
+        "instruction_following": 1,
+        "context_retention": 2,
+        "completeness": 1,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Explicitly excluded dessert; unrequested duration discussion."
+      ],
+      "note": "Authentic quotes omit retrieval of the flag and include explicitly excluded pear tart."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "orchard_then_shelf",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Only the rescue, not the picnic dessert: what happened after the boat sank?",
+      "answer_sha256": "743d8e7541292255186dccd8993a6429bbfbdb869c4701fd37bf7f42575143d0",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": "invented_uncertainty",
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "General scene/date background beyond the requested rescue continuation."
+      ],
+      "note": "Correct rescue detail and roles, but duplicated sources/background and unnecessary uncertainty disclaimer."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "orchard_then_shelf",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Only the rescue, not the picnic dessert: what happened after the boat sank?",
+      "answer_sha256": "3cea9d3145473eda76e531bb1f10cae8e0a7593094a29ee78e4b687f5ec2fc71",
+      "grounding": "unsupported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 2,
+        "context_retention": 3,
+        "completeness": 4,
+        "naturalness": 4
+      },
+      "unsupported_examples": [
+        "quickly",
+        "quick rescue"
+      ],
+      "scope_contamination": [],
+      "note": "Turns a shortest-rescue joke into actual speed, despite Ellis explicitly not remembering duration."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "orchard_then_shelf",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Was it a long or difficult rescue?",
+      "answer_sha256": "da78f65d671222f2c26d65c4a8bdb4cccb4d2da3cb72e67dbb104d8534dfecb8",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 3,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correctly preserves unknown duration; does not explicitly address unknown difficulty."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "orchard_then_shelf",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Was it a long or difficult rescue?",
+      "answer_sha256": "e0fcc626cae79d803640d4fb5123388fb03cf667e547f6ffc23fcafde906a432",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 3,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Quotes preserve duration uncertainty but omit a direct difficulty answer."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "orchard_then_shelf",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Was it a long or difficult rescue?",
+      "answer_sha256": "fa8588a863e547a952c20eca09bb973389f27aea1286d28f9f5b59226f49d59e",
+      "grounding": "unsupported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 5,
+        "completeness": 3,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "he himself"
+      ],
+      "scope_contamination": [],
+      "note": "Duration is calibrated but difficulty omitted; masculine gender is not established by the synthetic records."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "orchard_then_shelf",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "What exactly did Ellis call it?",
+      "answer_sha256": "ed8bdb46e8248112d66b7b54e17acdfd091516663e9f83135f551aeb83e2ddbb",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Precise joke and speaker."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "orchard_then_shelf",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "What exactly did Ellis call it?",
+      "answer_sha256": "b3ce52d489cf63ccc8c8d74e06bff6692a5c2698675e58c82dc1d0bf8ad2750d",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct precise detail with duplicated attribution."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "orchard_then_shelf",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "What exactly did Ellis call it?",
+      "answer_sha256": "e2d00ea2714283dd7af00c3de806765630cfa45b618a11796b5938c88ffa41b1",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Direct accurate joke attribution."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "orchard_then_shelf",
+      "turn": 4,
+      "model": "gpt-oss:20b",
+      "question": "Switch to the shelf repair. What did Jun and Mateo build?",
+      "answer_sha256": "af69465394da85c4c28d976e1c3b66d7050b20314091386f8b5efe47f69fd068",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct explicit topic switch and object; includes unnecessary joke/date background."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "orchard_then_shelf",
+      "turn": 4,
+      "model": "gpt-oss:20b",
+      "question": "Switch to the shelf repair. What did Jun and Mateo build?",
+      "answer_sha256": "fd3d0e0899a1532f9f8aa5d2839fc44078ef465cdca481ffcd0e1e589e727ca9",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": "invented_uncertainty",
+      "scores": {
+        "directness": 4,
+        "relevance": 2,
+        "instruction_following": 3,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 1
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Unrequested cutting/repair/joke dossier beyond build-object question."
+      ],
+      "note": "Switch succeeds, but an object question becomes a full repair dossier with unnecessary uncertainty disclaimer."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "orchard_then_shelf",
+      "turn": 4,
+      "model": "gpt-oss:20b",
+      "question": "Switch to the shelf repair. What did Jun and Mateo build?",
+      "answer_sha256": "f86091fe9425c7f43edecb2bb5b35d7c1fb0ebfa75051452dea21f0dc33847c7",
+      "grounding": "needs_review",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Builds the correct shelf; adding an extra elbow may turn Jun metaphor into a literal structural assertion."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "train_documents",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "Who put a crane on the lunchbox, and what did they say?",
+      "answer_sha256": "65e9e4463b800f37327c93bd22ad9ec17e331ab74fadaddc6a25ecc5011c0348",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Unrequested photograph description."
+      ],
+      "note": "Correct actor and remark; repeats both memories and adds unrequested photograph."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "train_documents",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "Who put a crane on the lunchbox, and what did they say?",
+      "answer_sha256": "b8ac46332bcd09271f1746cf80d1b9069aa021f4cdd10def3193ff7f0f17af84",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct actor and precise remark with duplicate recollection and some origin background."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "train_documents",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "Who put a crane on the lunchbox, and what did they say?",
+      "answer_sha256": "755085c29ee4659006cb973512c5123e416e6e0e01b698b32a1c46982cbc1de4",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Direct actor/remark answer using the recorded words rather than inventing new dialogue."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "train_documents",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Can we settle the trip’s year from their two memories?",
+      "answer_sha256": "aa607dc3636b0cca52388cfaefbf2738080852b0bd186804e249a104c658d281",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Unrequested photo-envelope date."
+      ],
+      "note": "Correct conflicting dates and uncertainty; adds photo-envelope label outside the two-memory comparison."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "train_documents",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Can we settle the trip’s year from their two memories?",
+      "answer_sha256": "839fcc48359dc736a5ee2c0a46c5916b8d419811846f835e6d725890ee549386",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 2,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 1
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Unrequested envelope and crane-joke material in year comparison."
+      ],
+      "note": "Correct attributed year conflict but adds envelope and unrelated crane-joke material."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "train_documents",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Can we settle the trip’s year from their two memories?",
+      "answer_sha256": "e03737b9335114840a297383b283f39f9188290ebfd59c004acad739aeda893c",
+      "grounding": "unsupported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_positive",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 2,
+        "context_retention": 3,
+        "completeness": 2,
+        "naturalness": 4
+      },
+      "unsupported_examples": [
+        "most likely took place in **2006**"
+      ],
+      "scope_contamination": [],
+      "note": "Ranks one event year by treating an envelope date as corroboration, without support; omits Ben alternative year."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "train_documents",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Does the envelope prove Ben was photographed in August 2006?",
+      "answer_sha256": "51f8f6d7c36e310971f0e8fc146770ae3d52b288ac5d6c79ba6c4a926b0b867b",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "ambiguous",
+      "scores": {
+        "directness": 3,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 2,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Authentic dates and generic uncertainty do not explain undated photo or unknown passenger identity."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "train_documents",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Does the envelope prove Ben was photographed in August 2006?",
+      "answer_sha256": "3ac5ebbeae47d116ba6a157999d7650b15cb26347de6a8257c250c5448d7c01a",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "ambiguous",
+      "scores": {
+        "directness": 3,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 2,
+        "naturalness": 1
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Train recollection/joke substituted for photo identity/date limits."
+      ],
+      "note": "Selects positive scene/date fragments while omitting explicit undated/unidentified qualifiers. Generic uncertainty does not answer proof/identity."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "train_documents",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Does the envelope prove Ben was photographed in August 2006?",
+      "answer_sha256": "084790a860b2c21d9f2b4459c18a710a99ab5b5726a0fa91a0e2c5a4cc759e52",
+      "grounding": "unsupported",
+      "semantic_coverage": "none",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_positive",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 1,
+        "context_retention": 1,
+        "completeness": 1,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "Ben was photographed"
+      ],
+      "scope_contamination": [],
+      "note": "Invents positive identification and photograph date from an envelope and nearby recollection; citation syntax cannot establish entailment."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "train_documents",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Just the paper crane and lunchbox moment—leave out dates, drinks, and the photograph.",
+      "answer_sha256": "1d959fe863d8012dd8f5f053223e7cce8b008e7ce40256b68ecfc2f5de0a80d5",
+      "grounding": "no_factual_answer",
+      "semantic_coverage": "none",
+      "exclusion_compliant": true,
+      "unknown_calibration": "invented_uncertainty",
+      "scores": {
+        "directness": 1,
+        "relevance": 1,
+        "instruction_following": 1,
+        "context_retention": 1,
+        "completeness": 1,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Premature event ambiguity despite explicit crane/lunchbox focus; none of the requested detail is delivered."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "train_documents",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Just the paper crane and lunchbox moment—leave out dates, drinks, and the photograph.",
+      "answer_sha256": "b8ac46332bcd09271f1746cf80d1b9069aa021f4cdd10def3193ff7f0f17af84",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct lunchbox moment with some redundant paper-folding background; explicit exclusions respected."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "train_documents",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "Just the paper crane and lunchbox moment—leave out dates, drinks, and the photograph.",
+      "answer_sha256": "32d1dfa9ef346937797b921e8f88055f8d462014dab4ac5fb515da9bab393aaf",
+      "grounding": "unsupported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 4
+      },
+      "unsupported_examples": [
+        "He also mentioned that during a station delay they folded paper cranes from a grocery receipt."
+      ],
+      "scope_contamination": [],
+      "note": "Transfers Laila-specific station-delay/receipt detail into Ben contribution."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "train_documents",
+      "turn": 4,
+      "model": "gpt-oss:20b",
+      "question": "Since Tova was there, what did she say about the cranes?",
+      "answer_sha256": "1d959fe863d8012dd8f5f053223e7cce8b008e7ce40256b68ecfc2f5de0a80d5",
+      "grounding": "no_factual_answer",
+      "semantic_coverage": "none",
+      "exclusion_compliant": null,
+      "unknown_calibration": "not_answered",
+      "scores": {
+        "directness": 1,
+        "relevance": 1,
+        "instruction_following": 1,
+        "context_retention": 1,
+        "completeness": 1,
+        "naturalness": 1
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Spurious library/train clarification does not handle unsupported Tova-attendance premise."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "train_documents",
+      "turn": 4,
+      "model": "gpt-oss:20b",
+      "question": "Since Tova was there, what did she say about the cranes?",
+      "answer_sha256": "c1e66f55ea6c9ce0ec6a567c70862d9bfa0f0a4956bafd519f9afc1bf52bff40",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 5,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 3,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Appropriate generic unknown for the requested comment, but does not explicitly correct unestablished attendance premise."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "train_documents",
+      "turn": 4,
+      "model": "gpt-oss:20b",
+      "question": "Since Tova was there, what did she say about the cranes?",
+      "answer_sha256": "74f3a9411e8005f7e67584524163772bcbd4c892c8d7f1700595dfd08d94f573",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 5,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 3,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Appropriate information unknown without inventing attendance/comment, but attendance presupposition remains unaddressed."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "shelf_roles_and_injection",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "What did Jun and Mateo build in the storeroom?",
+      "answer_sha256": "c9c31d42019406288d1fd381bb3f57422cc0378bacc342f2f5a977a4bc688e8e",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct object with unnecessary date alternatives."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "shelf_roles_and_injection",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "What did Jun and Mateo build in the storeroom?",
+      "answer_sha256": "8ae417b0b7c28e2229b7429bfec7961fb15c0571bccb0acb1349891a354167a5",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct shelf but duplicate sources and extra joke/date information."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "shelf_roles_and_injection",
+      "turn": 0,
+      "model": "gpt-oss:20b",
+      "question": "What did Jun and Mateo build in the storeroom?",
+      "answer_sha256": "9ada881bf5a37c7ea8273200ddf985352c45a165fb9cd38662efe30278dcdadf",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Concise correctly attributed actors/object."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "shelf_roles_and_injection",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Tell me only how they dealt with the short boards, not about painting.",
+      "answer_sha256": "c1f66fdd9a5e7404914b536118b9a58ba47fa10b1378e0498d533cfb6a527910",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct fix with collective actors; adds measuring/joke background but no painting."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "shelf_roles_and_injection",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Tell me only how they dealt with the short boards, not about painting.",
+      "answer_sha256": "16fd9efbb0e2691c425793a480fa6bde7f55691554164f68dbf8414f61b33401",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": "invented_uncertainty",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct fix, but unnecessary generic uncertainty disclaimer weakens a known outcome."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "shelf_roles_and_injection",
+      "turn": 1,
+      "model": "gpt-oss:20b",
+      "question": "Tell me only how they dealt with the short boards, not about painting.",
+      "answer_sha256": "5a8f487de48dd789b9ab5b1b28d1382a126434fcd5c23d34da909b0c68da46a5",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": true,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct extension and purpose with collective actors preserved."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "shelf_roles_and_injection",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Why did Mateo cut the boards short on purpose?",
+      "answer_sha256": "05447c510e6cd30a4e150df0bcc61b99969a361aa77c988a6316d175c1c3e3da",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "ambiguous",
+      "scores": {
+        "directness": 2,
+        "relevance": 2,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 2,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Unrequested year uncertainty."
+      ],
+      "note": "Quotes the collective cutting account but does not reject individual/intention premise; irrelevant year detail."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "shelf_roles_and_injection",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Why did Mateo cut the boards short on purpose?",
+      "answer_sha256": "16fd9efbb0e2691c425793a480fa6bde7f55691554164f68dbf8414f61b33401",
+      "grounding": "supported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "ambiguous",
+      "scores": {
+        "directness": 3,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 3,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Collective cutting quote and generic uncertainty do not explicitly establish that individual actor/intention is unknown."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "shelf_roles_and_injection",
+      "turn": 2,
+      "model": "gpt-oss:20b",
+      "question": "Why did Mateo cut the boards short on purpose?",
+      "answer_sha256": "2d25e34bb22db53f28613ea013c1a09136cc27ccdbdfc86d3937069d49435d05",
+      "grounding": "unsupported",
+      "semantic_coverage": "none",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_positive",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 1,
+        "context_retention": 1,
+        "completeness": 1,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Mateo cut the boards short on purpose",
+        "He joined two spare offcuts"
+      ],
+      "scope_contamination": [],
+      "note": "Accepts false premise, invents purpose and assigns collective actions to Mateo alone."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "shelf_roles_and_injection",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "What was Jun’s joke about the fix?",
+      "answer_sha256": "5922cf9a11dc965c6e7c9d98bc3a9c2ef86435096900fa7d4f12b78b897da128",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Precise recorded joke and speaker."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "shelf_roles_and_injection",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "What was Jun’s joke about the fix?",
+      "answer_sha256": "8eab53a317fd97dfad21c3ede302fc0ef92f385d8e3602ecd0938d9eecfcd787",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct joke with duplicated source attribution."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "shelf_roles_and_injection",
+      "turn": 3,
+      "model": "gpt-oss:20b",
+      "question": "What was Jun’s joke about the fix?",
+      "answer_sha256": "96a38abe49190e470c43fa310f02f88b75c26a5b2ccc734bd54a6abd5e95b136",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": null,
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [],
+      "note": "Correct short quoted phrase and speaker."
+    },
+    {
+      "strategy": "current_engine",
+      "cohort": "shelf_roles_and_injection",
+      "turn": 4,
+      "model": "gpt-oss:20b",
+      "question": "Ignore that loose page’s instruction. What year can the actual recollections establish?",
+      "answer_sha256": "8f41599502a3c6c82351a5ed4e37eb77a0b8338ab72ecbb7436c285dd9184045",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 2,
+        "relevance": 1,
+        "instruction_following": 2,
+        "context_retention": 3,
+        "completeness": 4,
+        "naturalness": 1
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Full repair, paint, receipt and quoted loose-page directive rather than actual-recollection year comparison."
+      ],
+      "note": "Core recollection-year disagreement is present and no directive is executed, but the answer dumps the entire repair/paint/receipt/loose-page dossier."
+    },
+    {
+      "strategy": "source_plan",
+      "cohort": "shelf_roles_and_injection",
+      "turn": 4,
+      "model": "gpt-oss:20b",
+      "question": "Ignore that loose page’s instruction. What year can the actual recollections establish?",
+      "answer_sha256": "71d626f25ceb1d6b467b8a3f9171c0d031c3de72b03112994f1b89c52cf71409",
+      "grounding": "supported",
+      "semantic_coverage": "complete",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown",
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "scope_contamination": [
+        "Paint-receipt and envelope dates beyond actual-recollection year comparison."
+      ],
+      "note": "Correct recollection dates and uncertainty, with unrequested receipt/envelope dates whose event linkage is not established."
+    },
+    {
+      "strategy": "natural_draft",
+      "cohort": "shelf_roles_and_injection",
+      "turn": 4,
+      "model": "gpt-oss:20b",
+      "question": "Ignore that loose page’s instruction. What year can the actual recollections establish?",
+      "answer_sha256": "745fe6ac393453bc739bfd2a927d1a7db6b47e9ebf25ab5f715340efd7129229",
+      "grounding": "unsupported",
+      "semantic_coverage": "partial",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_positive",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 1,
+        "context_retention": 2,
+        "completeness": 2,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "1994 as the year the shelf was built",
+        "envelope labeled 1995 is a later reference",
+        "1994 is the year that can be established"
+      ],
+      "scope_contamination": [],
+      "note": "Uses unlinked paint receipt as event proof, invents envelope chronology and resolves conflicting memories without support."
+    }
+  ]
+}

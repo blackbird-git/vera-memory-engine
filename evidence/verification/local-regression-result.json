@@ -1,0 +1,31 @@
+{
+  "purpose": "Private-review preparation: single model-independent regression invocation in the public candidate",
+  "command": [
+    "python3",
+    "-B",
+    "scripts/run_unit_tests.py"
+  ],
+  "suite_invocations": 1,
+  "application_behavior_modified": false,
+  "original_repository_accessed": false,
+  "model_inference_evaluation_or_service_launch": false,
+  "github_workflow_executed": false,
+  "status": "passed",
+  "exit_code": 0,
+  "result": {
+    "blocked_live_io_events": [],
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "successful": true,
+    "tests_run": 122
+  },
+  "log": "evidence/verification/local-regression-tests.txt",
+  "log_sha256": "baa37a09817b351fd769410a7554bdcbbea09af21add963cc67b7e2c5b0ce68f",
+  "runner_sha256": "51770a2ac27208c1f356a46430d09fe3c5ab9f32f910ee1945fdcaec536a11e9",
+  "runtime_versions": {
+    "python": "3.14.4",
+    "sqlite": "3.46.1"
+  },
+  "duration_seconds_reported_by_unittest": 3.368
+}

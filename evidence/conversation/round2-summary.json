@@ -1,0 +1,148 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "results/conversation_architecture/round2-summary.json",
+    "sha256": "0a188a8543ab6e81dfc556cf15e253a7dc9fa834df6c62b6f858f485bd29ef52"
+  },
+  "transformation": "Copied existing aggregate measurements without reevaluation. Removed original native-input checksums, exact disk free and sample timeline metadata; public checksum links sanitized answers.",
+  "artifact_type": "saved_aggregate_projection_v1",
+  "public_answer_file": "evidence/conversation/round2.answers.json",
+  "public_answer_file_sha256": "1c267130e04f08c030b3ccc3bbad4cf3a50c00d2068573ef65364f7f2a4ab759",
+  "cells": [
+    {
+      "strategy": "current_engine",
+      "attempted": 16,
+      "expected": 16,
+      "reviewed": 16,
+      "complete": true,
+      "runtime_errors": 0,
+      "grounding": {
+        "supported": 15,
+        "no_factual_answer": 1
+      },
+      "semantic_coverage": {
+        "complete": 10,
+        "none": 3,
+        "partial": 3
+      },
+      "exclusion_reviews": 5,
+      "exclusion_failures": 1,
+      "scope_contamination_rows": 8,
+      "unknown_calibration": {
+        "invented_uncertainty": 1,
+        "correct_unknown": 7,
+        "ambiguous": 2
+      },
+      "quality_means": {
+        "directness": 3.625,
+        "relevance": 3.125,
+        "instruction_following": 3.3125,
+        "context_retention": 4,
+        "completeness": 3.8125,
+        "naturalness": 2.25
+      },
+      "latency_median_s": 2.9697968785000057,
+      "latency_p95_s": 11.032346626000162,
+      "inference_median_s": 2.9686381239999946,
+      "inference_p95_s": 11.029822113000137,
+      "deterministic_processing_median_s": 0.0011639844999535853,
+      "no_model_turns": 3,
+      "no_model_latency_median_s": 0.0005625480000617245,
+      "no_model_latency_p95_s": 0.0005992330000026413
+    },
+    {
+      "strategy": "source_plan",
+      "attempted": 16,
+      "expected": 16,
+      "reviewed": 16,
+      "complete": true,
+      "runtime_errors": 0,
+      "grounding": {
+        "supported": 14,
+        "no_factual_answer": 2
+      },
+      "semantic_coverage": {
+        "complete": 9,
+        "partial": 5,
+        "none": 2
+      },
+      "exclusion_reviews": 5,
+      "exclusion_failures": 0,
+      "scope_contamination_rows": 3,
+      "unknown_calibration": {
+        "correct_unknown": 4,
+        "ambiguous": 3,
+        "invented_uncertainty": 2
+      },
+      "quality_means": {
+        "directness": 3.5625,
+        "relevance": 3.75,
+        "instruction_following": 3.625,
+        "context_retention": 4,
+        "completeness": 3.6875,
+        "naturalness": 2.625
+      },
+      "latency_median_s": 6.380836844999976,
+      "latency_p95_s": 12.176242684000272,
+      "inference_median_s": 6.380458231000034,
+      "inference_p95_s": 12.17580106499986,
+      "deterministic_processing_median_s": 0.0003814145004525926,
+      "no_model_turns": 0,
+      "no_model_latency_median_s": null,
+      "no_model_latency_p95_s": null
+    },
+    {
+      "strategy": "natural_draft",
+      "attempted": 16,
+      "expected": 16,
+      "reviewed": 16,
+      "complete": true,
+      "runtime_errors": 0,
+      "grounding": {
+        "supported": 8,
+        "unsupported": 8
+      },
+      "semantic_coverage": {
+        "complete": 9,
+        "partial": 5,
+        "none": 2
+      },
+      "exclusion_reviews": 5,
+      "exclusion_failures": 1,
+      "scope_contamination_rows": 1,
+      "unknown_calibration": {
+        "correct_unknown": 4,
+        "unsupported_positive": 5
+      },
+      "quality_means": {
+        "directness": 4.4375,
+        "relevance": 4.375,
+        "instruction_following": 3.375,
+        "context_retention": 3.875,
+        "completeness": 3.625,
+        "naturalness": 3.375
+      },
+      "latency_median_s": 10.167032365000068,
+      "latency_p95_s": 14.673333149999962,
+      "inference_median_s": 10.166292304500075,
+      "inference_p95_s": 14.672663728000089,
+      "deterministic_processing_median_s": 0.0006539465003925216,
+      "no_model_turns": 0,
+      "no_model_latency_median_s": null,
+      "no_model_latency_p95_s": null
+    }
+  ],
+  "benchmark_environment": {
+    "actual_memory_bytes": 25200037888,
+    "actual_swap_bytes": 8589934592,
+    "max_gpu_total_used_mib": 7664
+  },
+  "limits": [
+    "Independent development-agent reviews, not a blind human study.",
+    "Literal source fidelity is not semantic grounding; missing context and scope remain separate defects.",
+    "Different fresh cohorts prevent a paired causal before/after quality claim.",
+    "Natural drafts are research-only and unreleased.",
+    "Small correlated samples do not establish production service levels or universal accuracy."
+  ]
+}

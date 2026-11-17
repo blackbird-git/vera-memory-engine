@@ -1,0 +1,28 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "experiments/conversation_architecture/holdout-schema-correction.json",
+    "sha256": "d82542d5173b32a5a73021c2ba062e411a2844178e2de99970f6eecde44d6b4b"
+  },
+  "transformation": "Removed operational timestamps/private backup references; revision-1 file paths map to included historical snapshot; original hash belongs to private input.",
+  "manifest": {
+    "before_sha256": "ffb5bb00df881ced8ba0ef78809dd26586ac87037a6ffe32e4334eab69d0aa45",
+    "after_sha256": "90d8f9f819557fc5777dbeeac3f338d14d721e996fb11aec03a706ea09c8d6a3",
+    "exact_semantic_diff": [
+      {
+        "path": "records.503.kind",
+        "old": "document_note",
+        "new": "other"
+      },
+      {
+        "path": "records.504.kind",
+        "old": "document_note",
+        "new": "other"
+      }
+    ],
+    "substantive_content_and_targets_unchanged": true,
+    "before_model_outputs": true,
+    "reason": "insert_memory only accepts story/photo_note/recording_note/letter/recipe/other."
+  }
+}

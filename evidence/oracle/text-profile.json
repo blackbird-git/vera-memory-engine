@@ -1,0 +1,21 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "results/oracle_evidence/text-profile.json",
+    "sha256": "acde9245e585c0d7cca1a35c7ff04225a3a6830b45cd48cff8243dd141a4be0c"
+  },
+  "transformation": "Retained language-blob identity and text-only profile distinction; no weights exported.",
+  "parent": "qwen3.5:27b",
+  "profile": "qwen3.5:27b-text-oracle",
+  "language_blob_sha256": "sha256:c7e0e920a0948849beb7074d8368cbd5ac6825fcd1f2450cf851276325d8a6a5",
+  "requantized": false,
+  "additional_weight_download": false,
+  "vision_projector": false,
+  "renderer": "qwen3.5",
+  "parser": "qwen3.5",
+  "creation_response": {
+    "status": "success"
+  },
+  "note": "Text-only profile is a separate experimental condition, not the stock multimodal model."
+}

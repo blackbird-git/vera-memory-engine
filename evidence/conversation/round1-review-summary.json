@@ -1,0 +1,98 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "results/conversation_architecture/round1-review-summary.json",
+    "sha256": "ac125ff12b9530066ae62dc339a4ca876672e498245829660722f4e36c337e49"
+  },
+  "transformation": "Retained existing aggregate source-review results; no new evaluation.",
+  "saved_review_summary": {
+    "current_engine": {
+      "rows": 20,
+      "grounding": {
+        "supported": 17,
+        "no_factual_answer": 3
+      },
+      "semantic_coverage": {
+        "complete": 13,
+        "none": 3,
+        "partial": 4
+      },
+      "exclusion_reviews": 7,
+      "exclusion_failures": 1,
+      "scope_contamination_rows": 5,
+      "unknown_calibration": {
+        "correct_unknown": 4,
+        "invented_uncertainty": 2,
+        "ambiguous": 2,
+        "not_answered": 1
+      },
+      "quality_means": {
+        "directness": 3.7,
+        "relevance": 3.3,
+        "instruction_following": 3.55,
+        "context_retention": 4,
+        "completeness": 3.75,
+        "naturalness": 2.65
+      }
+    },
+    "source_plan": {
+      "rows": 20,
+      "grounding": {
+        "supported": 19,
+        "no_factual_answer": 1
+      },
+      "semantic_coverage": {
+        "complete": 15,
+        "none": 1,
+        "partial": 4
+      },
+      "exclusion_reviews": 7,
+      "exclusion_failures": 0,
+      "scope_contamination_rows": 8,
+      "unknown_calibration": {
+        "invented_uncertainty": 8,
+        "not_answered": 1,
+        "correct_unknown": 4,
+        "ambiguous": 2
+      },
+      "quality_means": {
+        "directness": 3.95,
+        "relevance": 3.1,
+        "instruction_following": 3.2,
+        "context_retention": 4.35,
+        "completeness": 4.35,
+        "naturalness": 2
+      }
+    },
+    "natural_draft": {
+      "rows": 20,
+      "grounding": {
+        "supported": 7,
+        "unsupported": 12,
+        "needs_review": 1
+      },
+      "semantic_coverage": {
+        "complete": 11,
+        "partial": 6,
+        "none": 3
+      },
+      "exclusion_reviews": 7,
+      "exclusion_failures": 0,
+      "scope_contamination_rows": 2,
+      "unknown_calibration": {
+        "unsupported_negative": 1,
+        "correct_unknown": 2,
+        "unsupported_positive": 4
+      },
+      "quality_means": {
+        "directness": 4.65,
+        "relevance": 4.15,
+        "instruction_following": 3.05,
+        "context_retention": 3.55,
+        "completeness": 3.55,
+        "naturalness": 3.45
+      }
+    }
+  }
+}

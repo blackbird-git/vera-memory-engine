@@ -1,0 +1,157 @@
+[
+  [
+    [
+      "I remember going to the Oregon coast with Dad and Michael when we were little. I think it was summer 1986.",
+      null
+    ],
+    [
+      "Did we build sandcastles together on the Oregon coast?",
+      {
+        "required": [
+          "sandcastles"
+        ],
+        "forbidden": [
+          "crabbing",
+          "fisherman",
+          "crab"
+        ],
+        "intent": "archive_question"
+      }
+    ]
+  ],
+  [
+    [
+      "Dad took us crabbing but we caught nothing. He bought crab from a fisherman at the dock and joked that he had caught it himself.",
+      null
+    ],
+    [
+      "I'm not sure of the year, possibly 1987. Was that a fun activity for us?",
+      {
+        "required": [
+          "don't have"
+        ],
+        "forbidden": [
+          "you enjoyed",
+          "fun for you",
+          "Sarah thinks it was summer"
+        ],
+        "intent": "archive_question"
+      }
+    ]
+  ],
+  [
+    [
+      "A faded photograph shows three children building a sandcastle on the Oregon coast. The back of the photograph is handwritten 'Summer 1986'.",
+      null
+    ],
+    [
+      "Who was with me when we built sandcastles on the Oregon coast?",
+      {
+        "required": [
+          "sandcastle",
+          "Oregon coast"
+        ],
+        "forbidden": [
+          "crabbing",
+          "fisherman"
+        ],
+        "intent": "archive_question"
+      }
+    ]
+  ],
+  [
+    [
+      "Mom made bread on Sundays. She always gave the children the first warm slices after church.",
+      null
+    ],
+    [
+      "Did we have bread on Sundays at Grandma's kitchen?",
+      {
+        "required": [
+          "bread"
+        ],
+        "forbidden": [
+          "crabbing",
+          "sandcastle"
+        ],
+        "intent": "archive_question"
+      }
+    ]
+  ],
+  [
+    [
+      "We visited the Washington coast in 1992. We stayed in a tent. No one went crabbing on that outing.",
+      null
+    ],
+    [
+      "Did we go crabbing on the Washington coast in 1992?",
+      {
+        "required": [
+          "Washington coast"
+        ],
+        "forbidden": [
+          "oregon-coast",
+          "sandcastle"
+        ],
+        "intent": "archive_question"
+      }
+    ]
+  ],
+  [
+    [
+      "We hired a skiff at Lake Rowan. The engine stopped halfway across the lake. Owen rowed us back to shore.",
+      null
+    ],
+    [
+      "Did we have a boat ride on Lake Rowan?",
+      {
+        "required": [
+          "Lake Rowan"
+        ],
+        "forbidden": [
+          "sandcastle",
+          "crabbing"
+        ],
+        "intent": "archive_question"
+      }
+    ]
+  ],
+  [
+    [
+      "Owen and I played chess at home. He won the first game. I won the second game.",
+      null
+    ],
+    [
+      "Did we play chess together?",
+      {
+        "required": [
+          "chess"
+        ],
+        "forbidden": [
+          "sandcastle",
+          "crabbing"
+        ],
+        "intent": "archive_question"
+      }
+    ]
+  ],
+  [
+    [
+      "I played piano at the school concert. Owen recorded the performance on a cassette.",
+      null
+    ],
+    [
+      "Can you send me the piano recording from the school concert?",
+      {
+        "required": [
+          "not implemented"
+        ],
+        "forbidden": [
+          "sandcastle",
+          "crabbing"
+        ],
+        "intent": "media_action"
+      }
+    ]
+  ]
+]

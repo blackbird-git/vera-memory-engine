@@ -1,0 +1,94 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "results/conversation_architecture/round2-review-summary.json",
+    "sha256": "06d62aca47b2af820829df1160ddf56dd6ba1c1fa5fcde9bca748caeb2bb79f3"
+  },
+  "transformation": "Retained existing aggregate source-review results; no new evaluation.",
+  "saved_review_summary": {
+    "current_engine": {
+      "rows": 16,
+      "grounding": {
+        "supported": 15,
+        "no_factual_answer": 1
+      },
+      "semantic_coverage": {
+        "complete": 10,
+        "none": 3,
+        "partial": 3
+      },
+      "exclusion_reviews": 5,
+      "exclusion_failures": 1,
+      "scope_contamination_rows": 8,
+      "unknown_calibration": {
+        "invented_uncertainty": 1,
+        "correct_unknown": 7,
+        "ambiguous": 2
+      },
+      "quality_means": {
+        "directness": 3.625,
+        "relevance": 3.125,
+        "instruction_following": 3.3125,
+        "context_retention": 4,
+        "completeness": 3.8125,
+        "naturalness": 2.25
+      }
+    },
+    "source_plan": {
+      "rows": 16,
+      "grounding": {
+        "supported": 14,
+        "no_factual_answer": 2
+      },
+      "semantic_coverage": {
+        "complete": 9,
+        "partial": 5,
+        "none": 2
+      },
+      "exclusion_reviews": 5,
+      "exclusion_failures": 0,
+      "scope_contamination_rows": 3,
+      "unknown_calibration": {
+        "correct_unknown": 4,
+        "ambiguous": 3,
+        "invented_uncertainty": 2
+      },
+      "quality_means": {
+        "directness": 3.5625,
+        "relevance": 3.75,
+        "instruction_following": 3.625,
+        "context_retention": 4,
+        "completeness": 3.6875,
+        "naturalness": 2.625
+      }
+    },
+    "natural_draft": {
+      "rows": 16,
+      "grounding": {
+        "supported": 8,
+        "unsupported": 8
+      },
+      "semantic_coverage": {
+        "complete": 9,
+        "partial": 5,
+        "none": 2
+      },
+      "exclusion_reviews": 5,
+      "exclusion_failures": 1,
+      "scope_contamination_rows": 1,
+      "unknown_calibration": {
+        "correct_unknown": 4,
+        "unsupported_positive": 5
+      },
+      "quality_means": {
+        "directness": 4.4375,
+        "relevance": 4.375,
+        "instruction_following": 3.375,
+        "context_retention": 3.875,
+        "completeness": 3.625,
+        "naturalness": 3.375
+      }
+    }
+  }
+}

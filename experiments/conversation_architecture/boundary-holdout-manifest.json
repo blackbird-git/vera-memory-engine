@@ -1,0 +1,25 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "experiments/conversation_architecture/boundary-holdout-manifest.json",
+    "sha256": "066e44fc9e6d98351f23ffccbe04a712bb887378fd99e65f4e91838d5f652fe4"
+  },
+  "transformation": "Removed operational timestamps/private backup references; revision-1 file paths map to included historical snapshot; original hash belongs to private input.",
+  "manifest": {
+    "file": "experiments/conversation_architecture/boundary-holdout.json",
+    "sha256": "40499f64dbdd6057b52b7f62333ba2a576bdb43ec840ca5f486cbe75d8be5a74",
+    "case_count": 8,
+    "synthetic_source_count": 8,
+    "author_role": "Independent safety/reviewer agent",
+    "upcoming_refinement_seen": false,
+    "main_holdout_seen": false,
+    "live_answers_seen": false,
+    "exact_cases_disclosed_to_implementer": false,
+    "notes": [
+      "The known generic counterexample motivated this challenge; these eight cases are new.",
+      "Do not use or inspect exact challenge texts until the segmentation revision is frozen.",
+      "Critical context may span multiple correctly segmented sentences; segmentation alone is not a semantic guarantee."
+    ]
+  }
+}

@@ -1,0 +1,1340 @@
+{
+  "source_revision": "654505c",
+  "original_repository_modified": false,
+  "git_history_included": false,
+  "project_license_selected": false,
+  "models_launched": false,
+  "inference_or_evaluations_run": false,
+  "tests_run": true,
+  "sourced_outputs": [
+    {
+      "output": "vera/__init__.py",
+      "origin_revision": "654505c",
+      "origin_path": "vera/__init__.py",
+      "original_sha256": "3261422bf49bb0d4572f29eb76716100788f9a3766d8b73a2c4ba70e4171d130",
+      "public_sha256": "3261422bf49bb0d4572f29eb76716100788f9a3766d8b73a2c4ba70e4171d130",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "vera/__main__.py",
+      "origin_revision": "654505c",
+      "origin_path": "vera/__main__.py",
+      "original_sha256": "6dbc7b44f9f6a9b6dd686512f2bab56d7a3052244fd8a591fca53bee782b1aef",
+      "public_sha256": "6dbc7b44f9f6a9b6dd686512f2bab56d7a3052244fd8a591fca53bee782b1aef",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "vera/conversation.py",
+      "origin_revision": "654505c",
+      "origin_path": "vera/conversation.py",
+      "original_sha256": "513f87b81571ea77b33055665165d03f4224f2c301450e31eac3da91cf39f602",
+      "public_sha256": "513f87b81571ea77b33055665165d03f4224f2c301450e31eac3da91cf39f602",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "vera/db.py",
+      "origin_revision": "654505c",
+      "origin_path": "vera/db.py",
+      "original_sha256": "eab96b56021343ad29d2dedf1053f24715c623514c2771f5d2cac4f490cdc740",
+      "public_sha256": "eab96b56021343ad29d2dedf1053f24715c623514c2771f5d2cac4f490cdc740",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "vera/evidence.py",
+      "origin_revision": "654505c",
+      "origin_path": "vera/evidence.py",
+      "original_sha256": "481e9b3c122cade7b99341fc9f192f91e734ec3221752563fd25a6a5fd51e884",
+      "public_sha256": "481e9b3c122cade7b99341fc9f192f91e734ec3221752563fd25a6a5fd51e884",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "vera/ollama.py",
+      "origin_revision": "654505c",
+      "origin_path": "vera/ollama.py",
+      "original_sha256": "07b94ff8bf979a7df3363048f661d1c2257e2b8c5728b44491c8c5da3d10c02d",
+      "public_sha256": "07b94ff8bf979a7df3363048f661d1c2257e2b8c5728b44491c8c5da3d10c02d",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "vera/query.py",
+      "origin_revision": "654505c",
+      "origin_path": "vera/query.py",
+      "original_sha256": "702d5fc0c558bd5cda1c4912a6bdcff7f6f8bbdb47e6edd4072351168bb8806f",
+      "public_sha256": "702d5fc0c558bd5cda1c4912a6bdcff7f6f8bbdb47e6edd4072351168bb8806f",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "vera/retrieval.py",
+      "origin_revision": "654505c",
+      "origin_path": "vera/retrieval.py",
+      "original_sha256": "0643c8633f0b7ddc9763e3070eabcc42055435ffc627f375a7d34e254ce3b6aa",
+      "public_sha256": "0643c8633f0b7ddc9763e3070eabcc42055435ffc627f375a7d34e254ce3b6aa",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "tests/test_acceptance_regressions.py",
+      "origin_revision": "654505c",
+      "origin_path": "tests/test_acceptance_regressions.py",
+      "original_sha256": "dfa16c6d6da251f5348ac97f97178c705619927ef18aed0d06785bcf01d50c3d",
+      "public_sha256": "dfa16c6d6da251f5348ac97f97178c705619927ef18aed0d06785bcf01d50c3d",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "tests/test_conversation_architecture.py",
+      "origin_revision": "654505c",
+      "origin_path": "tests/test_conversation_architecture.py",
+      "original_sha256": "9446f2aa20b75ff91f2bc72d0cc74d95253a7ab74948da6ad8777965aa6d9c69",
+      "public_sha256": "9446f2aa20b75ff91f2bc72d0cc74d95253a7ab74948da6ad8777965aa6d9c69",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "tests/test_engine.py",
+      "origin_revision": "654505c",
+      "origin_path": "tests/test_engine.py",
+      "original_sha256": "3627036de9426cc8e7d8bacb097157ea8bd12fb1425686169c03cdb9074b9ac4",
+      "public_sha256": "3627036de9426cc8e7d8bacb097157ea8bd12fb1425686169c03cdb9074b9ac4",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "tests/test_memory.py",
+      "origin_revision": "654505c",
+      "origin_path": "tests/test_memory.py",
+      "original_sha256": "29f33910d9f50c139759e7a361286c72adb75242857f2f3ec27c8c9f3fe790df",
+      "public_sha256": "29f33910d9f50c139759e7a361286c72adb75242857f2f3ec27c8c9f3fe790df",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "tests/test_model_comparison.py",
+      "origin_revision": "654505c",
+      "origin_path": "tests/test_model_comparison.py",
+      "original_sha256": "c46629d8261992f2325d581d2942bc38e1b5f8c24b386ce2b34f44e75faa1153",
+      "public_sha256": "c46629d8261992f2325d581d2942bc38e1b5f8c24b386ce2b34f44e75faa1153",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "tests/test_ollama_output.py",
+      "origin_revision": "654505c",
+      "origin_path": "tests/test_ollama_output.py",
+      "original_sha256": "849f78481ee2365071c44f8ae07ff3f845f9c8c69d32a90e7df122311a8efba4",
+      "public_sha256": "849f78481ee2365071c44f8ae07ff3f845f9c8c69d32a90e7df122311a8efba4",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "tests/test_oracle_evidence.py",
+      "origin_revision": "654505c",
+      "origin_path": "tests/test_oracle_evidence.py",
+      "original_sha256": "0bd2ca4b054601610ca3e43722fa433c9829ff75187883b84dd862aa26ff5685",
+      "public_sha256": "0bd2ca4b054601610ca3e43722fa433c9829ff75187883b84dd862aa26ff5685",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "tests/test_quality_evaluation.py",
+      "origin_revision": "654505c",
+      "origin_path": "tests/test_quality_evaluation.py",
+      "original_sha256": "0b8545b14876d64fdc78022f19278efa5ee0a83bf2bda32419744d764a29aab1",
+      "public_sha256": "0b8545b14876d64fdc78022f19278efa5ee0a83bf2bda32419744d764a29aab1",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "tests/test_relevance.py",
+      "origin_revision": "654505c",
+      "origin_path": "tests/test_relevance.py",
+      "original_sha256": "17d2c80983a3dba01193d849ecf42867dc3aceccf61c2c27524f274c39cc8764",
+      "public_sha256": "17d2c80983a3dba01193d849ecf42867dc3aceccf61c2c27524f274c39cc8764",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "scripts/evaluate.py",
+      "origin_revision": "654505c",
+      "origin_path": "scripts/evaluate.py",
+      "original_sha256": "bb027dc07c2b94b56164d3da4cef12e36c795a5e49943a0d77993fb0b7673838",
+      "public_sha256": "bb027dc07c2b94b56164d3da4cef12e36c795a5e49943a0d77993fb0b7673838",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "scripts/evaluate_acceptance.py",
+      "origin_revision": "654505c",
+      "origin_path": "scripts/evaluate_acceptance.py",
+      "original_sha256": "e8150969e9e2cf4b2de8f2dffd7c9510ee75eb2938aae9ef85602d42e2fb5bf6",
+      "public_sha256": "e8150969e9e2cf4b2de8f2dffd7c9510ee75eb2938aae9ef85602d42e2fb5bf6",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "scripts/evaluate_quality.py",
+      "origin_revision": "654505c",
+      "origin_path": "scripts/evaluate_quality.py",
+      "original_sha256": "6a1c19ff0875f7b4f664575fcbb275593d314dd10183c95f093535d4ce882c79",
+      "public_sha256": "6a1c19ff0875f7b4f664575fcbb275593d314dd10183c95f093535d4ce882c79",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "scripts/quality_cases.py",
+      "origin_revision": "654505c",
+      "origin_path": "scripts/quality_cases.py",
+      "original_sha256": "300925e6e4f81540e0be263596d682c50a6c622fe3d090843ca091aeaf63eb81",
+      "public_sha256": "300925e6e4f81540e0be263596d682c50a6c622fe3d090843ca091aeaf63eb81",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "scripts/reproduce.py",
+      "origin_revision": "654505c",
+      "origin_path": "scripts/reproduce.py",
+      "original_sha256": "55c1496d7e8c1888d25baad022101007b447d94156372236a639e654928a9d08",
+      "public_sha256": "55c1496d7e8c1888d25baad022101007b447d94156372236a639e654928a9d08",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "scripts/reproduce_acceptance.py",
+      "origin_revision": "654505c",
+      "origin_path": "scripts/reproduce_acceptance.py",
+      "original_sha256": "4a0ce4cf2e257cc5ba599966f9795e81e5f5bc5ead50d777d9ee995c31b7333e",
+      "public_sha256": "4a0ce4cf2e257cc5ba599966f9795e81e5f5bc5ead50d777d9ee995c31b7333e",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "samples/acceptance_extra.json",
+      "origin_revision": "654505c",
+      "origin_path": "samples/acceptance_extra.json",
+      "original_sha256": "9de212df40480b7bb77fac4499cc0f29d2f6537efc4724252b27e1b192dc6a5c",
+      "public_sha256": "9de212df40480b7bb77fac4499cc0f29d2f6537efc4724252b27e1b192dc6a5c",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "samples/acceptance_holdout.json",
+      "origin_revision": "654505c",
+      "origin_path": "samples/acceptance_holdout.json",
+      "original_sha256": "0b91b38443922f956dc97b649e3bd351cf7f1239fb7b412eb2d2f5c32a5531a4",
+      "public_sha256": "0b91b38443922f956dc97b649e3bd351cf7f1239fb7b412eb2d2f5c32a5531a4",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "samples/acceptance_independent.json",
+      "origin_revision": "654505c",
+      "origin_path": "samples/acceptance_independent.json",
+      "original_sha256": "cae41952239527f24734be373863dc7f670340a59ad1ec48b8738247b7b4985d",
+      "public_sha256": "cae41952239527f24734be373863dc7f670340a59ad1ec48b8738247b7b4985d",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "samples/acceptance_independent_adjudicated.json",
+      "origin_revision": "654505c",
+      "origin_path": "samples/acceptance_independent_adjudicated.json",
+      "original_sha256": "eca6e6be03418f5bddb264e48bae396a3f9d91c1222bc9997a830912d3c90d20",
+      "public_sha256": "eca6e6be03418f5bddb264e48bae396a3f9d91c1222bc9997a830912d3c90d20",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "samples/demo_memories.json",
+      "origin_revision": "654505c",
+      "origin_path": "samples/demo_memories.json",
+      "original_sha256": "5b10a27aaa286c1314bdd32cb463cd6d724e84e5b144f37482df66d737de8fe0",
+      "public_sha256": "5b10a27aaa286c1314bdd32cb463cd6d724e84e5b144f37482df66d737de8fe0",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "samples/relevance_extra.json",
+      "origin_revision": "654505c",
+      "origin_path": "samples/relevance_extra.json",
+      "original_sha256": "b50573b93cc10858008d40a6180029f0ca4b7d42dd88147be8a5019514edb181",
+      "public_sha256": "b50573b93cc10858008d40a6180029f0ca4b7d42dd88147be8a5019514edb181",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/model_comparison/calibrate.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/model_comparison/calibrate.py",
+      "original_sha256": "b2550af990f5d419f72eb95b5f4026774fcd08e9fa13d7c21b160f2b87790550",
+      "public_sha256": "b2550af990f5d419f72eb95b5f4026774fcd08e9fa13d7c21b160f2b87790550",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/model_comparison/client.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/model_comparison/client.py",
+      "original_sha256": "f393375dbe3e58a0d1e1d443403012f75f338b6689bca11254b23b383da864eb",
+      "public_sha256": "f393375dbe3e58a0d1e1d443403012f75f338b6689bca11254b23b383da864eb",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/model_comparison/grounding.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/model_comparison/grounding.py",
+      "original_sha256": "3803b2a2edf4c8c6ee559aba4f3b33697e8c0c4d30ae704b5c366eaa38adf3c6",
+      "public_sha256": "3803b2a2edf4c8c6ee559aba4f3b33697e8c0c4d30ae704b5c366eaa38adf3c6",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/model_comparison/prompts.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/model_comparison/prompts.py",
+      "original_sha256": "76fc7d3a636cf0a3028016fce6181749abfa5956ed988fcea01db397986b9188",
+      "public_sha256": "76fc7d3a636cf0a3028016fce6181749abfa5956ed988fcea01db397986b9188",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/model_comparison/run.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/model_comparison/run.py",
+      "original_sha256": "f63f1a12bf23da10de4f4d425d2047aa4ae84ae884e2e00fe0724b7844415b0d",
+      "public_sha256": "f63f1a12bf23da10de4f4d425d2047aa4ae84ae884e2e00fe0724b7844415b0d",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/model_comparison/stress.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/model_comparison/stress.py",
+      "original_sha256": "a6e7387fbbf38451027fddf9cfef8282090f40588a49f51b4092c9c9948cc8e3",
+      "public_sha256": "a6e7387fbbf38451027fddf9cfef8282090f40588a49f51b4092c9c9948cc8e3",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/model_comparison/summarize.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/model_comparison/summarize.py",
+      "original_sha256": "257d9773975ee7def1bed7d3ae87e6af2531008e96ad8de9af8c5e298b3448f1",
+      "public_sha256": "257d9773975ee7def1bed7d3ae87e6af2531008e96ad8de9af8c5e298b3448f1",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/model_comparison/cases.json",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/model_comparison/cases.json",
+      "original_sha256": "3ab9e8a7fe1f38f93552c8b3f4161ecea7cc0c35ae595ca2c38985f013a92b34",
+      "public_sha256": "3ab9e8a7fe1f38f93552c8b3f4161ecea7cc0c35ae595ca2c38985f013a92b34",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/model_comparison/manual-confirmed-cases.json",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/model_comparison/manual-confirmed-cases.json",
+      "original_sha256": "30134dc0e00847f0ff9f7d5a47648ed2f725b49178f2d37a72a6a4709eeb5fa5",
+      "public_sha256": "30134dc0e00847f0ff9f7d5a47648ed2f725b49178f2d37a72a6a4709eeb5fa5",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/model_comparison/records.json",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/model_comparison/records.json",
+      "original_sha256": "b3d3105c378120b381f85f2b25f713abdd0db2fde9f3146fc358caf8edec83c7",
+      "public_sha256": "b3d3105c378120b381f85f2b25f713abdd0db2fde9f3146fc358caf8edec83c7",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/model_comparison/recovered-cases.json",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/model_comparison/recovered-cases.json",
+      "original_sha256": "e0c3551ee80cef05d6e9f0050627556235a0fe1270ba5c426b906edc3018b08a",
+      "public_sha256": "e0c3551ee80cef05d6e9f0050627556235a0fe1270ba5c426b906edc3018b08a",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/oracle_evidence/build_cases.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/oracle_evidence/build_cases.py",
+      "original_sha256": "eadbf979ed8488d73b965d364d5df1ab61dfa0efea4dd9ff793d08e1cc51cc8d",
+      "public_sha256": "eadbf979ed8488d73b965d364d5df1ab61dfa0efea4dd9ff793d08e1cc51cc8d",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/oracle_evidence/client.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/oracle_evidence/client.py",
+      "original_sha256": "9067f78269fc7b2936be24f229e6f3ee7edebdf979d8d78d7f87bebdd897b80a",
+      "public_sha256": "9067f78269fc7b2936be24f229e6f3ee7edebdf979d8d78d7f87bebdd897b80a",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/oracle_evidence/download.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/oracle_evidence/download.py",
+      "original_sha256": "f792efeb43d9d18c38ae52d9f8501ee7d2a419b775cf7014fef15ba654a26c3d",
+      "public_sha256": "f792efeb43d9d18c38ae52d9f8501ee7d2a419b775cf7014fef15ba654a26c3d",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/oracle_evidence/host_guard.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/oracle_evidence/host_guard.py",
+      "original_sha256": "f8bb777e90d136643a3215648010ad28101f2a8dd77ccde781d0b0be97cce86f",
+      "public_sha256": "f8bb777e90d136643a3215648010ad28101f2a8dd77ccde781d0b0be97cce86f",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/oracle_evidence/preflight.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/oracle_evidence/preflight.py",
+      "original_sha256": "b798a0ad059c272cef7cdb4160977352ccffe3b289e5539eab27db419916edc2",
+      "public_sha256": "b798a0ad059c272cef7cdb4160977352ccffe3b289e5539eab27db419916edc2",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/oracle_evidence/prompts.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/oracle_evidence/prompts.py",
+      "original_sha256": "8c0a9ead2413efb0713c979b402b5a87eee550dd2e89f1f4f2b73a48117349c6",
+      "public_sha256": "8c0a9ead2413efb0713c979b402b5a87eee550dd2e89f1f4f2b73a48117349c6",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/oracle_evidence/resources.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/oracle_evidence/resources.py",
+      "original_sha256": "c6bd76ac08b3c5a00e3b360154e3effe0f673ea67ba2e9a7f45987e4eac69c33",
+      "public_sha256": "c6bd76ac08b3c5a00e3b360154e3effe0f673ea67ba2e9a7f45987e4eac69c33",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/oracle_evidence/run.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/oracle_evidence/run.py",
+      "original_sha256": "dc8f622f360083fa79a1d823694f29e6d2451943451c8dc7a36367805e4c02d3",
+      "public_sha256": "dc8f622f360083fa79a1d823694f29e6d2451943451c8dc7a36367805e4c02d3",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/oracle_evidence/start_service.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/oracle_evidence/start_service.py",
+      "original_sha256": "bdb9ac8d27b48e774fafe9e45483d3efa2983fb54b7407f366966f57cc4afc6a",
+      "public_sha256": "bdb9ac8d27b48e774fafe9e45483d3efa2983fb54b7407f366966f57cc4afc6a",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/oracle_evidence/summarize.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/oracle_evidence/summarize.py",
+      "original_sha256": "7a13ecd9a9888cb3bba147e72fa8910731abd840881882db5d6ad36827f28a04",
+      "public_sha256": "7a13ecd9a9888cb3bba147e72fa8910731abd840881882db5d6ad36827f28a04",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/oracle_evidence/text_profile.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/oracle_evidence/text_profile.py",
+      "original_sha256": "b1ea4810838b438b3102005bca1b759d9de071c2545aa5aa7de714e1fbc79e96",
+      "public_sha256": "b1ea4810838b438b3102005bca1b759d9de071c2545aa5aa7de714e1fbc79e96",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/oracle_evidence/cases.json",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/oracle_evidence/cases.json",
+      "original_sha256": "f4a576a22371ae5533fcd27b5d2fe2d1b627ab2d700ff53473c9a5c9318ddcfb",
+      "public_sha256": "f4a576a22371ae5533fcd27b5d2fe2d1b627ab2d700ff53473c9a5c9318ddcfb",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/conversation_architecture/analyze.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/conversation_architecture/analyze.py",
+      "original_sha256": "7471456bd4383c07585d65cc0cac9088e280d57e4ce6cdb015954a908655cc93",
+      "public_sha256": "7471456bd4383c07585d65cc0cac9088e280d57e4ce6cdb015954a908655cc93",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/conversation_architecture/engine.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/conversation_architecture/engine.py",
+      "original_sha256": "6164954d86df902f3fa313ea62fe7d29d2f0bad6ff86c7f231b8df92356d8158",
+      "public_sha256": "6164954d86df902f3fa313ea62fe7d29d2f0bad6ff86c7f231b8df92356d8158",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/conversation_architecture/run.py",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/conversation_architecture/run.py",
+      "original_sha256": "8e0895ba3c35a0d863d308113012b73c92158936d38df6faba62cd48a0fe7209",
+      "public_sha256": "8e0895ba3c35a0d863d308113012b73c92158936d38df6faba62cd48a0fe7209",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/conversation_architecture/boundary-holdout.json",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/conversation_architecture/boundary-holdout.json",
+      "original_sha256": "40499f64dbdd6057b52b7f62333ba2a576bdb43ec840ca5f486cbe75d8be5a74",
+      "public_sha256": "40499f64dbdd6057b52b7f62333ba2a576bdb43ec840ca5f486cbe75d8be5a74",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/conversation_architecture/holdout.json",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/conversation_architecture/holdout.json",
+      "original_sha256": "90d8f9f819557fc5777dbeeac3f338d14d721e996fb11aec03a706ea09c8d6a3",
+      "public_sha256": "90d8f9f819557fc5777dbeeac3f338d14d721e996fb11aec03a706ea09c8d6a3",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/conversation_architecture/holdout-round2.json",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/conversation_architecture/holdout-round2.json",
+      "original_sha256": "66d651f3bc0bf423b602acca01b8bd52ee6d23a4900b0377ba50ca9f1f8766f8",
+      "public_sha256": "66d651f3bc0bf423b602acca01b8bd52ee6d23a4900b0377ba50ca9f1f8766f8",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "requirements.txt",
+      "origin_revision": "654505c",
+      "origin_path": "requirements.txt",
+      "original_sha256": "b5813a8561523cf90da4774bf495731c4b182473aaff85979442ef0ee4f40013",
+      "public_sha256": "b5813a8561523cf90da4774bf495731c4b182473aaff85979442ef0ee4f40013",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/oracle_evidence/REVIEW_GUIDE.md",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/oracle_evidence/REVIEW_GUIDE.md",
+      "original_sha256": "3e6e4ee253425503289fffc11123dc0ea530d50b9bdeb4314dd7452b03d6ea38",
+      "public_sha256": "3e6e4ee253425503289fffc11123dc0ea530d50b9bdeb4314dd7452b03d6ea38",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/conversation_architecture/INDEPENDENT_AUDIT.md",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/conversation_architecture/INDEPENDENT_AUDIT.md",
+      "original_sha256": "5d97a322bcef502e65192630d20355f2ca3cfad309166af10a19c944abd5b587",
+      "public_sha256": "5d97a322bcef502e65192630d20355f2ca3cfad309166af10a19c944abd5b587",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/conversation_architecture/INDEPENDENT_REVIEW_METHOD.md",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/conversation_architecture/INDEPENDENT_REVIEW_METHOD.md",
+      "original_sha256": "bba01fb340f03c3d8283540a71690ace7ae9a6c8230ac0417b32eb9b9348d81f",
+      "public_sha256": "bba01fb340f03c3d8283540a71690ace7ae9a6c8230ac0417b32eb9b9348d81f",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/vera/__init__.py",
+      "origin_revision": "9031f10",
+      "origin_path": "vera/__init__.py",
+      "original_sha256": "3261422bf49bb0d4572f29eb76716100788f9a3766d8b73a2c4ba70e4171d130",
+      "public_sha256": "3261422bf49bb0d4572f29eb76716100788f9a3766d8b73a2c4ba70e4171d130",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/vera/__main__.py",
+      "origin_revision": "9031f10",
+      "origin_path": "vera/__main__.py",
+      "original_sha256": "6dbc7b44f9f6a9b6dd686512f2bab56d7a3052244fd8a591fca53bee782b1aef",
+      "public_sha256": "6dbc7b44f9f6a9b6dd686512f2bab56d7a3052244fd8a591fca53bee782b1aef",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/vera/conversation.py",
+      "origin_revision": "9031f10",
+      "origin_path": "vera/conversation.py",
+      "original_sha256": "513f87b81571ea77b33055665165d03f4224f2c301450e31eac3da91cf39f602",
+      "public_sha256": "513f87b81571ea77b33055665165d03f4224f2c301450e31eac3da91cf39f602",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/vera/db.py",
+      "origin_revision": "9031f10",
+      "origin_path": "vera/db.py",
+      "original_sha256": "eab96b56021343ad29d2dedf1053f24715c623514c2771f5d2cac4f490cdc740",
+      "public_sha256": "eab96b56021343ad29d2dedf1053f24715c623514c2771f5d2cac4f490cdc740",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/vera/evidence.py",
+      "origin_revision": "9031f10",
+      "origin_path": "vera/evidence.py",
+      "original_sha256": "481e9b3c122cade7b99341fc9f192f91e734ec3221752563fd25a6a5fd51e884",
+      "public_sha256": "481e9b3c122cade7b99341fc9f192f91e734ec3221752563fd25a6a5fd51e884",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/vera/ollama.py",
+      "origin_revision": "9031f10",
+      "origin_path": "vera/ollama.py",
+      "original_sha256": "07b94ff8bf979a7df3363048f661d1c2257e2b8c5728b44491c8c5da3d10c02d",
+      "public_sha256": "07b94ff8bf979a7df3363048f661d1c2257e2b8c5728b44491c8c5da3d10c02d",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/vera/query.py",
+      "origin_revision": "9031f10",
+      "origin_path": "vera/query.py",
+      "original_sha256": "702d5fc0c558bd5cda1c4912a6bdcff7f6f8bbdb47e6edd4072351168bb8806f",
+      "public_sha256": "702d5fc0c558bd5cda1c4912a6bdcff7f6f8bbdb47e6edd4072351168bb8806f",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/vera/retrieval.py",
+      "origin_revision": "9031f10",
+      "origin_path": "vera/retrieval.py",
+      "original_sha256": "0643c8633f0b7ddc9763e3070eabcc42055435ffc627f375a7d34e254ce3b6aa",
+      "public_sha256": "0643c8633f0b7ddc9763e3070eabcc42055435ffc627f375a7d34e254ce3b6aa",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/tests/test_acceptance_regressions.py",
+      "origin_revision": "9031f10",
+      "origin_path": "tests/test_acceptance_regressions.py",
+      "original_sha256": "dfa16c6d6da251f5348ac97f97178c705619927ef18aed0d06785bcf01d50c3d",
+      "public_sha256": "dfa16c6d6da251f5348ac97f97178c705619927ef18aed0d06785bcf01d50c3d",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/tests/test_conversation_architecture.py",
+      "origin_revision": "9031f10",
+      "origin_path": "tests/test_conversation_architecture.py",
+      "original_sha256": "6be3298294ad59b78d0bb4286add78ce47b8233c844d3ad5656026b3b27de74c",
+      "public_sha256": "6be3298294ad59b78d0bb4286add78ce47b8233c844d3ad5656026b3b27de74c",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/tests/test_engine.py",
+      "origin_revision": "9031f10",
+      "origin_path": "tests/test_engine.py",
+      "original_sha256": "3627036de9426cc8e7d8bacb097157ea8bd12fb1425686169c03cdb9074b9ac4",
+      "public_sha256": "3627036de9426cc8e7d8bacb097157ea8bd12fb1425686169c03cdb9074b9ac4",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/tests/test_memory.py",
+      "origin_revision": "9031f10",
+      "origin_path": "tests/test_memory.py",
+      "original_sha256": "29f33910d9f50c139759e7a361286c72adb75242857f2f3ec27c8c9f3fe790df",
+      "public_sha256": "29f33910d9f50c139759e7a361286c72adb75242857f2f3ec27c8c9f3fe790df",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/tests/test_model_comparison.py",
+      "origin_revision": "9031f10",
+      "origin_path": "tests/test_model_comparison.py",
+      "original_sha256": "c46629d8261992f2325d581d2942bc38e1b5f8c24b386ce2b34f44e75faa1153",
+      "public_sha256": "c46629d8261992f2325d581d2942bc38e1b5f8c24b386ce2b34f44e75faa1153",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/tests/test_ollama_output.py",
+      "origin_revision": "9031f10",
+      "origin_path": "tests/test_ollama_output.py",
+      "original_sha256": "849f78481ee2365071c44f8ae07ff3f845f9c8c69d32a90e7df122311a8efba4",
+      "public_sha256": "849f78481ee2365071c44f8ae07ff3f845f9c8c69d32a90e7df122311a8efba4",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/tests/test_oracle_evidence.py",
+      "origin_revision": "9031f10",
+      "origin_path": "tests/test_oracle_evidence.py",
+      "original_sha256": "0bd2ca4b054601610ca3e43722fa433c9829ff75187883b84dd862aa26ff5685",
+      "public_sha256": "0bd2ca4b054601610ca3e43722fa433c9829ff75187883b84dd862aa26ff5685",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/tests/test_quality_evaluation.py",
+      "origin_revision": "9031f10",
+      "origin_path": "tests/test_quality_evaluation.py",
+      "original_sha256": "0b8545b14876d64fdc78022f19278efa5ee0a83bf2bda32419744d764a29aab1",
+      "public_sha256": "0b8545b14876d64fdc78022f19278efa5ee0a83bf2bda32419744d764a29aab1",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/tests/test_relevance.py",
+      "origin_revision": "9031f10",
+      "origin_path": "tests/test_relevance.py",
+      "original_sha256": "17d2c80983a3dba01193d849ecf42867dc3aceccf61c2c27524f274c39cc8764",
+      "public_sha256": "17d2c80983a3dba01193d849ecf42867dc3aceccf61c2c27524f274c39cc8764",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/scripts/evaluate.py",
+      "origin_revision": "9031f10",
+      "origin_path": "scripts/evaluate.py",
+      "original_sha256": "bb027dc07c2b94b56164d3da4cef12e36c795a5e49943a0d77993fb0b7673838",
+      "public_sha256": "bb027dc07c2b94b56164d3da4cef12e36c795a5e49943a0d77993fb0b7673838",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/scripts/evaluate_acceptance.py",
+      "origin_revision": "9031f10",
+      "origin_path": "scripts/evaluate_acceptance.py",
+      "original_sha256": "e8150969e9e2cf4b2de8f2dffd7c9510ee75eb2938aae9ef85602d42e2fb5bf6",
+      "public_sha256": "e8150969e9e2cf4b2de8f2dffd7c9510ee75eb2938aae9ef85602d42e2fb5bf6",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/scripts/evaluate_quality.py",
+      "origin_revision": "9031f10",
+      "origin_path": "scripts/evaluate_quality.py",
+      "original_sha256": "6a1c19ff0875f7b4f664575fcbb275593d314dd10183c95f093535d4ce882c79",
+      "public_sha256": "6a1c19ff0875f7b4f664575fcbb275593d314dd10183c95f093535d4ce882c79",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/scripts/quality_cases.py",
+      "origin_revision": "9031f10",
+      "origin_path": "scripts/quality_cases.py",
+      "original_sha256": "300925e6e4f81540e0be263596d682c50a6c622fe3d090843ca091aeaf63eb81",
+      "public_sha256": "300925e6e4f81540e0be263596d682c50a6c622fe3d090843ca091aeaf63eb81",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/scripts/reproduce.py",
+      "origin_revision": "9031f10",
+      "origin_path": "scripts/reproduce.py",
+      "original_sha256": "55c1496d7e8c1888d25baad022101007b447d94156372236a639e654928a9d08",
+      "public_sha256": "55c1496d7e8c1888d25baad022101007b447d94156372236a639e654928a9d08",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/scripts/reproduce_acceptance.py",
+      "origin_revision": "9031f10",
+      "origin_path": "scripts/reproduce_acceptance.py",
+      "original_sha256": "4a0ce4cf2e257cc5ba599966f9795e81e5f5bc5ead50d777d9ee995c31b7333e",
+      "public_sha256": "4a0ce4cf2e257cc5ba599966f9795e81e5f5bc5ead50d777d9ee995c31b7333e",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/samples/acceptance_extra.json",
+      "origin_revision": "9031f10",
+      "origin_path": "samples/acceptance_extra.json",
+      "original_sha256": "9de212df40480b7bb77fac4499cc0f29d2f6537efc4724252b27e1b192dc6a5c",
+      "public_sha256": "9de212df40480b7bb77fac4499cc0f29d2f6537efc4724252b27e1b192dc6a5c",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/samples/acceptance_holdout.json",
+      "origin_revision": "9031f10",
+      "origin_path": "samples/acceptance_holdout.json",
+      "original_sha256": "0b91b38443922f956dc97b649e3bd351cf7f1239fb7b412eb2d2f5c32a5531a4",
+      "public_sha256": "0b91b38443922f956dc97b649e3bd351cf7f1239fb7b412eb2d2f5c32a5531a4",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/samples/acceptance_independent.json",
+      "origin_revision": "9031f10",
+      "origin_path": "samples/acceptance_independent.json",
+      "original_sha256": "cae41952239527f24734be373863dc7f670340a59ad1ec48b8738247b7b4985d",
+      "public_sha256": "cae41952239527f24734be373863dc7f670340a59ad1ec48b8738247b7b4985d",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/samples/acceptance_independent_adjudicated.json",
+      "origin_revision": "9031f10",
+      "origin_path": "samples/acceptance_independent_adjudicated.json",
+      "original_sha256": "eca6e6be03418f5bddb264e48bae396a3f9d91c1222bc9997a830912d3c90d20",
+      "public_sha256": "eca6e6be03418f5bddb264e48bae396a3f9d91c1222bc9997a830912d3c90d20",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/samples/demo_memories.json",
+      "origin_revision": "9031f10",
+      "origin_path": "samples/demo_memories.json",
+      "original_sha256": "5b10a27aaa286c1314bdd32cb463cd6d724e84e5b144f37482df66d737de8fe0",
+      "public_sha256": "5b10a27aaa286c1314bdd32cb463cd6d724e84e5b144f37482df66d737de8fe0",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/samples/relevance_extra.json",
+      "origin_revision": "9031f10",
+      "origin_path": "samples/relevance_extra.json",
+      "original_sha256": "b50573b93cc10858008d40a6180029f0ca4b7d42dd88147be8a5019514edb181",
+      "public_sha256": "b50573b93cc10858008d40a6180029f0ca4b7d42dd88147be8a5019514edb181",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/model_comparison/calibrate.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/model_comparison/calibrate.py",
+      "original_sha256": "b2550af990f5d419f72eb95b5f4026774fcd08e9fa13d7c21b160f2b87790550",
+      "public_sha256": "b2550af990f5d419f72eb95b5f4026774fcd08e9fa13d7c21b160f2b87790550",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/model_comparison/client.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/model_comparison/client.py",
+      "original_sha256": "f393375dbe3e58a0d1e1d443403012f75f338b6689bca11254b23b383da864eb",
+      "public_sha256": "f393375dbe3e58a0d1e1d443403012f75f338b6689bca11254b23b383da864eb",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/model_comparison/grounding.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/model_comparison/grounding.py",
+      "original_sha256": "3803b2a2edf4c8c6ee559aba4f3b33697e8c0c4d30ae704b5c366eaa38adf3c6",
+      "public_sha256": "3803b2a2edf4c8c6ee559aba4f3b33697e8c0c4d30ae704b5c366eaa38adf3c6",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/model_comparison/prompts.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/model_comparison/prompts.py",
+      "original_sha256": "76fc7d3a636cf0a3028016fce6181749abfa5956ed988fcea01db397986b9188",
+      "public_sha256": "76fc7d3a636cf0a3028016fce6181749abfa5956ed988fcea01db397986b9188",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/model_comparison/run.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/model_comparison/run.py",
+      "original_sha256": "f63f1a12bf23da10de4f4d425d2047aa4ae84ae884e2e00fe0724b7844415b0d",
+      "public_sha256": "f63f1a12bf23da10de4f4d425d2047aa4ae84ae884e2e00fe0724b7844415b0d",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/model_comparison/stress.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/model_comparison/stress.py",
+      "original_sha256": "a6e7387fbbf38451027fddf9cfef8282090f40588a49f51b4092c9c9948cc8e3",
+      "public_sha256": "a6e7387fbbf38451027fddf9cfef8282090f40588a49f51b4092c9c9948cc8e3",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/model_comparison/summarize.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/model_comparison/summarize.py",
+      "original_sha256": "257d9773975ee7def1bed7d3ae87e6af2531008e96ad8de9af8c5e298b3448f1",
+      "public_sha256": "257d9773975ee7def1bed7d3ae87e6af2531008e96ad8de9af8c5e298b3448f1",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/model_comparison/cases.json",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/model_comparison/cases.json",
+      "original_sha256": "3ab9e8a7fe1f38f93552c8b3f4161ecea7cc0c35ae595ca2c38985f013a92b34",
+      "public_sha256": "3ab9e8a7fe1f38f93552c8b3f4161ecea7cc0c35ae595ca2c38985f013a92b34",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/model_comparison/manual-confirmed-cases.json",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/model_comparison/manual-confirmed-cases.json",
+      "original_sha256": "30134dc0e00847f0ff9f7d5a47648ed2f725b49178f2d37a72a6a4709eeb5fa5",
+      "public_sha256": "30134dc0e00847f0ff9f7d5a47648ed2f725b49178f2d37a72a6a4709eeb5fa5",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/model_comparison/records.json",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/model_comparison/records.json",
+      "original_sha256": "b3d3105c378120b381f85f2b25f713abdd0db2fde9f3146fc358caf8edec83c7",
+      "public_sha256": "b3d3105c378120b381f85f2b25f713abdd0db2fde9f3146fc358caf8edec83c7",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/model_comparison/recovered-cases.json",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/model_comparison/recovered-cases.json",
+      "original_sha256": "e0c3551ee80cef05d6e9f0050627556235a0fe1270ba5c426b906edc3018b08a",
+      "public_sha256": "e0c3551ee80cef05d6e9f0050627556235a0fe1270ba5c426b906edc3018b08a",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/oracle_evidence/build_cases.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/oracle_evidence/build_cases.py",
+      "original_sha256": "eadbf979ed8488d73b965d364d5df1ab61dfa0efea4dd9ff793d08e1cc51cc8d",
+      "public_sha256": "eadbf979ed8488d73b965d364d5df1ab61dfa0efea4dd9ff793d08e1cc51cc8d",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/oracle_evidence/client.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/oracle_evidence/client.py",
+      "original_sha256": "9067f78269fc7b2936be24f229e6f3ee7edebdf979d8d78d7f87bebdd897b80a",
+      "public_sha256": "9067f78269fc7b2936be24f229e6f3ee7edebdf979d8d78d7f87bebdd897b80a",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/oracle_evidence/download.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/oracle_evidence/download.py",
+      "original_sha256": "f792efeb43d9d18c38ae52d9f8501ee7d2a419b775cf7014fef15ba654a26c3d",
+      "public_sha256": "f792efeb43d9d18c38ae52d9f8501ee7d2a419b775cf7014fef15ba654a26c3d",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/oracle_evidence/host_guard.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/oracle_evidence/host_guard.py",
+      "original_sha256": "f8bb777e90d136643a3215648010ad28101f2a8dd77ccde781d0b0be97cce86f",
+      "public_sha256": "f8bb777e90d136643a3215648010ad28101f2a8dd77ccde781d0b0be97cce86f",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/oracle_evidence/preflight.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/oracle_evidence/preflight.py",
+      "original_sha256": "b798a0ad059c272cef7cdb4160977352ccffe3b289e5539eab27db419916edc2",
+      "public_sha256": "b798a0ad059c272cef7cdb4160977352ccffe3b289e5539eab27db419916edc2",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/oracle_evidence/prompts.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/oracle_evidence/prompts.py",
+      "original_sha256": "8c0a9ead2413efb0713c979b402b5a87eee550dd2e89f1f4f2b73a48117349c6",
+      "public_sha256": "8c0a9ead2413efb0713c979b402b5a87eee550dd2e89f1f4f2b73a48117349c6",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/oracle_evidence/resources.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/oracle_evidence/resources.py",
+      "original_sha256": "c6bd76ac08b3c5a00e3b360154e3effe0f673ea67ba2e9a7f45987e4eac69c33",
+      "public_sha256": "c6bd76ac08b3c5a00e3b360154e3effe0f673ea67ba2e9a7f45987e4eac69c33",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/oracle_evidence/run.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/oracle_evidence/run.py",
+      "original_sha256": "dc8f622f360083fa79a1d823694f29e6d2451943451c8dc7a36367805e4c02d3",
+      "public_sha256": "dc8f622f360083fa79a1d823694f29e6d2451943451c8dc7a36367805e4c02d3",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/oracle_evidence/start_service.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/oracle_evidence/start_service.py",
+      "original_sha256": "bdb9ac8d27b48e774fafe9e45483d3efa2983fb54b7407f366966f57cc4afc6a",
+      "public_sha256": "bdb9ac8d27b48e774fafe9e45483d3efa2983fb54b7407f366966f57cc4afc6a",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/oracle_evidence/summarize.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/oracle_evidence/summarize.py",
+      "original_sha256": "7a13ecd9a9888cb3bba147e72fa8910731abd840881882db5d6ad36827f28a04",
+      "public_sha256": "7a13ecd9a9888cb3bba147e72fa8910731abd840881882db5d6ad36827f28a04",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/oracle_evidence/text_profile.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/oracle_evidence/text_profile.py",
+      "original_sha256": "b1ea4810838b438b3102005bca1b759d9de071c2545aa5aa7de714e1fbc79e96",
+      "public_sha256": "b1ea4810838b438b3102005bca1b759d9de071c2545aa5aa7de714e1fbc79e96",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/oracle_evidence/cases.json",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/oracle_evidence/cases.json",
+      "original_sha256": "f4a576a22371ae5533fcd27b5d2fe2d1b627ab2d700ff53473c9a5c9318ddcfb",
+      "public_sha256": "f4a576a22371ae5533fcd27b5d2fe2d1b627ab2d700ff53473c9a5c9318ddcfb",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/conversation_architecture/engine.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/conversation_architecture/engine.py",
+      "original_sha256": "5c99d3055e125e506c07ddcf793e9e8797afc150d34be26aef4469407c3871e5",
+      "public_sha256": "5c99d3055e125e506c07ddcf793e9e8797afc150d34be26aef4469407c3871e5",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/conversation_architecture/run.py",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/conversation_architecture/run.py",
+      "original_sha256": "430db327b9c108e25d688f87abe2d4a249cc00d644a1935ce5c95b2ff14b8097",
+      "public_sha256": "430db327b9c108e25d688f87abe2d4a249cc00d644a1935ce5c95b2ff14b8097",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/conversation_architecture/holdout.json",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/conversation_architecture/holdout.json",
+      "original_sha256": "90d8f9f819557fc5777dbeeac3f338d14d721e996fb11aec03a706ea09c8d6a3",
+      "public_sha256": "90d8f9f819557fc5777dbeeac3f338d14d721e996fb11aec03a706ea09c8d6a3",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "research_snapshots/revision1/experiments/conversation_architecture/boundary-holdout.json",
+      "origin_revision": "9031f10",
+      "origin_path": "experiments/conversation_architecture/boundary-holdout.json",
+      "original_sha256": "40499f64dbdd6057b52b7f62333ba2a576bdb43ec840ca5f486cbe75d8be5a74",
+      "public_sha256": "40499f64dbdd6057b52b7f62333ba2a576bdb43ec840ca5f486cbe75d8be5a74",
+      "transformation": "verbatim reviewed source; no behavior changes"
+    },
+    {
+      "output": "experiments/conversation_architecture/boundary-holdout-manifest.json",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/conversation_architecture/boundary-holdout-manifest.json",
+      "original_sha256": "066e44fc9e6d98351f23ffccbe04a712bb887378fd99e65f4e91838d5f652fe4",
+      "public_sha256": "2c0e5589a686666ecb49575026ec6849a522d2cf71d9614e16adf8c228168278",
+      "transformation": "Removed operational timestamps/private backup references; revision-1 file paths map to included historical snapshot; original hash belongs to private input."
+    },
+    {
+      "output": "experiments/conversation_architecture/holdout-manifest.json",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/conversation_architecture/holdout-manifest.json",
+      "original_sha256": "c86cc05adf70833aa81f73f15a11b4306351a44c06b513c54e892a07a960155a",
+      "public_sha256": "15431d25c75354220ea43fc6b3874a6044e270ada063fddeb0dee697d452b414",
+      "transformation": "Removed operational timestamps/private backup references; revision-1 file paths map to included historical snapshot; original hash belongs to private input."
+    },
+    {
+      "output": "experiments/conversation_architecture/holdout-round2-manifest.json",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/conversation_architecture/holdout-round2-manifest.json",
+      "original_sha256": "1fa8f31284b71cea6026c3a120981ce77f70eed3a63849e957cd3e50c7617058",
+      "public_sha256": "5f123d712af48d6a15b1122878ff091f54e2099dea3c9c27535d2195afd3c8fb",
+      "transformation": "Removed operational timestamps/private backup references; revision-1 file paths map to included historical snapshot; original hash belongs to private input."
+    },
+    {
+      "output": "experiments/conversation_architecture/holdout-schema-correction.json",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/conversation_architecture/holdout-schema-correction.json",
+      "original_sha256": "d82542d5173b32a5a73021c2ba062e411a2844178e2de99970f6eecde44d6b4b",
+      "public_sha256": "861198d217d9c69836e8cf583ad54faaf3fb966128bcec8b92549b58c378c5c5",
+      "transformation": "Removed operational timestamps/private backup references; revision-1 file paths map to included historical snapshot; original hash belongs to private input."
+    },
+    {
+      "output": "experiments/conversation_architecture/implementation-freeze.json",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/conversation_architecture/implementation-freeze.json",
+      "original_sha256": "5ce006964f4187e1007a36d8e5a3ec66ba7f166608506143247dc3a028b89876",
+      "public_sha256": "63f183f78c050d3e8edf9810cee29d80c1c8a490900e45f397cc88dbcaccf7b9",
+      "transformation": "Removed operational timestamps/private backup references; revision-1 file paths map to included historical snapshot; original hash belongs to private input."
+    },
+    {
+      "output": "experiments/conversation_architecture/refinement-freeze.json",
+      "origin_revision": "654505c",
+      "origin_path": "experiments/conversation_architecture/refinement-freeze.json",
+      "original_sha256": "4dad801da6b3890a913a8cc7a9ea36779caa23e3a1cd7756e36017b3e5bae8aa",
+      "public_sha256": "103d2202002924fd2bd8e1376ba9ee9b0a9b28fbc966f245d94b72e7a835ee62",
+      "transformation": "Removed operational timestamps/private backup references; revision-1 file paths map to included historical snapshot; original hash belongs to private input."
+    },
+    {
+      "output": "evidence/conversation/round1.answers.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/conversation_architecture/round1.json",
+      "original_sha256": "301670df4ac5428950e96a6f2aa6131332b3d0cd5ae0b867ecbee66a1000020d",
+      "public_sha256": "150973f41377c19ba0c96062e44459b4250228175afed4fde2a3fbeeaa932aa1",
+      "transformation": "Whitelisted final answer/evidence/plan/timing fields only. Removed native calls, generated reasoning, warmups, model-server inventory and all per-second resource records. Not a native analysis-runner input. Model-generated request plans omitted."
+    },
+    {
+      "output": "evidence/conversation/round1-review.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/conversation_architecture/round1-review.json",
+      "original_sha256": "0cce7f7d359a74836e290a92e0a35d138ad9f4d8be6b9d104eecdf53b9148c5a",
+      "public_sha256": "26f2d942c9e76349140bf7465c5cd5803b1fa172f77ae61359b6318f785ad22d",
+      "transformation": "Preserved independent judgments and answer hashes. Removed operational timestamp/private raw-file checksum fields; linked sanitized public answer input instead. No rescoring."
+    },
+    {
+      "output": "evidence/conversation/round2.answers.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/conversation_architecture/round2.json",
+      "original_sha256": "ae841c2d4f7e980d3883f624d8068ad50f0a13ff6762300219990fadeebfd5ac",
+      "public_sha256": "1c267130e04f08c030b3ccc3bbad4cf3a50c00d2068573ef65364f7f2a4ab759",
+      "transformation": "Whitelisted final answer/evidence/plan/timing fields only. Removed native calls, generated reasoning, warmups, model-server inventory and all per-second resource records. Not a native analysis-runner input. Model-generated request plans omitted."
+    },
+    {
+      "output": "evidence/conversation/round2-review.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/conversation_architecture/round2-review.json",
+      "original_sha256": "be48dcd088d10e8c57a1dde5bcd4bd28e3d6295666040bf9a957086f9e89a223",
+      "public_sha256": "09cd5055a2daa5c750404543da2ba8df0d50144819e6f20aa28a61111bec5a21",
+      "transformation": "Preserved independent judgments and answer hashes. Removed operational timestamp/private raw-file checksum fields; linked sanitized public answer input instead. No rescoring."
+    },
+    {
+      "output": "evidence/conversation/boundary-round2.answers.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/conversation_architecture/boundary-round2.json",
+      "original_sha256": "c25ebd3b29b030bd8789d78dab1af3f5a406ebe426047ff2d46702f777489555",
+      "public_sha256": "8b0d1c17554ff85dcc9f68481f3ca4c810cf08a128786d75a5b008ce510a3e65",
+      "transformation": "Whitelisted final answer/evidence/plan/timing fields only. Removed native calls, generated reasoning, warmups, model-server inventory and all per-second resource records. Not a native analysis-runner input. Model-generated request plans omitted."
+    },
+    {
+      "output": "evidence/conversation/boundary-round2-review.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/conversation_architecture/boundary-round2-review.json",
+      "original_sha256": "a41d88dae706499a6ba2822b28763f6a83e7e61a9313a6da26eb5c220e970025",
+      "public_sha256": "7f18921358aeffb0c8cb11e5b91dfd213bd029384b60ea3f8e1e6964bda79019",
+      "transformation": "Preserved independent judgments and answer hashes. Removed operational timestamp/private raw-file checksum fields; linked sanitized public answer input instead. No rescoring."
+    },
+    {
+      "output": "evidence/conversation/round1-summary.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/conversation_architecture/round1-summary.json",
+      "original_sha256": "5f488d8c75fae048dab504f0fd1df3864f19e048dfc266278117b34e4d796061",
+      "public_sha256": "a8c575878e42a4f4773a854275e3698af00abf53da8c5709e080d071c083abfa",
+      "transformation": "Copied existing aggregate measurements without reevaluation. Removed original native-input checksums, exact disk free and sample timeline metadata; public checksum links sanitized answers."
+    },
+    {
+      "output": "evidence/conversation/round2-summary.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/conversation_architecture/round2-summary.json",
+      "original_sha256": "0a188a8543ab6e81dfc556cf15e253a7dc9fa834df6c62b6f858f485bd29ef52",
+      "public_sha256": "64491084cec22b5974814ee514cd37bcdf94631799c76cd6117ca974ead2ac62",
+      "transformation": "Copied existing aggregate measurements without reevaluation. Removed original native-input checksums, exact disk free and sample timeline metadata; public checksum links sanitized answers."
+    },
+    {
+      "output": "evidence/conversation/round1-review-summary.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/conversation_architecture/round1-review-summary.json",
+      "original_sha256": "ac125ff12b9530066ae62dc339a4ca876672e498245829660722f4e36c337e49",
+      "public_sha256": "600ca1b1cab3c57df4211fbc7f164886f3559107af6f656d3fcd65746d96dedc",
+      "transformation": "Retained existing aggregate source-review results; no new evaluation."
+    },
+    {
+      "output": "evidence/conversation/round2-review-summary.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/conversation_architecture/round2-review-summary.json",
+      "original_sha256": "06d62aca47b2af820829df1160ddf56dd6ba1c1fa5fcde9bca748caeb2bb79f3",
+      "public_sha256": "887fc8c9a8b2121eeb0294a8e7badbe610fbd7aade9de820a482b6dcc1a9d8e4",
+      "transformation": "Retained existing aggregate source-review results; no new evaluation."
+    },
+    {
+      "output": "evidence/oracle/qwen27-text.answers.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/oracle_evidence/generations-text-cache512-15g.json",
+      "original_sha256": "87060a44e501824ec6348c409f965fb0227f93e226e842839ce909f22e50562f",
+      "public_sha256": "0e2afcecbb3d4364846d175671a93383995b59cd474b0ef165312382d1037822",
+      "transformation": "Whitelisted final answer/evidence/timing only; no calls, internal thinking, warmups, process state or host resource timeline. Model-generated request plans omitted."
+    },
+    {
+      "output": "evidence/oracle/baseline-models.answers.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/oracle_evidence/generations-baseline-cache512-15g.json",
+      "original_sha256": "eb2f0d0a2e3ac0d86b601335dc8d24c9640a96a3ba9a7ac6ae6ce2c934327f11",
+      "public_sha256": "3e53cd4716146898191c9d375cae2f5e9706d339648e94a05a95708704ea39ca",
+      "transformation": "Whitelisted final answer/evidence/timing only; no calls, internal thinking, warmups, process state or host resource timeline. Model-generated request plans omitted."
+    },
+    {
+      "output": "evidence/oracle/source-reviews.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/oracle_evidence/source-review-cache512.json",
+      "original_sha256": "af61e86d403aa8b9af678c24f483459d8e89db72130b7bb597be61e4c6ce5ea0",
+      "public_sha256": "11bfc5d990e6d771c616e56fa1c6bec17ef5ca44719907f3ebb94ce3a289a88a",
+      "transformation": "Retained original source judgments and answer hashes, with explicit prior-review reuse; no rescoring."
+    },
+    {
+      "output": "evidence/oracle/summary-cache512.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/oracle_evidence/summary-cache512.json",
+      "original_sha256": "92647e645f3d4c226b86af63753cad424bf21b27a7aa4ec0e5ef13d0d9001fe4",
+      "public_sha256": "ed5b78d01ea1a16065ecc4960220fd215ca2cecd72509ecf189406b6488df209",
+      "transformation": "Existing quality/latency aggregates only; no private input-checksum assertions or machine/resource timelines. Includes unsuccessful/partial stock-model condition where recorded."
+    },
+    {
+      "output": "evidence/oracle/summary-15g.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/oracle_evidence/summary-15g.json",
+      "original_sha256": "a295ae01659aa7ed866fa8c0cb3a14a3cb4d88d25be970bcc53ea137354b3c52",
+      "public_sha256": "92cc74ba7756baf144ea0cdf5141d8aea0be7d840e7af4243ccfedf1c599688f",
+      "transformation": "Existing quality/latency aggregates only; no private input-checksum assertions or machine/resource timelines. Includes unsuccessful/partial stock-model condition where recorded."
+    },
+    {
+      "output": "evidence/oracle/text-profile.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/oracle_evidence/text-profile.json",
+      "original_sha256": "acde9245e585c0d7cca1a35c7ff04225a3a6830b45cd48cff8243dd141a4be0c",
+      "public_sha256": "0352596069920253b219ce623e6c2787b6ce5f08303926459db3354b3d2817e2",
+      "transformation": "Retained language-blob identity and text-only profile distinction; no weights exported."
+    },
+    {
+      "output": "evidence/model_comparison/canonical-summary.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/model_comparison/canonical-summary.json",
+      "original_sha256": "76ccb5bff18e492db33218137c343e5aae04ea0a5c90fab7bb40fd4937e590e6",
+      "public_sha256": "0d36de1518d19557e4f9a331a9a4bc1dbb831fb8f4c7800511fbacc50bb86181",
+      "transformation": "Existing aggregate results only; omitted synthetic dialogue rows, native calls and runtime measurements. No reevaluation."
+    },
+    {
+      "output": "evidence/model_comparison/canonical-validated-fallback-summary.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/model_comparison/canonical-validated-fallback-summary.json",
+      "original_sha256": "403fff0bc0b60c7f03f69d17d173976ec00e537616dc232f2d61a35e909309ba",
+      "public_sha256": "5abdff9c0a6b89534b44b8c7ca7b3b6d7490f79e6c93e45ec1b3c4d39f430224",
+      "transformation": "Existing aggregate results only; omitted synthetic dialogue rows, native calls and runtime measurements. No reevaluation."
+    },
+    {
+      "output": "evidence/model_comparison/manual-confirmed-summary.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/model_comparison/manual-confirmed-summary.json",
+      "original_sha256": "9215175e97cbabb59b6b08c77ed907a1d2d98b6a084459331b935ef78c08a9a6",
+      "public_sha256": "da2bcdf40b2afbb10d826220396b58eb71c484313b1242af25cad2a27536e75d",
+      "transformation": "Existing aggregate results only; omitted synthetic dialogue rows, native calls and runtime measurements. No reevaluation."
+    },
+    {
+      "output": "evidence/model_comparison/manual-confirmed-repeat-summary.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/model_comparison/manual-confirmed-repeat-summary.json",
+      "original_sha256": "b1bc621ed209869188edf8fdb0acf2265efac1aee0205237c02acc9dcdbff76e",
+      "public_sha256": "67cbf1cd8f8e6ae770a7204f07433643ac36664afb01660dd0a4c490f75e64ed",
+      "transformation": "Existing aggregate results only; omitted synthetic dialogue rows, native calls and runtime measurements. No reevaluation."
+    },
+    {
+      "output": "evidence/model-identities.json",
+      "origin_revision": "654505c",
+      "origin_path": "results/oracle_evidence/generations-baseline-cache512-15g.json",
+      "original_sha256": "eb2f0d0a2e3ac0d86b601335dc8d24c9640a96a3ba9a7ac6ae6ce2c934327f11",
+      "public_sha256": "f039ee4d970e2ecd3f973336d8a1bf9ac4fbde40a18f927427d2f3c12b1d66d6",
+      "transformation": "Whitelisted model tag/digest/size/quantization metadata only; removed timestamps, paths and server state."
+    }
+  ],
+  "generated_outputs": [
+    {
+      "path": ".github/workflows/tests.yml",
+      "sha256": "20077ae8599d56c66fb022950c905536c03555621c857359d00db05b89350b98",
+      "origin": "new private-review test infrastructure; not application behavior"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "de1b760f24dc18bf787231f8ae362d56b09228d8a0d818cd158b73064f8465b5",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "413e42c1a680bedb24233cf955dfb8e7f8b735975033e2bf5369a1ccbd24b16f",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "PUBLICATION_ALLOWLIST.json",
+      "sha256": "8926c878afbdded26bfbd46f65ce79d3c300847f64f4c2e5769ba99d4cca0416",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "PUBLICATION_CHECK.md",
+      "sha256": "a2fc95202bc82af27bfe32ebb5b5e18af24046296afb4b6f16016849431ce5e4",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "README.md",
+      "sha256": "4508183ccf643cd7aa19ad7bad717b81d2533b3864597a91f484d722803a19d9",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "e07cbe59ddba50a034f9ecaed27f2e05a2de4b8050660c644842424e5f1c3e0e",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "docs/DATA_PROVENANCE.md",
+      "sha256": "19c1276354b3e2f13ba2019b883634712eee74fbe969ee159347b481a2028d6c",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "docs/LICENSING_STATUS.md",
+      "sha256": "c13ec3e313ad937207345703d61f6921e962de595dee2e8b16d261445010ac86",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "docs/PUBLICATION_PROVENANCE.md",
+      "sha256": "32e2ea9475b9c89c8e1dc97cdb8689ab45fcd198f6a501b0f27509774de4dd97",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "sha256": "3ce6455d0157c6649e99d48b834c70eb087445bf7ae3df10ed886f1e68a05107",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "docs/RESEARCH_RESULTS.md",
+      "sha256": "08e2707ce753ea0cfe77966bb3320e4fbf2790964943ec0a400dbf63430c30f8",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "docs/RUNTIME_REQUIREMENTS.md",
+      "sha256": "1039ea8df51fa5b040776132f1fe0c50c4aa782c5acc0916d746be76a7b3f368",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "docs/TESTING.md",
+      "sha256": "2072ffbb71df512b7ce38db1d72b1f0ec3453d0f03899d0ba0a1cc2db83a1204",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "evidence/prior-test-status.json",
+      "sha256": "b98ad5f25ab877c81c4b7a420b8337bba2ea029857765b8e73529e088483a716",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "evidence/verification/local-regression-result.json",
+      "sha256": "2b61bf310bd9d8368a71e424b14cc08f61fe00322ad0b2a827e35f98b90c8856",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "evidence/verification/local-regression-tests.txt",
+      "sha256": "baa37a09817b351fd769410a7554bdcbbea09af21add963cc67b7e2c5b0ce68f",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "experiments/conversation_architecture/README.md",
+      "sha256": "8a4fb5735523efaeccbcd8774670693553a3c0504acbc8014882ce0bafb11f83",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "experiments/model_comparison/README.md",
+      "sha256": "2137f588aa718b29aa8dea52c60e8048c75051bca5053163ba9bb42188aa438f",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "experiments/oracle_evidence/README.md",
+      "sha256": "69ca05247dbf69bedccd2267bb9d37d2d9b90468440eaf57cf5c9434dbd82602",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "research_snapshots/revision1/README.md",
+      "sha256": "e3a3973800ba5b46d9aa7d03af788dc6a3f7426f06fa24988936a56925d25498",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "research_snapshots/revision1/SNAPSHOT.json",
+      "sha256": "8e5f16eca876d862f486080de666a79c376a697eb7e1c6b8308dec82751f56aa",
+      "origin": "public documentation/configuration, provenance metadata or explicitly recorded verification; not original private model evidence"
+    },
+    {
+      "path": "scripts/run_unit_tests.py",
+      "sha256": "51770a2ac27208c1f356a46430d09fe3c5ab9f32f910ee1945fdcaec536a11e9",
+      "origin": "new private-review test infrastructure; not application behavior"
+    }
+  ],
+  "self_coverage": "Manifest and checksum file are not self-hashed; PUBLIC_CHECKSUMS.sha256 covers this manifest.",
+  "counts": {
+    "source_tracked_files": 253,
+    "selected_head_source_files": 88,
+    "excluded_head_source_files": 165,
+    "historical_snapshot_files": 56,
+    "sourced_public_outputs": 145,
+    "candidate_files_before_manifest_and_checksum": 159,
+    "candidate_regular_files": 170,
+    "generated_public_outputs": 23
+  },
+  "redactions": {
+    "string_redaction_count": 0,
+    "policy": "Known personal-path pilot and private host/recovery files excluded; evidence projected to reviewed fields; operational timestamps, private backup references, native calls/reasoning and host timelines removed.",
+    "model_generated_request_plans_omitted": 80
+  },
+  "privacy_check": {
+    "kind": "bounded static publication inventory/checksum/pattern review after authorized local regression run",
+    "maximum_files": 220,
+    "maximum_bytes": 10485760,
+    "symlinks": 0,
+    "sensitive_pattern_findings": 0,
+    "broken_local_markdown_links": 0,
+    "model_or_evaluation_execution": false,
+    "regression_suite_invocations": 1
+  },
+  "initial_export_execution": {
+    "tests_run": false,
+    "models_launched": false,
+    "inference_or_evaluations_run": false,
+    "original_repository_modified": false
+  },
+  "test_scope": "One model-independent existing root regression-suite invocation during later private-review preparation; not a live-model evaluation.",
+  "private_review_preparation": {
+    "original_repository_accessed": false,
+    "application_behavior_modified": false,
+    "existing_test_or_fixture_bytes_modified": false,
+    "new_test_infrastructure": [
+      "scripts/run_unit_tests.py",
+      ".github/workflows/tests.yml"
+    ],
+    "local_result": "evidence/verification/local-regression-result.json",
+    "local_result_sha256": "2b61bf310bd9d8368a71e424b14cc08f61fe00322ad0b2a827e35f98b90c8856",
+    "suite_invocations": 1,
+    "passing_tests": 122,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "github_workflow_executed": false,
+    "remote_created_or_push": false,
+    "project_license_selected": false
+  }
+}

@@ -1,0 +1,854 @@
+{
+  "source_revision": "654505c",
+  "scope": "Tracked files at source revision only. Ignored/private files not inspected or counted.",
+  "selected_head_source_paths": [
+    "experiments/conversation_architecture/INDEPENDENT_AUDIT.md",
+    "experiments/conversation_architecture/INDEPENDENT_REVIEW_METHOD.md",
+    "experiments/conversation_architecture/analyze.py",
+    "experiments/conversation_architecture/boundary-holdout-manifest.json",
+    "experiments/conversation_architecture/boundary-holdout.json",
+    "experiments/conversation_architecture/engine.py",
+    "experiments/conversation_architecture/holdout-manifest.json",
+    "experiments/conversation_architecture/holdout-round2-manifest.json",
+    "experiments/conversation_architecture/holdout-round2.json",
+    "experiments/conversation_architecture/holdout-schema-correction.json",
+    "experiments/conversation_architecture/holdout.json",
+    "experiments/conversation_architecture/implementation-freeze.json",
+    "experiments/conversation_architecture/refinement-freeze.json",
+    "experiments/conversation_architecture/run.py",
+    "experiments/model_comparison/calibrate.py",
+    "experiments/model_comparison/cases.json",
+    "experiments/model_comparison/client.py",
+    "experiments/model_comparison/grounding.py",
+    "experiments/model_comparison/manual-confirmed-cases.json",
+    "experiments/model_comparison/prompts.py",
+    "experiments/model_comparison/records.json",
+    "experiments/model_comparison/recovered-cases.json",
+    "experiments/model_comparison/run.py",
+    "experiments/model_comparison/stress.py",
+    "experiments/model_comparison/summarize.py",
+    "experiments/oracle_evidence/REVIEW_GUIDE.md",
+    "experiments/oracle_evidence/build_cases.py",
+    "experiments/oracle_evidence/cases.json",
+    "experiments/oracle_evidence/client.py",
+    "experiments/oracle_evidence/download.py",
+    "experiments/oracle_evidence/host_guard.py",
+    "experiments/oracle_evidence/preflight.py",
+    "experiments/oracle_evidence/prompts.py",
+    "experiments/oracle_evidence/resources.py",
+    "experiments/oracle_evidence/run.py",
+    "experiments/oracle_evidence/start_service.py",
+    "experiments/oracle_evidence/summarize.py",
+    "experiments/oracle_evidence/text_profile.py",
+    "requirements.txt",
+    "results/conversation_architecture/boundary-round2-review.json",
+    "results/conversation_architecture/boundary-round2.json",
+    "results/conversation_architecture/round1-review-summary.json",
+    "results/conversation_architecture/round1-review.json",
+    "results/conversation_architecture/round1-summary.json",
+    "results/conversation_architecture/round1.json",
+    "results/conversation_architecture/round2-review-summary.json",
+    "results/conversation_architecture/round2-review.json",
+    "results/conversation_architecture/round2-summary.json",
+    "results/conversation_architecture/round2.json",
+    "results/model_comparison/canonical-summary.json",
+    "results/model_comparison/canonical-validated-fallback-summary.json",
+    "results/model_comparison/manual-confirmed-repeat-summary.json",
+    "results/model_comparison/manual-confirmed-summary.json",
+    "results/oracle_evidence/generations-baseline-cache512-15g.json",
+    "results/oracle_evidence/generations-text-cache512-15g.json",
+    "results/oracle_evidence/source-review-cache512.json",
+    "results/oracle_evidence/summary-15g.json",
+    "results/oracle_evidence/summary-cache512.json",
+    "results/oracle_evidence/text-profile.json",
+    "samples/acceptance_extra.json",
+    "samples/acceptance_holdout.json",
+    "samples/acceptance_independent.json",
+    "samples/acceptance_independent_adjudicated.json",
+    "samples/demo_memories.json",
+    "samples/relevance_extra.json",
+    "scripts/evaluate.py",
+    "scripts/evaluate_acceptance.py",
+    "scripts/evaluate_quality.py",
+    "scripts/quality_cases.py",
+    "scripts/reproduce.py",
+    "scripts/reproduce_acceptance.py",
+    "tests/test_acceptance_regressions.py",
+    "tests/test_conversation_architecture.py",
+    "tests/test_engine.py",
+    "tests/test_memory.py",
+    "tests/test_model_comparison.py",
+    "tests/test_ollama_output.py",
+    "tests/test_oracle_evidence.py",
+    "tests/test_quality_evaluation.py",
+    "tests/test_relevance.py",
+    "vera/__init__.py",
+    "vera/__main__.py",
+    "vera/conversation.py",
+    "vera/db.py",
+    "vera/evidence.py",
+    "vera/ollama.py",
+    "vera/query.py",
+    "vera/retrieval.py"
+  ],
+  "excluded_head_paths": [
+    {
+      "path": ".gitignore",
+      "reason": "replaced with newly written public documentation/configuration"
+    },
+    {
+      "path": "AGENTS.md",
+      "reason": "private operational/recovery material excluded; prior test fact only is separately summarized"
+    },
+    {
+      "path": "DEVELOPMENT_LOG.md",
+      "reason": "private operational/recovery material excluded; prior test fact only is separately summarized"
+    },
+    {
+      "path": "README.md",
+      "reason": "replaced with newly written public documentation/configuration"
+    },
+    {
+      "path": "VERA_DEV_MISSION.md",
+      "reason": "private operational/recovery material excluded; prior test fact only is separately summarized"
+    },
+    {
+      "path": "docs/AUTONOMOUS_WORKFLOW.md",
+      "reason": "private operational/recovery material excluded; prior test fact only is separately summarized"
+    },
+    {
+      "path": "evaluations/acceptance/RESULTS.md",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/attempt1-trace.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/attempt2-trace.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/baseline-trace.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/development-attempt1.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/development-final.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/development-repeated.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/final-trace.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/heldout-first.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/heldout-recheck.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/heldout-recheck2.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/independent-adjudicated.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/independent-author.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/independent-author2.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/independent-final.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/independent-first.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/quality-final-verified.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/quality-final.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/quality-regression.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/quality-regression2.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/reliability-attempt1.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/reliability-final.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/reserved-final.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/reserved-repeated.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/acceptance/unit-tests.txt",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/attempt1.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/attempt2.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/attempt3.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/attempt4.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/attempt5.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/live.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/prefill-fixed.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/relevance/MANUAL_REVIEW.md",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/relevance/RESULTS.md",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/relevance/attempt1.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/relevance/attempt2.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/relevance/baseline.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/relevance/final-verified.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/relevance/final.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/relevance/prior-verified.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/relevance/reliability-final.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/relevance/reliability-regression.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/relevance/repeated-final.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/relevance/repeated.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/relevance/timed-final.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/relevance/unit-tests.txt",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/repeated-final.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/repeated-latest.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/repeated.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "evaluations/unit-tests.txt",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "experiments/conversation_architecture/README.md",
+      "reason": "replaced with newly written public documentation/configuration"
+    },
+    {
+      "path": "experiments/conversation_architecture/SAFETY_REVIEW.md",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "experiments/model_comparison/README.md",
+      "reason": "replaced with newly written public documentation/configuration"
+    },
+    {
+      "path": "experiments/model_comparison/metadata_audit.py",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "experiments/model_comparison/pilot.py",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "experiments/model_comparison/probe.py",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "experiments/oracle_evidence/README.md",
+      "reason": "replaced with newly written public documentation/configuration"
+    },
+    {
+      "path": "experiments/oracle_evidence/RESUME.md",
+      "reason": "private operational/recovery material excluded; prior test fact only is separately summarized"
+    },
+    {
+      "path": "results/conversation_architecture/REPORT.md",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/conversation_architecture/boundary-round2.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/conversation_architecture/host-memory-boundary-round2.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/conversation_architecture/host-memory-round1.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/conversation_architecture/host-memory-round2.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/conversation_architecture/round1-independent-report.md",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/conversation_architecture/round1.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/conversation_architecture/round2.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/model_comparison/ARTIFACTS.sha256",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/MANUAL_CONFIRMED.md",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/REPORT.md",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/blind-development-review.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/blind-examples.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/blind-key.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/canonical-generations.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/canonical-generations.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/model_comparison/canonical-reviews.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/canonical-reviews.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/model_comparison/checker-calibration-v2-interrupted.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/checker-calibration-v2.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/checker-calibration.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/closeout.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/model_comparison/environment-summary.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/model_comparison/exploratory-generations.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/exploratory-generations.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/model_comparison/exploratory-limitations.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/grounding-stress.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/live-probes.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/live-probes.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-closeout.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-development-review.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-generations.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-generations.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-limitations.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-repeat-generations.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-repeat-generations.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-repeat-reviews.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-repeat-reviews.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-repeat-validated-fallback-summary.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-reviews.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-reviews.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-trace.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-unit-tests.txt",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-validated-fallback-summary.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/manual-confirmed-verifier-audit.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/metadata-audit.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/pilots.json",
+      "reason": "pilot metadata excluded, including known personal model-store paths"
+    },
+    {
+      "path": "results/model_comparison/recovered-generations.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/recovered-generations.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/model_comparison/recovered-reviews.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/recovered-reviews.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/model_comparison/recovered-summary.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/recovered-validated-fallback-summary.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/repeat-generations.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/repeat-generations.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/model_comparison/repeat-reviews.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/repeat-reviews.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/model_comparison/repeat-summary.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/repeat-validated-fallback-summary.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/smoke.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/smoke.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/model_comparison/unit-tests.txt",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/validated-fallback-live-probes.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/model_comparison/validated-fallback-live-probes.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/oracle_evidence/REPORT.md",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/oracle_evidence/cleanup.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/oracle_evidence/downloads.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/oracle_evidence/environment.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/oracle_evidence/generations-15g.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/oracle_evidence/generations-15g.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/oracle_evidence/generations-baseline-cache512-15g.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/oracle_evidence/generations-cache512-15g.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/oracle_evidence/generations-cache512-15g.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/oracle_evidence/generations-qwen3-15g.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/oracle_evidence/generations-qwen3-15g.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/oracle_evidence/generations-small-15g.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/oracle_evidence/generations-small-15g.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/oracle_evidence/generations-text-cache512-15g.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/oracle_evidence/host-memory-baseline-cache512.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/oracle_evidence/host-memory-cache512.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/oracle_evidence/host-memory-large-15g.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/oracle_evidence/host-memory-small-15g.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/oracle_evidence/host-memory-text-cache512.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/oracle_evidence/host-memory.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/oracle_evidence/pilots-15g.json",
+      "reason": "pilot metadata excluded, including known personal model-store paths"
+    },
+    {
+      "path": "results/oracle_evidence/pilots-15g.json.wire.jsonl.gz",
+      "reason": "raw transcript/generated reasoning excluded"
+    },
+    {
+      "path": "results/oracle_evidence/qwen27-memory-block.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/oracle_evidence/runtime-verification.json",
+      "reason": "host/runtime/operational state excluded"
+    },
+    {
+      "path": "results/oracle_evidence/source-review.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/oracle_evidence/unit-tests.txt",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/oracle_evidence/unreviewed-cache512.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "results/recovery_20261117/REBOOT_REPORT.md",
+      "reason": "private operational/recovery material excluded; prior test fact only is separately summarized"
+    },
+    {
+      "path": "results/recovery_20261117/RECOVERY_REVIEW.md",
+      "reason": "private operational/recovery material excluded; prior test fact only is separately summarized"
+    },
+    {
+      "path": "results/recovery_20261117/collect_reboot_evidence.py",
+      "reason": "private operational/recovery material excluded; prior test fact only is separately summarized"
+    },
+    {
+      "path": "results/recovery_20261117/current-state.json",
+      "reason": "private operational/recovery material excluded; prior test fact only is separately summarized"
+    },
+    {
+      "path": "results/recovery_20261117/reboot-events.json",
+      "reason": "private operational/recovery material excluded; prior test fact only is separately summarized"
+    },
+    {
+      "path": "results/recovery_20261117/unit-tests-prototype.txt",
+      "reason": "private operational/recovery material excluded; prior test fact only is separately summarized"
+    },
+    {
+      "path": "results/recovery_20261117/unit-tests-recovery.txt",
+      "reason": "private operational/recovery material excluded; prior test fact only is separately summarized"
+    },
+    {
+      "path": "results/recovery_20261117/unit-tests-refinement.txt",
+      "reason": "private operational/recovery material excluded; prior test fact only is separately summarized"
+    },
+    {
+      "path": "samples/acceptance_independent_draft.json",
+      "reason": "not admitted by reviewed publication allowlist; historical/raw/diagnostic material retained privately"
+    },
+    {
+      "path": "vera.code-workspace",
+      "reason": "unnecessary editor configuration excluded"
+    }
+  ],
+  "historical_source_revision": "9031f10",
+  "historical_snapshot_paths": [
+    "vera/__init__.py",
+    "vera/__main__.py",
+    "vera/conversation.py",
+    "vera/db.py",
+    "vera/evidence.py",
+    "vera/ollama.py",
+    "vera/query.py",
+    "vera/retrieval.py",
+    "tests/test_acceptance_regressions.py",
+    "tests/test_conversation_architecture.py",
+    "tests/test_engine.py",
+    "tests/test_memory.py",
+    "tests/test_model_comparison.py",
+    "tests/test_ollama_output.py",
+    "tests/test_oracle_evidence.py",
+    "tests/test_quality_evaluation.py",
+    "tests/test_relevance.py",
+    "scripts/evaluate.py",
+    "scripts/evaluate_acceptance.py",
+    "scripts/evaluate_quality.py",
+    "scripts/quality_cases.py",
+    "scripts/reproduce.py",
+    "scripts/reproduce_acceptance.py",
+    "samples/acceptance_extra.json",
+    "samples/acceptance_holdout.json",
+    "samples/acceptance_independent.json",
+    "samples/acceptance_independent_adjudicated.json",
+    "samples/demo_memories.json",
+    "samples/relevance_extra.json",
+    "experiments/model_comparison/calibrate.py",
+    "experiments/model_comparison/client.py",
+    "experiments/model_comparison/grounding.py",
+    "experiments/model_comparison/prompts.py",
+    "experiments/model_comparison/run.py",
+    "experiments/model_comparison/stress.py",
+    "experiments/model_comparison/summarize.py",
+    "experiments/model_comparison/cases.json",
+    "experiments/model_comparison/manual-confirmed-cases.json",
+    "experiments/model_comparison/records.json",
+    "experiments/model_comparison/recovered-cases.json",
+    "experiments/oracle_evidence/build_cases.py",
+    "experiments/oracle_evidence/client.py",
+    "experiments/oracle_evidence/download.py",
+    "experiments/oracle_evidence/host_guard.py",
+    "experiments/oracle_evidence/preflight.py",
+    "experiments/oracle_evidence/prompts.py",
+    "experiments/oracle_evidence/resources.py",
+    "experiments/oracle_evidence/run.py",
+    "experiments/oracle_evidence/start_service.py",
+    "experiments/oracle_evidence/summarize.py",
+    "experiments/oracle_evidence/text_profile.py",
+    "experiments/oracle_evidence/cases.json",
+    "experiments/conversation_architecture/engine.py",
+    "experiments/conversation_architecture/run.py",
+    "experiments/conversation_architecture/holdout.json",
+    "experiments/conversation_architecture/boundary-holdout.json"
+  ],
+  "source_file_count": 253,
+  "selected_source_count": 88,
+  "excluded_source_count": 165,
+  "admitted_metadata_only_inputs": [
+    {
+      "source_revision": "654505c",
+      "source_path": "results/recovery_20261117/unit-tests-refinement.txt",
+      "output": "evidence/prior-test-status.json",
+      "allowed_facts": [
+        "previously verified passing test count",
+        "original log digest"
+      ],
+      "original_file_exported": false
+    }
+  ],
+  "private_review_preparation": {
+    "scope": "Documentation, third-party inventory, Git exclusions, no-model CI/test infrastructure and one local existing-suite invocation; no application/test/fixture changes.",
+    "explicit_allowed_paths": [
+      ".github/workflows/tests.yml",
+      ".gitignore",
+      "CONTRIBUTING.md",
+      "PUBLICATION_ALLOWLIST.json",
+      "PUBLICATION_CHECK.md",
+      "PUBLICATION_MANIFEST.json",
+      "PUBLIC_CHECKSUMS.sha256",
+      "README.md",
+      "THIRD_PARTY_NOTICES.md",
+      "docs/LICENSING_STATUS.md",
+      "docs/PUBLICATION_PROVENANCE.md",
+      "docs/REPRODUCIBILITY.md",
+      "docs/RUNTIME_REQUIREMENTS.md",
+      "docs/TESTING.md",
+      "evidence/verification/local-regression-result.json",
+      "evidence/verification/local-regression-tests.txt",
+      "scripts/run_unit_tests.py"
+    ],
+    "models_or_evaluations_run": false,
+    "project_license_selected": false
+  }
+}

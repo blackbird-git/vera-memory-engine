@@ -1,0 +1,220 @@
+{
+  "synthetic_only": true,
+  "purpose": "Independent boundary/context challenge, not a family-answer corpus or a retrieval benchmark.",
+  "author": "Independent safety/reviewer development agent",
+  "design": "Authored after round1 code review and known generic boundary counterexample. Exact cases hidden from implementer until segmentation revision freeze. Reviewer has not inspected upcoming refinement, main hidden holdout, or live answer outputs.",
+  "review_method": "Judge preserved source meaning and forbidden inferences against complete originals. Critical spans are provenance aids, not a sufficient lexical pass metric. Some cases require adjacent context even when sentence boundaries are correct.",
+  "records": {
+    "b1": {
+      "contributor": "Asha (synthetic)",
+      "kind": "story",
+      "content": "No one recorded whether Dr. Alvarez boarded the ferry. The ticket list names only Mara."
+    },
+    "b2": {
+      "contributor": "Noel (synthetic)",
+      "kind": "story",
+      "content": "It was not J. P. Sen who rang the bell; Mina rang it. I watched from the entrance."
+    },
+    "b3": {
+      "contributor": "Owen (synthetic)",
+      "kind": "story",
+      "content": "The gauge read 1.8 cm. I guessed at the reading; the instrument had not been calibrated."
+    },
+    "b4": {
+      "contributor": "Luz (synthetic)",
+      "kind": "document_note",
+      "content": "The pencilled instruction says e.g. 2018 as an example of how to fill in the form. It is not the date of the excursion."
+    },
+    "b5": {
+      "contributor": "Sumi (synthetic)",
+      "kind": "document_note",
+      "content": "A ticket has the initials L. M. on it. Those marks do not identify a passenger."
+    },
+    "b6": {
+      "contributor": "Arun (synthetic)",
+      "kind": "photo_note",
+      "content": "The sign in the image reads U.S. Route 20. It does not tell us which town the photograph shows."
+    },
+    "b7": {
+      "contributor": "Theo (synthetic)",
+      "kind": "document_note",
+      "content": "My note trails off: \"I thought the witness was...\" The next page is missing. My note does not identify the witness."
+    },
+    "b8": {
+      "contributor": "Nell (synthetic)",
+      "kind": "story",
+      "content": "Bea planted the cedar in 1992. I am only guessing about the year, not who planted it."
+    }
+  },
+  "cases": [
+    {
+      "id": "title_and_unknown_attendance",
+      "source_ids": [
+        "b1"
+      ],
+      "history": [
+        "What is recorded about the ferry crossing?"
+      ],
+      "question": "Can we establish whether Dr. Alvarez was aboard?",
+      "expected_meaning": [
+        "Attendance is not established by these notes.",
+        "Mara being named does not make the list exhaustive."
+      ],
+      "critical_context_spans": [
+        "No one recorded whether Dr. Alvarez boarded the ferry."
+      ],
+      "forbidden_inferences": [
+        "Alvarez definitely boarded.",
+        "Alvarez definitely did not board.",
+        "Mara was the only passenger."
+      ]
+    },
+    {
+      "id": "initials_and_negated_actor",
+      "source_ids": [
+        "b2"
+      ],
+      "history": [],
+      "question": "Who rang the bell? Was it J. P. Sen?",
+      "expected_meaning": [
+        "Mina rang the bell.",
+        "The note explicitly denies J. P. Sen was the bell-ringer."
+      ],
+      "critical_context_spans": [
+        "It was not J. P. Sen who rang the bell; Mina rang it."
+      ],
+      "forbidden_inferences": [
+        "Sen rang the bell.",
+        "The initials identify several different people.",
+        "The note leaves the bell-ringer unknown."
+      ]
+    },
+    {
+      "id": "measurement_and_later_qualifier",
+      "source_ids": [
+        "b3"
+      ],
+      "history": [],
+      "question": "Is 1.8 cm a verified measurement here?",
+      "expected_meaning": [
+        "The reported reading is 1.8 cm.",
+        "The contributor says it was a guess and the instrument was uncalibrated.",
+        "The amount is not established as a verified measurement."
+      ],
+      "critical_context_spans": [
+        "I guessed at the reading; the instrument had not been calibrated."
+      ],
+      "forbidden_inferences": [
+        "The actual amount was certainly 1.8 cm.",
+        "The instrument had been calibrated.",
+        "The decimal denotes separate measurements of 1 and 8."
+      ]
+    },
+    {
+      "id": "example_abbreviation_and_non_event_date",
+      "source_ids": [
+        "b4"
+      ],
+      "history": [],
+      "question": "Does the document date the excursion to 2018?",
+      "expected_meaning": [
+        "2018 appears as an example in form instructions.",
+        "The source explicitly says it is not the excursion date."
+      ],
+      "critical_context_spans": [
+        "e.g. 2018 as an example",
+        "It is not the date of the excursion."
+      ],
+      "forbidden_inferences": [
+        "The excursion occurred in 2018.",
+        "The example is a confirmed event date."
+      ]
+    },
+    {
+      "id": "initials_without_identity",
+      "source_ids": [
+        "b5"
+      ],
+      "history": [],
+      "question": "Do those initials tell us who travelled?",
+      "expected_meaning": [
+        "The ticket is marked L. M.",
+        "The note does not identify the passenger from the marks."
+      ],
+      "critical_context_spans": [
+        "initials L. M. on it.",
+        "Those marks do not identify a passenger."
+      ],
+      "forbidden_inferences": [
+        "The passenger was a named person inferred from L or M.",
+        "There were two passengers named L and M.",
+        "The marks establish passenger identity."
+      ]
+    },
+    {
+      "id": "acronym_and_location_limits",
+      "source_ids": [
+        "b6"
+      ],
+      "history": [],
+      "question": "Which town does that photograph show?",
+      "expected_meaning": [
+        "The photograph includes a U.S. Route 20 sign.",
+        "The source does not establish a town."
+      ],
+      "critical_context_spans": [
+        "U.S. Route 20.",
+        "It does not tell us which town the photograph shows."
+      ],
+      "forbidden_inferences": [
+        "A specific town is proved by the route number.",
+        "Route 20 is the name of the town.",
+        "The source establishes a specific state."
+      ]
+    },
+    {
+      "id": "ellipsis_and_unfinished_identification",
+      "source_ids": [
+        "b7"
+      ],
+      "history": [],
+      "question": "Who was the witness mentioned in the note?",
+      "expected_meaning": [
+        "The identification is unfinished and the next page is missing.",
+        "The source does not identify the witness."
+      ],
+      "critical_context_spans": [
+        "\"I thought the witness was...\"",
+        "My note does not identify the witness."
+      ],
+      "forbidden_inferences": [
+        "Theo was the witness.",
+        "A witness name can be completed from the ellipsis.",
+        "The missing page has known contents."
+      ]
+    },
+    {
+      "id": "cross_sentence_uncertainty_scope",
+      "source_ids": [
+        "b8"
+      ],
+      "history": [
+        "Tell me what the garden recollection establishes."
+      ],
+      "question": "Who planted the cedar, and is the year certain?",
+      "expected_meaning": [
+        "Nell identifies Bea as the planter.",
+        "1992 is only a guess about the year.",
+        "The uncertainty is explicitly about the year rather than the planter."
+      ],
+      "critical_context_spans": [
+        "I am only guessing about the year, not who planted it."
+      ],
+      "forbidden_inferences": [
+        "1992 is certain.",
+        "The note is uncertain who planted the cedar.",
+        "The year is independently verified."
+      ]
+    }
+  ]
+}

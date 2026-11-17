@@ -1,0 +1,6 @@
+[
+  {"title":"Cottage rental receipt","contributor":"Helen (synthetic example)","kind":"letter","content":"The rental receipt lists Seabird Cottage in Newport. The receipt is dated July 1986.","metadata":{"events":["oregon-coast"],"people":["helen","sarah"],"place":"Newport","uncertainty":"receipt date does not establish that all recollections describe one outing"}},
+  {"title":"Lisa coast recollection","contributor":"Lisa (synthetic example)","kind":"story","content":"I remember joining Sarah and Michael on the coast. We played in the sand by Seabird Cottage.","metadata":{"events":["oregon-coast"],"people":["lisa","sarah","michael"]}},
+  {"title":"Sarah birthday picnic","contributor":"Sarah (synthetic example)","kind":"story","content":"My birthday picnic in Denver was in 1990. Michael brought cherry cake.","metadata":{"events":["birthday-denver"],"people":["sarah","michael"],"place":"Denver"}},
+  {"title":"Michael's cousin","contributor":"Michael (synthetic example)","kind":"story","content":"Lisa is my cousin. I remember Lisa joining us on the Oregon coast.","metadata":{"events":["oregon-coast"],"people":["lisa","michael"],"relationships":[{"subject":"lisa","relation":"cousin","object":"michael","certainty":"contributor account"}]}}
+]

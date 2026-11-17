@@ -1,0 +1,21 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "experiments/conversation_architecture/holdout-round2-manifest.json",
+    "sha256": "1fa8f31284b71cea6026c3a120981ce77f70eed3a63849e957cd3e50c7617058"
+  },
+  "transformation": "Removed operational timestamps/private backup references; revision-1 file paths map to included historical snapshot; original hash belongs to private input.",
+  "manifest": {
+    "holdout_sha256": "66d651f3bc0bf423b602acca01b8bd52ee6d23a4900b0377ba50ca9f1f8766f8",
+    "records": 16,
+    "cohorts": 4,
+    "questions": 16,
+    "prior_round1_outputs_seen": true,
+    "refinement_implementation_or_prompts_seen": false,
+    "round2_outputs_seen": false,
+    "authorship": "Separate holdout-author/review development agent, not independent human study.",
+    "input_boundary": "Only current question, history and fixed cohort candidate_source_ids records enter inference. oracle_source_ids/reference_plan/rubric are hidden evaluation metadata.",
+    "high_level_brief_seen": "Refinement intends target/context bindings, field-specific answerability and conservative abbreviation segmentation; no actual new prompts/code seen."
+  }
+}

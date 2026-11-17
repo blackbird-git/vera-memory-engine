@@ -1,0 +1,7 @@
+[
+ {"title":"Lake Rowan boat ride","contributor":"Ben (synthetic)","kind":"story","content":"We hired a skiff at Lake Rowan. The engine stopped halfway across the lake. Owen rowed us back to shore. Nina joked that our luxury cruise had become a rowing lesson.","metadata":{"events":["lake-rowan"],"people":["ben","owen","nina"]}},
+ {"title":"Lake Rowan picnic","contributor":"Ruth (synthetic)","kind":"story","content":"We ate a picnic by Lake Rowan. Nina made sandwiches. The children played tag near the willow tree.","metadata":{"events":["lake-rowan"],"people":["ruth","nina"]}},
+ {"title":"Board game afternoon","contributor":"Lena (synthetic)","kind":"story","content":"Owen and I played chess at home. He won the first game. I won the second game.","metadata":{"events":["chess-afternoon"],"people":["lena","owen"]}},
+ {"title":"Piano practice recollection","contributor":"Dana (synthetic)","kind":"recording_note","content":"I played piano at the school concert. Owen recorded the performance on a cassette.","metadata":{"events":["school-concert"],"people":["dana","owen"]}},
+ {"title":"Kitchen mishap","contributor":"Ruth (synthetic)","kind":"story","content":"I forgot the cream, not the sugar. Ben laughed when the pudding slid off the plate.","metadata":{"events":["pudding-evening"],"people":["ruth","ben"]}}
+]

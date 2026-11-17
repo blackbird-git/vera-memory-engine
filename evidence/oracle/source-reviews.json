@@ -1,0 +1,4980 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "results/oracle_evidence/source-review-cache512.json",
+    "sha256": "af61e86d403aa8b9af678c24f483459d8e89db72130b7bb597be61e4c6ce5ea0"
+  },
+  "transformation": "Retained original source judgments and answer hashes, with explicit prior-review reuse; no rescoring.",
+  "method": "Unblinded development-agent review against original oracle records and pre-frozen question rubrics. Not an independent human study. Supported/unsupported/needs_review distinguish clear errors from ambiguous binding. Scores are diagnostic 1-5, not universal accuracy. Examples of unsupported claims are lower bounds, not exhaustive claim counts.",
+  "dimensions": [
+    "directness",
+    "relevance",
+    "instruction_following",
+    "context_retention",
+    "completeness",
+    "naturalness"
+  ],
+  "reviews": [
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "answer_sha256": "3103f6807338565445297a369fcafe6514c9cfb852d8354ce746b2700ce4d0dd",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "the siblings"
+      ],
+      "note": "Infers a sibling relationship; Dad participation in building is also ambiguous. Photo identities remain tentative.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "answer_sha256": "139badfc862d2fe7231d4041b2edcf3ad4e29ffdf9380d6464b34f8c6c92a809",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Everyone broadens the unspecified us group; otherwise correct outing and uncertainty.",
+      "exclusion_compliant": true
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "answer_sha256": "234f82a649eab83ca1d521de8d1b0e3957887e4a9178975acca31a9ebd1e141e",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct joke selection; unnecessary date aside.",
+      "exclusion_compliant": true
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "answer_sha256": "8626d1ca5d1c54f76d511e627faa51f6dbe8779f28a26a4c074a9e8968124d6e",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Dad is inserted into sandcastle building rather than merely trip attendance.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "answer_sha256": "0692de301db7923eac10a8676ebd70f91a8ab2d1df05f4d87a1c2c9c61bb70db",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct joke facts, but discusses the expressly excluded date uncertainty.",
+      "exclusion_compliant": false
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "answer_sha256": "e37bcec4645754e8090d13ca61a6ae9001be5dce0aaf6fd7726c0a88c816d54d",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "note": "Correct uncertainty; metadata-verification boilerplate distracts.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "answer_sha256": "177e5ee27745be9606eeb92207b3e6d3360cabbf94e33c7df142bfa01d7c90d7",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "note": "Parallel activity phrasing merges Sarah/Michael into both activities; generic factual summary rather than entertaining story.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "answer_sha256": "0205deb755885f420eacd14b3f76613af16caabcd2f29bd78296cbb9094eb3da",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "lists only Sarah, Michael, and Dad as being present"
+      ],
+      "note": "Attendance unknown is retained, but metadata names become an exhaustive activity participant list.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown"
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "answer_sha256": "59b2aa2166c1e99a03d5e2016b194889cf1781e9483c3938b45dedde98b40b76",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct conflicting dates and joke attribution, with synthetic-source boilerplate.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "answer_sha256": "9a531ecea2b833635f72c4b660662d7447df18d32406507029e3031295d9e3e8",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 2,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct aftermath, but discusses years despite explicit exclusion.",
+      "exclusion_compliant": false
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "answer_sha256": "25a9143c098ff1feb4c1b22cf1fe6bfc947e4896accc4f9d298b2ea0f0d81c1b",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct attribution and specific joke.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "answer_sha256": "e42f4cf948f733e0b0e1946afb8f29615cde0e65f84e647405cb8137fe4531d8",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct photo/envelope distinction and identity uncertainty.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "answer_sha256": "ddde7dd2670e4cfd97b435ced104aa398a9097e52334854d15160086fe9c27a3",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Neither contributor recalled the exact price per slice."
+      ],
+      "note": "Only Tessa reports not remembering the price; Priya gives no price, which does not establish her inability to recall it.",
+      "exclusion_compliant": true
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "answer_sha256": "15516b4c516e3b86b2c90f104b712f8a4eab9d41656494dfa764c5869702c298",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct specific detail and attribution.",
+      "exclusion_compliant": true
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "answer_sha256": "da21badc949996c02cff264ceecace0643c2fae0a5670a733801591367c60ae6",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Preserves source/date distinction; unnecessary synthetic-source caveat.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "answer_sha256": "b109f8560f325ff48ebd8fa9a0628314b015fd274c8bdc0296485c4b145406e3",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Final answer correctly preserves attendance and price unknown; opening No refers to lack of notes, not definite nonattendance.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown"
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "answer_sha256": "b2defab05ac01c4461967248a78fe74a3f24628b4a58b19fc1559aa75964ea28",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Dad is inserted into building activity; photo identities are attributed and qualified.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "answer_sha256": "babe718247dc46f59dec13d128d019a7d764c852ee2dd2bb6d9ae3e0d54148d9",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct complete crabbing account; unnecessary date aside.",
+      "exclusion_compliant": true
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "answer_sha256": "30952c56b3213688973fcdb376adcc99ff3041fff9a9eb816882cbdc5743d159",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct detail and attribution; extra date commentary.",
+      "exclusion_compliant": true
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "answer_sha256": "de0168055cd08e2f45fd302556712d19edbfb8c47dbe4fa2928db21b2378a6d9",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct activity and tentative photographic identification.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "answer_sha256": "8fefbd815cc0c0bfc1fd4f8a360bf5e4670e9ba2a71fdeac0b4b6250dcc8bcf9",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 5,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct purchase and joke, but date uncertainty is discussed despite explicit exclusion; failed catch context omitted.",
+      "exclusion_compliant": false
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "answer_sha256": "4c8cffef878e370f9b7f08812255d4bf4d55aa9568fdb5c0490edf8de509097d",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct direct uncertainty answer.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "answer_sha256": "b73a5989aad3d1e4f7f53d893aee002b0503c5cd1d3afce844c5e4592cd6f5db",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "note": "Joint recollection phrasing can attribute Sarah-only cottage/building facts to Michael; remains an informational summary rather than an entertaining story.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "answer_sha256": "db060705cbdc00f9e3eeff95580ac8f56807ad7920df5606ed2fb4ecf9c42076",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "mention only Sarah, Michael, and Dad going crabbing"
+      ],
+      "note": "Preserves attendance unknown but presents source metadata as an exhaustive crabbing participant list.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown"
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "answer_sha256": "e655ae4e489fb0d6c7a9a9771edab56b016e8d26f43d2283fd83c84ee2ffee60",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct original and uncertain date accounts and joke attribution.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "answer_sha256": "7666e3b8ddfd1728c40cae81fbcaf0beca44bfafb0ad1d6efffc826dfd0cb9f8",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 2,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct walking detail but violates the explicit exclusion by discussing year disagreement.",
+      "exclusion_compliant": false
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "answer_sha256": "8d2ff3a0e380e2160cd6c4e006dc090e905aba0a05869a964e2a76c915a3e44a",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct joke author and specific detail.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "answer_sha256": "412f3c9d67b210ff1791f82d8a218bc913b6a7dccbcc3c23dd55bbdb5e3fd07e",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct image/envelope/date uncertainty distinction.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "answer_sha256": "4a1fd01e1aef85769a1a251c4811480767455a4ea376bec3cefc34ffa8e6f679",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Neither contributor remembers the specific price per slice."
+      ],
+      "note": "Only Tessa says she cannot remember the price; no evidence establishes Priya cannot remember it.",
+      "exclusion_compliant": true
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "answer_sha256": "375fed82bc6f86e9b1325adbba16e8d8b978471df5f30c7a0b963b7aee166554",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct selected detail with attribution.",
+      "exclusion_compliant": true
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "answer_sha256": "6db1787f4e96ab6f7f387b44ba4449f1650c99dcc7f73ed23646fda1343d5885",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct uncertainty and contributor/date distinctions; synthetic-source boilerplate.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "answer_sha256": "281770901ea95b476eb26e8b50bfe3c60edd2adcaa60082abacf3f9d80b3b30b",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Does not assert nonattendance and correctly reports Tessa cannot remember price, though the unknown conclusion is implicit.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown"
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "answer_sha256": "710dc0a1402b8bf9612294aaa79d56275b10f0db7767b11fa21eeab49a737275",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Photo date lacks label provenance; dated could mean marked rather than taken, so keep ambiguous instead of treating as confirmed error.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "answer_sha256": "3ff3a858d1ec8c892b0abe8c392308af8ca0c20b9c4202070bb2934f919e22f6",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Complete concise outing with attribution.",
+      "exclusion_compliant": true
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "answer_sha256": "057a6db1d97740dde7d2ccfa71e13908cde5bf3e7be3ab271f3978786f4b4407",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct joke selection and attribution; playful deception describes the recorded joke rather than inventing a reaction.",
+      "exclusion_compliant": true
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "answer_sha256": "2a2fddfacabab974e2815a63d78b49948b450d8d7124795c62e00673ecda6bfe",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "photograph from Summer 1986"
+      ],
+      "note": "Promotes handwritten label into an unqualified historical photo date.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "answer_sha256": "4af3982760f1bf792a4bd47e63a176701d4e890771daab53435288a8b5b79e9f",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [
+        "To cover this"
+      ],
+      "note": "Adds a motive for buying crab absent from the plan and source.",
+      "exclusion_compliant": true
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "answer_sha256": "12beaa976afc7dad7e7682f84e2a56fdfcc9c086f0b8b23efe754009d859788e",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Preserves Michael uncertainty directly.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "answer_sha256": "3c167e3ab10cef56d81e74b9bd7e3371c696c5afdfb0e7ebcfbd16c1a5740bae",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "note": "Where can bind sandcastle building to the cottage; reads as a source summary followed by a date disclaimer rather than an entertaining story.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "answer_sha256": "b0bab3096ec6d496337214743135d3f319a8f0e154e5f6ef206313afc10d44f7",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "note": "Correct attendance unknown; verbose evidential boilerplate and unnecessary bread discussion.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown"
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "answer_sha256": "b1243582f52881cb9f187024cfcab8a462040e802ae661400ac6518d35c49546",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct attributed recollections, conflicting dates and joke author.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "answer_sha256": "83dbcec11a8a638e9757252c23d87c80676211119d50956ec2a908a89622caf7",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct aftermath; repeats agreement rather than a simple answer.",
+      "exclusion_compliant": true
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "answer_sha256": "ad6661236ca2f8c96890c80b4537f0d037898fc8897f3ed4bc4d91590d969fe5",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct author/detail; duplicate source statements are stilted.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "answer_sha256": "f04084c8ba6c0c2de6d04a08eb9ab03b688581ad2b0ebf58ce9d7009e7c0491e",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct identity and envelope-date limits.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "answer_sha256": "57577112a573eaf7c90a924aaaaad404433d1efe83b95dca9d44be7c7669bc8a",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct lemon cake and partner detail; unnecessary tentative year and three repetitive sentences.",
+      "exclusion_compliant": true
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "answer_sha256": "1997bb4a145718305a2ddbbafead33966d9e535f0d07f093514ff01148c52f43",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Direct specific detail with attribution.",
+      "exclusion_compliant": true
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "answer_sha256": "1bf7b5dd77e970286a407208f055636ecf2d61bb9879c979e59f1f5fd71b15f1",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct date disagreement and no certainty of identical stall.",
+      "exclusion_compliant": null
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "answer_sha256": "3d460b88523d0658ba5518b8e77d09309120bc022bba54b3e3a26278f40aab19",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "note": "Correct attendance and price unknown; echoes the internal no-invention rule instead of natural conversation.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "correct_unknown"
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "answer_sha256": "34649601f1e49d083b1fe84ead55d2d4f9d82e26e67f54ff4dbc7ef1f8422449",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 4,
+        "naturalness": 4
+      },
+      "unsupported_examples": [
+        "photo shows them building a sandcastle there"
+      ],
+      "note": "Tentative photographic identification becomes certain.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "answer_sha256": "3264c697de1eba3bd22c1d0b383bf8e5e47917c8fe44a1f466114aa28fea47e9",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct episode, with an unnecessary year aside.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "answer_sha256": "f70bac92fc3cf183c1736aa5aa8b2340b1bf22419b6456a90859c93d6266fdbc",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "had everyone laughing"
+      ],
+      "note": "Also calls it the highlight; neither reaction nor ranking is recorded.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "answer_sha256": "941e5c4c1596c4900162d3b644eede6dcec748c91d5f6cb8a63c7163a081f9a3",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "answer_sha256": "c3e0c1945d66419c5055d0876bd9e49e0ad3763d08313d2d77fc70fbb218a721",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "fresh crab",
+        "empty bucket",
+        "only thing that made the day memorable"
+      ],
+      "note": "Invents props, freshness, reaction and relative memorability.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "answer_sha256": "299e0dd17cf1c5928d9aa8ed5352bc2a100d52472368a8a3992dd11e52556403",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Keeps metadata date range separate from Michael's uncertainty.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "answer_sha256": "d1508ec799cddb3303f85c32ca1d2807146f975505d92458dcc01deed6dd5445",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 2,
+        "completeness": 4,
+        "naturalness": 1
+      },
+      "unsupported_examples": [
+        "as we trudged back to the cottage",
+        "he kept repeating",
+        "kids’ giggles"
+      ],
+      "note": "Invented dialogue, reactions, actions and listener participation.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "answer_sha256": "17534c06f25ddcbbbc340ce07cbc65cdd0a3bae7b41a7d3cbb31a072a2f97960",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Unknown attendance is preserved; metadata list is not treated as proof of absence.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unknown_preserved",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "answer_sha256": "8fb92bce348a41d0982ce92e73ba55032d4f14140cc34ff3018d85bc6746c2b8",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Plural “they joked” may overattribute Leo's joke; synthetic-source meta-language hurts naturalness.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "answer_sha256": "8b1e25b33faa5f84020601cc3092e763407bea501c039bb3ffe38feb3698d0a7",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Plural joking attribution is broader than the named Leo speaker.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "answer_sha256": "611c814072791336fd2a0b66e6431a07c1ae5f55e6b27769b24bb7b0a96bcf9b",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "answer_sha256": "fd0688b801561c809ef3ac70434542b0516e365402374358ea204cd900da4d2d",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Photo/envelope conjunction can imply the envelope is pictured; core identity/date uncertainty is correct.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "answer_sha256": "114c3f802a06d7a91bb42ac5b327628eb1ed118ec3818737540e5079b35107a0",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "answer_sha256": "86cc6623fa24e50964ba01698fd83fd17bb15c16f0df2e451a73b0c5fc06e999",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "answer_sha256": "2ab4bd49defcbe6f2fc8db439ed0134d214791cf29d219f697cdf355d6ccb821",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Distinguishes year conflict, but omits contributor names/receipt basis and exposes synthetic framing.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "answer_sha256": "1b782769258dafdc42ad585fad499eedd8a16b50f9bcd5b2bf5d544d8d6c2424",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unknown_preserved",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "answer_sha256": "467767c1306d775d3b457add33f4a333af1ed4be4da31e6701e5aea92b52966d",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Identification/non-independent-evidence caveat mitigates identity certainty; bullet format is stilted.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "answer_sha256": "72c396a78766cfa3cf89ee678b01b054200a01df6cbda9af4712e027106bba01",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "answer_sha256": "74d7405429df413ad7e4d013d977db36d572357fd4988b0377ef4996ccb9964f",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Only humorous moment noted is correctly scoped to supplied notes.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "answer_sha256": "e43b3ec2d957bc085e8bf3684d976df17a565afa042de0353bc32a3abd0e01a0",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "answer_sha256": "f0f08c8d86c1e992fea05315ea6718e004220757bd160b60485cd18b21c752a0",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "no other details about the outing are provided"
+      ],
+      "note": "The source also records catch failure and year uncertainty; false absence claim.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "answer_sha256": "6b38615b70dc9191242a5a52bd543d8391e5d42deb41228af0bb8189906d0c84",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Quotation typography changes only; mechanical source-quote error is reported separately.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "answer_sha256": "8023a4cb3df0b3454b0a04692484ef6b954242a77f7bafc8dd80aec143f41cf8",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 1,
+        "completeness": 4,
+        "naturalness": 1
+      },
+      "unsupported_examples": [
+        "with a grin",
+        "We all laughed",
+        "I caught this myself!"
+      ],
+      "note": "Invented reactions, direct dialogue, return chronology and narrator participation.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "answer_sha256": "ee1a8a2fd3e0ea158e4f10aff0e05935f8b2896a04eaffc7720efb02e558435f",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unknown_preserved",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "answer_sha256": "2b09b5606b0ff74f7fd0d099aa0d8cc42ea2df3bfdba616c9a298ef3c40e4c3e",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct source/actor/date binding; synthetic meta-framing remains unnatural.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "answer_sha256": "e9a37d00ba84e48148a4be30981e2958268fe6edbbc58b04c0639ae1cce727d7",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "answer_sha256": "ed22233f7e32970f9746656f933174c9f97fa20d033eaf01f2b0a387fafe15e7",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "answer_sha256": "39daee50febc010284cab85871270cc22d383305dd8a2386f59f43be6c103398",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 4,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct uncertainty but does not explain envelope versus photograph date.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "answer_sha256": "86592231ad02c42dfeeaaa1ce7bbf7efc54514e5cdcc823b5ca0c2a30a3b61e7",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "answer_sha256": "8863bb3d78c446240021c16a5926332fd0d71a62016cafef3bb825c17f0fb23f",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "answer_sha256": "743d52b907a9c4bbd09d950ecf497f8d9cb49435501d35421fd0b25185ea1b44",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Mid-2010s is an imprecise synthesis; receipt basis and contributor attribution are weak.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "answer_sha256": "5bf5482a75ee8daf1f03462580af830677b05b84fcfe2aaaa30524127848f1ba",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 3,
+        "naturalness": 4
+      },
+      "unsupported_examples": [
+        "wasn’t part of the cake stall"
+      ],
+      "note": "Absence of attendance evidence is turned into categorical nonattendance.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_negative",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "answer_sha256": "b58b5a264552413f56961c9cf8d77166c84103668fd7fe075aaa70ecc785f033",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "answer_sha256": "4beea749d8ad82bdf9017f7699986e5fa3432ee61458694f62242924c3c5d047",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "answer_sha256": "556448c621b0024f5c6f54aec995604d9de855c2049cd3dc026136df1592a412",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "answer_sha256": "1a822de8d788e246540a84b9cf46abcc56eed7d47644307399cf823a90bc30be",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 2,
+        "instruction_following": 3,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "note": "Correct but padded with date/identity discussion and a leaked caveat instruction.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "answer_sha256": "cdefd3e961682f84b698f6bfbba38ff57038be947e4251b6ec1300873e20e686",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "The joke made everyone laugh"
+      ],
+      "note": "Invents a reaction and memorable-moment evaluation despite a validated plan.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "answer_sha256": "53928850977b496a40295f6ccc8c6ac3edb62ec159f00d1099c5b4e791aad580",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "answer_sha256": "ed996ec5ba37830aae8bcd6733be15675680475cd44c066a99a505ebef472c2a",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "The day ended with the family laughing"
+      ],
+      "note": "Invented reaction and actual day-ending chronology.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "answer_sha256": "45101200493f7597cd184fe3aba7b7414aa6bb94b7e119b724a6ad4ce6e821c2",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unknown_preserved",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "answer_sha256": "546f3996a3077bc50f836df5417f59279a7623f96fb3c3f04db5c59f0102b7dc",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Plural joking wording can blur Leo's role; uncertainty otherwise correct.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "answer_sha256": "c769ffe9ff03fb5f6e173f43e397841abb537f68c34f5077db6120ab709f6b4e",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "answer_sha256": "c2599825337d019375a5f15d009631cbd68d368a61a2f71918fd402dab34082d",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "answer_sha256": "70f6ba5cf5b49c254d487a7ae921620731fe0a022a1bd5e4126325e5e9605d02",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "answer_sha256": "8a916e2dd59cad262da99542872aa3691f1d6c6263359506f9b479aef1250ede",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct but repeats the same fact with redundant quotes.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "answer_sha256": "a8cc620f04efe4ff3f96f04938801b210e31fe2d00c8c0e89f12e1826ec92f94",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "answer_sha256": "c27a5de7023c6ac1fad52918d034a4cb0f0116063d706e7738988a845866cecb",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "answer_sha256": "5d2d655861df5d880ca15c5a1bc720e2e09b4cd8082846784ffca3327866ed55",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unknown_preserved",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "answer_sha256": "10731e781ea996e1f50edca9c7c7f6de8540621c6f918fa6c686087778977a26",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Helen confirmed through the photograph"
+      ],
+      "note": "Tentative identification becomes confirmation.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "answer_sha256": "4af6007d62895b317d6aa50dbb3c57d4ecb495d934891d488354ca028a2cb922",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 1,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "Dad took Sarah and me crabbing"
+      ],
+      "note": "Invented narrator participation and named attendance.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "answer_sha256": "1b6dd46dd340aaef6872c03eb68a27b63904dc9ea15f43fe30fa8afbb438b1f4",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "answer_sha256": "ddb13d4269dddec6ba8c00fffd59b91fc5c71b4ccb66a28844f2f3094bc19fc8",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "it shows Lisa as well"
+      ],
+      "note": "Tentative identification becomes definite photographic presence.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "answer_sha256": "e092fefc39b5ca5e2605248e5e037cb9b9743fdb8f31bb7a2c8dd04a69a10b0e",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "answer_sha256": "d6159fe9ba994259da872cf8808a13e534939ef7cc014fdaece81b2d550cd576",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Quoted wording changes from original first-person contraction; factual uncertainty is correct.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "answer_sha256": "820d9ed8766598e89ebe52404f1ca0c8ac88069d2997c694efffb4ca76751156",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "Sarah, Michael, and their cousin Lisa laughed"
+      ],
+      "note": "Invents reactions, definite Lisa attendance and emotional recoloring.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "answer_sha256": "1b9f431c90ef80df0cf2e17574df1b856654e5bcda35a9722929dcf2a9723714",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 2,
+        "completeness": 2,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Uncle James wasn't part of the crabbing trip"
+      ],
+      "note": "Unsupported nonattendance and exhaustive participant list.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_negative",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "answer_sha256": "118066f4b85afe819ffd188827de6212f02bc7f99ff37693eaefd636d873cd74",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "answer_sha256": "a1070d934b3aa11f4608b20cc2a106a710c095224eec29a2cbcce8d3dd6cba49",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 3,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "shows them doing the same activity"
+      ],
+      "note": "Photo identities become certain; Dad is also inserted into building activity.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "answer_sha256": "f225767c5483cd7358808c95435ddc4d88ffb0a04f5e9e70c954a06c45a5d01d",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Asserts Sarah's attendance, then qualifies it as uncertain; source linkage is inconsistent.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "answer_sha256": "a18c735556860f2ce02f15e351618dfa4be8263d4bfb66030dabc97ea1bc3b13",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "answer_sha256": "727d594dd256bcc8f7790d68b31be8a9e29ac971344d39ee58437306e41c30c8",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct tentative children identities, but Dad not visible is an additional visual absence inference.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "answer_sha256": "21534f2f756f2ae81fb6465cacbd63be5ff8367ee5e99297448e17c1e59dade0",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 1,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "we caught nothing that day"
+      ],
+      "note": "Narrator adopts participant identity.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "answer_sha256": "fb2c37299208b86a47f4b2686396940200523a8b20bedd73a371e3b0720b74e8",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct fact but a third-person paraphrase is presented as original direct quotation.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "answer_sha256": "a7b960043bf2e9f5e5e067ec9bee7f708f729ce15c506bc8ca90faf8d632ccbb",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 2,
+        "instruction_following": 2,
+        "context_retention": 2,
+        "completeness": 4,
+        "naturalness": 1
+      },
+      "unsupported_examples": [
+        "The photo shows their tiny castles",
+        "the real treasure was Dad’s laugh"
+      ],
+      "note": "Invented scale, reaction and dialogue; cottage location is ambiguous.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "answer_sha256": "fbdf90b148a132f18f10c31ef451d98b7b9a331b6ce532613dd80faed081ee3e",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "answer_sha256": "7b3e17d79535617f105c789db3984975fe5829f730c89d79dd6f58f455a604e4",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 1,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "we used spare paper plates"
+      ],
+      "note": "Narrator becomes a participant.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "answer_sha256": "66e240ebb89ef68192eeffa2a6a937272b42562d5020a2845a193876d5eb5f10",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct dates and contributors; described as does not explicitly claim both authored the joke. Synthetic-source boilerplate remains.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "answer_sha256": "3566c0542cca6d9e78b50aa41f9609341af583cb8bbbb35a5cf166999baadabc",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Plural joking broadens Leo authorship to the pair.",
+      "exclusion_compliant": true,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "answer_sha256": "8341cfb533cc3b30744ca3af4fd35d29482ebd6de41f40328acd12d9139fcd2c",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Nora inability to identify riders can be read as an intrinsic visual property of the image; envelope distinction is correct.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "answer_sha256": "86592231ad02c42dfeeaaa1ce7bbf7efc54514e5cdcc823b5ca0c2a30a3b61e7",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct concise topic switch.",
+      "exclusion_compliant": true,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "answer_sha256": "2800a738432d4836ec931cffc8979327a1c22a3caea5273833351f1972fdc2bd",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "without any issue"
+      ],
+      "note": "Adds smooth handling of the napkin problem absent from the source.",
+      "exclusion_compliant": true,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "answer_sha256": "dc7a1c007cbc5a972954a2df00b7807700bd4892bc136d1971e7e075c663584e",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Synthetic provenance label may be attached to the receipt instead of contributor/source; otherwise correct date conflict.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "answer_sha256": "80576a2eec61b6b887a9970bf2847ac341df3b962d7a34c38358bfb1927a7715",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 2,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Uncle Martin didn't sell cake"
+      ],
+      "note": "Absence becomes definite nonattendance; price is correctly described as unrecorded.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition.",
+      "unknown_calibration": "categorical_negative"
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "answer_sha256": "e48faa9ea258b85c1bffb871913ed2a249eb25d4eb2cd26dbfeaa84171c824d2",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 2,
+        "instruction_following": 2,
+        "context_retention": 2,
+        "completeness": 2,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "Uncle James wasn't part of the crabbing trip",
+        "only confirmed family moment"
+      ],
+      "note": "Unsupported nonattendance and exhaustive confirmation claim.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition.",
+      "unknown_calibration": "categorical_negative"
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "answer_sha256": "8dd71f2f8e94692fc97d0a7d598c6c693a70e326250072c24985f890fbeba3e4",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Strong same-experience binding and plural joke attribution remain ambiguous.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "answer_sha256": "bbbcd343b830e70e522fcf7dd9060ab99f194b37ef28456477ca4f4f07e99ffc",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Both called it broadens Leo authorship; source agreement is stated strongly.",
+      "exclusion_compliant": true,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "answer_sha256": "cbf17ec191fe363234341842bed2f6ca8998889fd875df54b92719781bf5c4b4",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct envelope and identity uncertainty.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "answer_sha256": "5146349658caf5a7894479df8db6582df1115ad3b469c441e18a6a8be4b5a811",
+      "grounding": "supported",
+      "scores": {
+        "directness": 3,
+        "relevance": 1,
+        "instruction_following": 1,
+        "context_retention": 1,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "note": "Family facts are source-supported, but it catalogs excluded cycling/photo topics and falsely describes the current market question as a cycling question. This is a severe context/instruction failure.",
+      "exclusion_compliant": false,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "answer_sha256": "51da8f218d9c7af26643c788a9e0450604fb86f90675ba9f546d15d669d7064f",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct conflict and uncertainty with awkward synthetic framing.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "answer_sha256": "8e21f76eeb211f402d06073d851aa76745ca4af793c4dd753e5cee5d49a558e4",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Identity stays tentative; photographic year is presented without label provenance.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "answer_sha256": "99a6218693f62b53947119c61e9d7d6d1bbde4d660006008d7916d3169ade3d5",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "He later bought is grammatically ambiguous between Michael and Dad.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "answer_sha256": "c9b491c0d4e3bda6f8eba06c14c30e1762fed87faa16a4ec275da702dbd7bf77",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "only funny moment of the outing"
+      ],
+      "note": "Only recorded humorous detail becomes the event's only humor.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "answer_sha256": "5b1eff8ab63871f7290bf5cffabc8d3e5e14bfb00ad421595aa6ce211a0e641a",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "constructing one in 1986"
+      ],
+      "note": "Handwritten photo label is promoted into an unqualified historical activity date.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "answer_sha256": "f804e3f4af3441df24522025e08ed8172781c8f8e93b56013d0a85ff5946e22a",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Making the whole trip silly adds an overall evaluation beyond the recorded joke.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "answer_sha256": "96219e4b2d02d9ec5f5c66c3065b119cd5bb9083a6ae67e77fc92697b4ce4e5f",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "note": "Correct uncertainty but exposes oracle-plan implementation language.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "answer_sha256": "a767113e373c7500238775d4afcb07c6f502b91503f79d37ab339769ae00d3c6",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 2,
+        "instruction_following": 2,
+        "context_retention": 2,
+        "completeness": 4,
+        "naturalness": 1
+      },
+      "unsupported_examples": [
+        "Sarah and her siblings",
+        "The family never questioned his playful claim"
+      ],
+      "note": "Invented relationship and attitude; highlight also unrecorded.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "answer_sha256": "058af8919e022b53811d2cc3b34a9963225b371c84e367bb26d27d2d6892880b",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "note": "Calibrated unknown but exposes oracle machinery.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unknown_preserved",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "answer_sha256": "cdb79ef3b99e0daa82df9b5c0413ecc06c7545cf585b19aea3852dc7cffbcac1",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "answer_sha256": "1a61342617c17b9d0abf13bdc67a2b1301e4df089e65e872d6eef3cc52666748",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "To fix the problem is ordinary repair-shop purpose, not a claim repair occurred.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "answer_sha256": "125168e807ddca719c3320ffb39119a4a5ba4f8f601d25c753bebe608a5284df",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "answer_sha256": "6c2484ea03f59c2902e892b54079eb212ffbbfad078ec901f2e0a5ed80906d27",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "answer_sha256": "aa3f90ff49d8831780414b3bfa4d37b65a4c4d9aa81a7f1bf956a141604bae31",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "sharing that sweet treat with each other"
+      ],
+      "note": "Selling is changed to sharing/eating with one another.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "answer_sha256": "cccf376f5654aff884c148ad4dbfed17b4b167d3dceaa0dc2dc2d63d8ff5dcf8",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "answer_sha256": "c05cb8ca2b65da5577ffa536bd0828c110d5c23ce4977d5fa569728ed3291cc3",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "answer_sha256": "f7b1d9757b76f0aef4f500bc24c64fd16a7981ad73336a0ff27001fa35f2c5a7",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 4,
+        "relevance": 2,
+        "instruction_following": 2,
+        "context_retention": 1,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "note": "Imports a canal photograph/May 2010 into the market context; absence remains uncertain but the reference is wrong.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unknown_preserved",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "answer_sha256": "9e91b4e049b0897bba7a35a58fbc2e33d6f9d7875f1075fa0d79acf5124b38b7",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct tentative identity, with unnecessary date aside.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "answer_sha256": "ca3ae7888e654c85c5e29c11c468cb6b90210479de5b5e9fd26030816fee18cc",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 3,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Omits the failed catch required for the episode.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "answer_sha256": "bb0c05105f467c01a9321d8bf7c7495adb4a67d2761d020b7e844583a2dd01fd",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "He told Sarah and Michael that he had caught nothing"
+      ],
+      "note": "Invented statement to named recipients.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "answer_sha256": "7c38f025cfb7982c732cb99ce130ab516cc70aefbc94dc392dbec5cfa36c9b58",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 4,
+        "context_retention": 3,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Dad is inserted into sandcastle building; Lisa instead is ambiguous identity substitution.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "answer_sha256": "71a33797a4c8f593e04e75cc472344c187fb20b48edccab6e30f19f5a01fd22a",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "answer_sha256": "5f229c7c2f2b613d39c7da26588ef826cc47ebd3f63883e446b6884106e223c5",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "answer_sha256": "1d67cd13f0b3372b459851500438b0fc4dcb70a08551830d6821e0700d50b984",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "fresh crab",
+        "became the highlight of the trip"
+      ],
+      "note": "Freshness and family experience ranking are unsupported.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "answer_sha256": "72ab2d89ee408e8218523ed2f66f8023701a98a898e743b331426fb986439d05",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 2,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Uncle James did not go crabbing with them"
+      ],
+      "note": "Unknown attendance becomes a definite negative.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_negative",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "answer_sha256": "f61cff9c29d73adf1274c436ad4b9fde2e593cff8794b3e29156610694194d93",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "The ever-done comparison is reported as Leo's joke, not actual race history.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "answer_sha256": "528952bd7941ef3695dd8ab55a7252554384fe70a053c812ec518daa5a4bed65",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct speaker, unnecessary year uncertainty after earlier date exclusion.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "answer_sha256": "471c95e7497ac543a0a0447240f8b21426cc4642d67a349f066151c19e96caf6",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Plural contributors cannot identify broadens Nora's single-source assessment.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "answer_sha256": "a842ea2e257b5be941993976dab139fef94ac27cc82bdcf8dc41cf2ff02915ee",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Adds unrequested sales totals/price absence, but both are supported.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "answer_sha256": "c353f31a9aaeff7ce32d3cd46277d6240ad29e7f35e37e1dc763830ee0a4eec1",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "answer_sha256": "e5a3ad021f5045f713b88f7bb5bf72c60d6045467e4f159792f52f918faabfcf",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct conflict and receipt basis; synthetic-source language is unnatural.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "answer_sha256": "4bd0b6d689f6e29ca56615d93ee4f7e88241befb829793e68b2b443719bc2eab",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 2,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Uncle Martin did not sell the cake"
+      ],
+      "note": "Absence does not establish nonattendance; herbs are also overgeneralized as his only activity.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_negative",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "answer_sha256": "5b9ed914c1b7f31d986a6fa2a18c270a8e64c5e0b5721ed56ea31ff0699a6fc7",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "both accounts confirm their presence on the beach"
+      ],
+      "note": "Photograph identity is tentative, not confirmation.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "answer_sha256": "6050ca6b9975401a75fb2f95a0672166cd964ba659f57240de3d2739b3cd34d3",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 1,
+        "completeness": 3,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "Uncle Martin never sold cake",
+        "market-related note"
+      ],
+      "note": "Unsupported nonattendance and herb story is mislabeled market-related.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition.",
+      "unknown_calibration": "categorical_negative"
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "answer_sha256": "f5cdf81bbbb830e273d69cbb6e76138696572b7fbc51086c41b7224f6ac69d58",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "note": "Plural puncture and joking wording blurs Leo role; year attribution is correct but tentative Leo date not explicit.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "answer_sha256": "1acd087b25e1521be8e24891eeb44202a39fdeaf8b876481ae49380027c3bf58",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 2,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Michael recalls this trip possibly happening in 1986 or 1987"
+      ],
+      "note": "Attributes 1986 to Michael though his recollection only suggests 1987. Omits purchase and joke.",
+      "exclusion_compliant": true,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "answer_sha256": "6a327de702c9909c9981dfbfc1aa0090bc5cb4eb7351e318bf7bb98e9fea7c06",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "He told Michael and Sarah this story"
+      ],
+      "note": "Adds named recipients unsupported for the crabbing/joke activity.",
+      "exclusion_compliant": true,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "answer_sha256": "a3325056dda5bec173ddc55f24098f6097c764ac3470d35a387497a1c17b51bb",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct sandcastles, with tentative photograph identities preserved.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "answer_sha256": "e3bb1a162e614383106c4d7834ef0e156e82b30625aa9f0c511b18d0f201bdd4",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 2,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Potentially binds aggregate metadata date alternatives to Michael; explicitly excluded dates are discussed, plus irrelevant absence of Sarah reaction.",
+      "exclusion_compliant": false,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "answer_sha256": "9a3246ca001b358c3bfc8bed9ee04ff9c885cc804a0337daf88f686c3a0a6ca1",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct attributed uncertainty.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "answer_sha256": "63946b88c866f7b0700d862b6f8263484b819ac7dda6c1898d806430cfa0b953",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 3,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Sarah's building memory is recast as a memory Helen recalls from a photo; later tentative identities mitigate certainty.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "answer_sha256": "6f7b8dcc54c485e669db0e86d0ff397f9227686e0786e33ecbfe7ec5ea585e30",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 4,
+        "context_retention": 3,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [
+        "Dad took Michael and Sarah crabbing"
+      ],
+      "note": "Source says us; event people metadata does not establish Sarah attended this specific outing.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "answer_sha256": "14c4a9fafc79bbd90ccca4e845d3c4fc5d29061a69dc58aefb146c58dea6982c",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "only thing funny about the outing"
+      ],
+      "note": "Only recorded humorous detail is overgeneralized into the entire event's only humor.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "answer_sha256": "46ed6dacfba2d7ba0723de0c7ea7738d80a7dfd9be4ae86f2a403741f862d8eb",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Photo taken-date wording drifts from a handwritten label; identity remains tentative.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "answer_sha256": "acf8d9eecdf637e4927c3f11324e4960a31c93cecd61a8417da2c12fe4ed6f10",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "answer_sha256": "962b2d258f7ed93bf2484f4ab9c3d6f34fc4feade18fb8f257e51848b1ddc0e3",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "answer_sha256": "135f09a693e95f1013d3297f26da2f5557e5c3c5970d9b7c17f201b6f7782d70",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Where may move sandcastle building to the cottage rather than coast; phrasing is ambiguous.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "answer_sha256": "58d132c683a28acdd6b5ee5c29b296d4f3901ebe23b94ba3dd6af97a7c2b9686",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct calibrated unknown, but copies plan caveats verbatim and discusses bread.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unknown_preserved",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "answer_sha256": "49fd4a4e641cc452d9817df5870ffdbdf2f96b09792a0bac5af656afcd07defc",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "answer_sha256": "f76bf4b5af98619e2b1f26abab4bc3bf352ecbe2f8adbb5b6225df9b382f5a44",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "To get the bikes fixed adds an inferred purpose/plural repair beyond simply walking to a shop.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "answer_sha256": "5e385b3febf52a3fa263b6068536b2357e1527225d5b4dad191c32fb9e3ffb5c",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "answer_sha256": "d45e8361b260dc4ca6476166d8d2712e0fcb033fd7b420721c97d70290cae7fb",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "answer_sha256": "b2e602cb24148c0b086b7d6cffc1630fb1d2d34438ca206521bbdfa68b7e76b9",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Both women"
+      ],
+      "note": "Contributors' genders are not specified by source records.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "answer_sha256": "1997bb4a145718305a2ddbbafead33966d9e535f0d07f093514ff01148c52f43",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "answer_sha256": "6d339497bfa4a7748c77ad9f58b43d7231fd8c15b798f7279453ece7bcbb7d57",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "answer_sha256": "2dba8004d5a1b3dd7c0593f8fb2c0f8e9c7f73d01df6277af3a4b6164dd87715",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unknown_preserved",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "answer_sha256": "62fa8c70192d5bbc0972657567097f9c97739b4905d27e04f5e669b1a3ab7597",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 3,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Adds Dad to sandcastle building; source mentions him on the trip, not explicitly in that activity.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "answer_sha256": "ff2f0dca768f4be57cfc7f924eca19f2346a78961ad4b961252bb08f1b16c516",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 2,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Purchase omitted; returned empty-handed may conflate failed catch with the eventual purchased crab.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "answer_sha256": "00b0a925d7dfaee49edc32348234d33388fc81525949aee31e390257974af175",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "empty nets"
+      ],
+      "note": "Nets are not described in the source.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "answer_sha256": "6cd7a8dd2a2f6cdc119fc6d92c3ce8ea163e96f2de4de1204f9684c844184845",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "crafted elaborate structures"
+      ],
+      "note": "Photo description has no elaborate structures or creative motives.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "answer_sha256": "c97cbad0396a775fb3cb13819b05060b5384817e519d80510a37f6491274e715",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 2,
+        "instruction_following": 2,
+        "context_retention": 1,
+        "completeness": 2,
+        "naturalness": 1
+      },
+      "unsupported_examples": [
+        "Dad laughed as he handed the bag of crab to the fisherman"
+      ],
+      "note": "Invents laughter, a bag/gift/freshness and reverses the transaction.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "answer_sha256": "58b4183eb2db1d1a11a1574f7430437a77f9b100f4814faed20f0eb2db2a926c",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 3,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "he only recalled it was likely **1986 or 1987**"
+      ],
+      "note": "Event metadata range is assigned to Michael's own recollection.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "answer_sha256": "c34006a830471ab6bfed2c5d416138177e1429d5a4f1f80611d11efe756d94ec",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 2,
+        "instruction_following": 2,
+        "context_retention": 1,
+        "completeness": 3,
+        "naturalness": 1
+      },
+      "unsupported_examples": [
+        "The kids laughed",
+        "waves to knock ‘em down"
+      ],
+      "note": "Invents dialogue, reactions, bag, waves destroying castles and narrator participation.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "answer_sha256": "1c98523e145851ffc908af9d2baaf20bbbc595e08921f5ae289484f9de6332e1",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 2,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Uncle James did not go crabbing with them"
+      ],
+      "note": "Unknown attendance becomes definite nonattendance.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_negative",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "answer_sha256": "41113abf8fcf7209f0b2c102790c8537c04380b30439697bcc01fa8c3ee5760d",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 3,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Iris and Leo recall a shared canal ride in 2009"
+      ],
+      "note": "Leo's tentative 2010 recollection is replaced by 2009 attribution.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "answer_sha256": "e78e63446370369cb23997e02960a385a6dc73d197b154ec7dc86b66e49959f5",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "They likely discussed the flat tire",
+        "turned the frustration into a fun memory"
+      ],
+      "note": "Invented discussion and emotions despite likely hedge.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "answer_sha256": "75853f14fea39f6a388c48228ef4b7f2e214f5647caef0fdedf296453d2b2efc",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Attributes a playful-description interpretation to Leo rather than simply reporting his joke.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "answer_sha256": "18e5f19824669a89a997c1b30d54d641f62ba9583f86d06569e162a44bbd6195",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 3,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Envelope label versus uncertain photograph date is imprecise; leaves out May 2010 and undated-photo explanation.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "answer_sha256": "4e0fa551108bd7ac2ecac53d33c6c623b1dec1773ec1b68e375cc9157afbd687",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Supported but unnecessary totals/napkins background.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "answer_sha256": "fb9d196433c1c58694a7bff043669dfe5ea6e7aa46a13443aab8d68d6510be40",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 3,
+        "relevance": 1,
+        "instruction_following": 1,
+        "context_retention": 2,
+        "completeness": 2,
+        "naturalness": 1
+      },
+      "unsupported_examples": [
+        "They folded the crumpled plates into napkin-like shapes",
+        "The crowd chuckled"
+      ],
+      "note": "Extensive invented actions, crowd, boxes and reactions.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "answer_sha256": "63f6686e74bf11277fbac34c7d9ef31f89c18c75a7ad59a5176148602d5443f2",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 2,
+        "completeness": 3,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "both contributors mention **September 2016** and **2017**",
+        "Priya’s note suggests a slight overlap"
+      ],
+      "note": "Misbinds both dates to both contributors; overlap is not recorded.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "answer_sha256": "f61001235f88a62cb166df0e62ab176c0d9f5376a54c9187b9d8b552c49b5b25",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 2,
+        "completeness": 2,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Uncle Martin did not sell the cake"
+      ],
+      "note": "Unknown attendance is denied; herb activity is not attendance evidence.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_negative",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "answer_sha256": "56462264b88f1fa20e20afc9b322bbef30f5f6d3b2cf40e239264ba2fa3b6d56",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Dad rented a tiny cottage",
+        "fresh crab"
+      ],
+      "note": "Names a cottage renter and crab freshness without support; photo linkage is also too strong for uncertain event identity.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "answer_sha256": "d83fb8a36dce57671aad959487637b7a72eec60f1bcefb77f449604cc2692bf1",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Does not assert nonattendance; correctly says notes lack evidence.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition.",
+      "unknown_calibration": "correct_unknown"
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "answer_sha256": "43f581b853b1ce838c8f681267092734047cf571338873314552452905887b78",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "which bicycle failed remain uncertain"
+      ],
+      "note": "Both records explicitly identify Leo bicycle; invents uncertainty about the actor/object binding.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "answer_sha256": "0ea1ce60d3c2884ce95f5bbafc31b7d8bdce0d7ff97a07ee6ed6df4e9248dd32",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "The ever-done phrasing remains attributed as Leo joke, not actual race history.",
+      "exclusion_compliant": true,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "answer_sha256": "40f6d8921ffd4b2ceb70ffe2926bffaa5194e15efe49c769d91c4f9b2b8a84d3",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [],
+      "note": "Correct joke author/detail; synthetic verification boilerplate is stilted.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "answer_sha256": "ef6fa21d8d753632d98ef3d7d4f6a263ba8f64f2b9edc4c693288c9f1b05c056",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct unknown identities and envelope-date caveat.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "answer_sha256": "9ed83e5bf0345d92ab205d67d0052416cab80c8e147e34ccccdceacfa8d29580",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct cake and grounded extra napkin detail.",
+      "exclusion_compliant": true,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "answer_sha256": "7004c25c9b9e4d2d46377377347c3759d7738cd09fe1ce24d872090313d6dc4c",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct substitution with Priya attribution; unnecessary synthetic proof caveat.",
+      "exclusion_compliant": true,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "answer_sha256": "c04e200caa08603c622cc41583f146ded3d0ab615a717f846af627e904a4d17d",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct conflicting date accounts and uncertainty.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "answer_sha256": "2f1dcd0dbf0a7246bd3c9e5bdf947d5fea6b441cfdce27753eaeb9b258189e3a",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 2,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Uncle Martin did not sell the cake",
+        "The only people who sold lemon cake were Tessa and Priya"
+      ],
+      "note": "Unknown attendance becomes nonattendance and participant list is treated as exhaustive.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition.",
+      "unknown_calibration": "categorical_negative"
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "answer_sha256": "aa2542da390b2850946ff008fdedcccff556a3ce338948acb7916432bc8cc3d9",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Both sources confirm they built sandcastles"
+      ],
+      "note": "Overstates tentative photographic identity confirmation.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "answer_sha256": "159e94a09ade71824db96b7f03124baf84d13ff9615cc767a9a3a27bec3e8784",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "answer_sha256": "7ab45c023d4f7dbfbac5847cfc779d865694a69fbbff2bf36874f9d926800d02",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "laughed",
+        "just to lighten the mood"
+      ],
+      "note": "Invented reaction and purpose.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "answer_sha256": "3255900538257c94a89a36c13db65ea59719338fe756c37f58c6c3248f86cc9d",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 2,
+        "instruction_following": 2,
+        "context_retention": 1,
+        "completeness": 3,
+        "naturalness": 1
+      },
+      "unsupported_examples": [
+        "empty nets",
+        "The kids groaned",
+        "laughter was the real treasure"
+      ],
+      "note": "Invents dialogue, emotional reactions, environment and props.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "answer_sha256": "57a4312a34713d8150d2451441fa4dc80f6e75b7111d23a78d44afcf9be6db2e",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 2,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "Uncle James did not go crabbing with them"
+      ],
+      "note": "Unknown attendance is denied.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_negative",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 0,
+      "answer_sha256": "634cf7bf0367b5b3bdf92087fb436c31604c8497956d29d29cdb4423b4c90b88",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "shared joy"
+      ],
+      "note": "Strongest memory does not establish shared joy.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 1,
+      "answer_sha256": "abe68beee99c06f6671132f972140c860b9fe0651220aaf7b26c1096623c6e0a",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "fresh crab"
+      ],
+      "note": "Freshness is invented; dock/return chronology is also embellished.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "answer_sha256": "3d90538e0154c33d6e5d90bb04e365174b752841370226f95eccf800f6ed6788",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Michael finding humor is an interpretation, not an explicit recorded reaction.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "answer_sha256": "521f29e9aa41f4f44aebb887849bc8e646e5d4997814c043354187173311a50e",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 2,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "Sarah and her siblings",
+        "fondly"
+      ],
+      "note": "Invented sibling relationship and emotional coloring.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 4,
+      "answer_sha256": "eb7c12bdfb46efbd9f0898afba18330b61893b30a195855641e55829ad9dc5bd",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 3,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "with a grin",
+        "shared laugh"
+      ],
+      "note": "Invented reaction and direct dialogue.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "answer_sha256": "a275845fbe9d8c296f9fd39ab72bb312b72b71fdd026632c6f964e9d779d380f",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 2,
+        "completeness": 3,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "during the trip",
+        "He never confirmed it afterward"
+      ],
+      "note": "Moves the uncertain date estimate into the trip and invents a later nonconfirmation history.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 6,
+      "answer_sha256": "0ee6785556f598a2410a6a8618f08b86bd6e72c186bfee082af58e0ae159edb1",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 2,
+        "instruction_following": 2,
+        "context_retention": 2,
+        "completeness": 4,
+        "naturalness": 1
+      },
+      "unsupported_examples": [
+        "towering sandcastles in the tiny rented cottage’s sandy yard",
+        "made the kids laugh"
+      ],
+      "note": "Invented setting, scale and reactions.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "manual_exact",
+      "turn": 7,
+      "answer_sha256": "702c0b791000f73ba53dec2102a5c39ef2f93579eb0ec27b8407211e42f63ea6",
+      "grounding": "supported",
+      "scores": {
+        "directness": 4,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct attendance uncertainty, but broadens to beach presence and is verbose.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unknown_preserved",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "answer_sha256": "c543218a99ea6b15d4f90c08c27a5a8b7d92375d62d9258e62efc2d5d20761e9",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 2,
+        "completeness": 3,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "suddenly lost a tire",
+        "their most leisurely ride"
+      ],
+      "note": "Puncture becomes a lost tire and joke content changes; return chronology also added.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "answer_sha256": "98c7f8070a3587fd78fb5d318b8c1d27d6301b07f5fa720ab4415111e29bbe69",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 2,
+        "completeness": 3,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "Iris remembers carrying them",
+        "Leo recalls following closely behind"
+      ],
+      "note": "Walking bicycles becomes carrying/following; plural repairs are not established.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "answer_sha256": "e0b65287fc25ec4b5deab9f629527d6bcafffd0ce9b752d316777798bc3a34fa",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 2,
+        "completeness": 4,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "while they waited for the puncture to be fixed"
+      ],
+      "note": "Waiting for repair is not recorded; timing and speaker wording drift.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "answer_sha256": "c4a4e570fda148f2eb5ad19be92e3ec0cc78b795d8eb354dc17cbe48fe4d04d9",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct date/identity caution, with awkward date-versus-names phrase.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "answer_sha256": "cbc7fc63e9a2e8d2d4c8ae386a2c7b1572cdb17d01174a7c2f5f04d911100c08",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct selling fact; extra year aside.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "answer_sha256": "c7381564c495df9fd1204d34efafc02fa113e723528f5de80bead07a23e6bc99",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Clearly remembers adds subjective confidence not explicitly supplied.",
+      "exclusion_compliant": true,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "answer_sha256": "a2bc0b720f2c5b298f2bf72be0d8590bf9b80be072b4e694324d442118a7e719",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 3,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct uncertainty but loses Priya's specific 2017 recollection.",
+      "exclusion_compliant": null,
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "answer_sha256": "07a39b0878cd1d67588681207cd1d5e261c3c03a6bb10c203af2bab2f284f510",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 4,
+        "relevance": 2,
+        "instruction_following": 2,
+        "context_retention": 1,
+        "completeness": 2,
+        "naturalness": 2
+      },
+      "unsupported_examples": [
+        "Uncle Martin did not attend the market stall in May 2010"
+      ],
+      "note": "Invents nonattendance and imports the canal-photo date into the market event.",
+      "exclusion_compliant": null,
+      "unknown_calibration": "unsupported_negative",
+      "review_origin": "Reused source review from the default-cache condition: same key and byte-identical answer SHA256."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 2,
+      "answer_sha256": "36cf2ce878344692885fa1329b6521f0febc79be9c2406cd823b8c00de3152c3",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "The joke likely amused him more than anyone else."
+      ],
+      "note": "Invents speculative emotional reaction and ranking.",
+      "exclusion_compliant": true,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 3,
+      "answer_sha256": "000722419930d0a3fae0336314b1e764addefcf3cc3fe2cf6fe325ffe27bf5d3",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Confirms recorded activity/object, without asserting certain identities.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "manual_exact",
+      "turn": 5,
+      "answer_sha256": "609a3b82b733c0d4c871e424c5f13526727862ea7ad5ba959eb1b9ba53054bab",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 3,
+        "completeness": 3,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "he only recalled it was likely **1986 or 1987**"
+      ],
+      "note": "Attributes 1986 to Michael; his actual recollection only suggests 1987.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 0,
+      "answer_sha256": "936e6de2f973033d3879d4f9e729dcfabeab7a7b3a126db151e07da3bb99049a",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 4,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Plural joke authorship, unqualified opening date and strongly merged shared incident are ambiguous; final uncertainty helps.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 1,
+      "answer_sha256": "6ec8ff7079919860a7ac63a19ef224875326d2c0eb6e1b52d5b4979418d527a5",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 3,
+        "context_retention": 4,
+        "completeness": 4,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "their funniest—and slowest—part of the ride"
+      ],
+      "note": "Changes the joke into an unrecorded funniest-part ranking.",
+      "exclusion_compliant": true,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 2,
+      "answer_sha256": "886b2aa75ed653a776db25b3ef07c97d16a696c7e242c77f182f3860755cd499",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct joke author and detail.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 3,
+      "answer_sha256": "22f141a9fa2f169b36f199547a71993e9b92b127cc7807ec57aaeb247f3f2ed5",
+      "grounding": "needs_review",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 3,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Only-bicycles wording may overclaim visual contents; identity uncertainty correct but envelope/date distinction omitted.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 4,
+      "answer_sha256": "e0e1d90e4e564772cf6ebecf6f683bf06549307133eaf3c678f7d73cd7513ec4",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Correct cake and source-supported sales totals; extra uncertainty not requested.",
+      "exclusion_compliant": true,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 5,
+      "answer_sha256": "1362aaa776d74da37440ff073ac1b4d253abd1124d1c6c46133e852b963c5c05",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 5,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 4
+      },
+      "unsupported_examples": [],
+      "note": "Swapped is ordinary substitution phrasing, not necessarily a claim of physical exchange.",
+      "exclusion_compliant": true,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 6,
+      "answer_sha256": "263454cbdaa1ead50740984f84c3fae523a26de96438cd50811c43293256fb69",
+      "grounding": "supported",
+      "scores": {
+        "directness": 5,
+        "relevance": 4,
+        "instruction_following": 5,
+        "context_retention": 5,
+        "completeness": 5,
+        "naturalness": 3
+      },
+      "unsupported_examples": [],
+      "note": "Correct receipt/recollection distinction and year uncertainty.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition."
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "cohort": "independent_holdout",
+      "turn": 7,
+      "answer_sha256": "d7222ee0e00f8ae0c51f1446539ab6020d4636a65a3feb34b159cb4ba09cbb02",
+      "grounding": "unsupported",
+      "scores": {
+        "directness": 5,
+        "relevance": 3,
+        "instruction_following": 3,
+        "context_retention": 2,
+        "completeness": 3,
+        "naturalness": 3
+      },
+      "unsupported_examples": [
+        "No, Uncle Martin did not sell the cake.",
+        "receipts dated September 2016 and possibly 2017"
+      ],
+      "note": "Unsupported nonattendance plus invents a second receipt from Priya possible recollection.",
+      "exclusion_compliant": null,
+      "review_origin": "New source review of changed answer in bounded-cache condition.",
+      "unknown_calibration": "categorical_negative"
+    }
+  ],
+  "reuse_policy": "Only an identical model/strategy/cohort/turn and byte-identical answer SHA256 permits reuse of a prior source review. Changed answers are newly reviewed."
+}

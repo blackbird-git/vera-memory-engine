@@ -1,0 +1,809 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "results/oracle_evidence/summary-cache512.json",
+    "sha256": "92647e645f3d4c226b86af63753cad424bf21b27a7aa4ec0e5ef13d0d9001fe4"
+  },
+  "transformation": "Existing quality/latency aggregates only; no private input-checksum assertions or machine/resource timelines. Includes unsuccessful/partial stock-model condition where recorded.",
+  "quality_review_method": "Unblinded development-agent review against original oracle records and pre-frozen question rubrics. Not an independent human study. Supported/unsupported/needs_review distinguish clear errors from ambiguous binding. Scores are diagnostic 1-5, not universal accuracy. Examples of unsupported claims are lower bounds, not exhaustive claim counts.",
+  "attempted_rows": 240,
+  "reviewed_rows": 240,
+  "cells": [
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "direct",
+      "attempted_turns": 16,
+      "expected_turns": 16,
+      "generation_errors": 0,
+      "reviewed_turns": 16,
+      "complete_for_quality": true,
+      "grounding_counts": {
+        "unsupported": 3,
+        "needs_review": 3,
+        "supported": 10
+      },
+      "quality_means": {
+        "directness": 4.9375,
+        "relevance": 3.8125,
+        "instruction_following": 3.875,
+        "context_retention": 4.875,
+        "completeness": 4.8125,
+        "naturalness": 3
+      },
+      "latency_median_s": 17.348627937521087,
+      "latency_p95_s": 27.800729712995235,
+      "successful_latency_median_s": 17.348627937521087,
+      "successful_latency_p95_s": 27.800729712995235,
+      "mechanical_plan_rejects": 0,
+      "stripped_inline_reasoning_turns": 0,
+      "cohorts": {
+        "manual_exact": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "unsupported": 2,
+            "needs_review": 3,
+            "supported": 3
+          }
+        },
+        "independent_holdout": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "supported": 7,
+            "unsupported": 1
+          }
+        }
+      },
+      "exclusion_reviews": 6,
+      "exclusion_failures": 2,
+      "unknown_calibration": {
+        "correct_unknown": 2
+      }
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "generated_plan",
+      "attempted_turns": 16,
+      "expected_turns": 16,
+      "generation_errors": 0,
+      "reviewed_turns": 16,
+      "complete_for_quality": true,
+      "grounding_counts": {
+        "needs_review": 2,
+        "supported": 12,
+        "unsupported": 2
+      },
+      "quality_means": {
+        "directness": 4.9375,
+        "relevance": 4,
+        "instruction_following": 4.0625,
+        "context_retention": 4.875,
+        "completeness": 4.6875,
+        "naturalness": 3.1875
+      },
+      "latency_median_s": 73.46497156651458,
+      "latency_p95_s": 184.62792025896488,
+      "successful_latency_median_s": 73.46497156651458,
+      "successful_latency_p95_s": 184.62792025896488,
+      "mechanical_plan_rejects": 1,
+      "stripped_inline_reasoning_turns": 0,
+      "cohorts": {
+        "manual_exact": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "needs_review": 2,
+            "supported": 5,
+            "unsupported": 1
+          }
+        },
+        "independent_holdout": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "supported": 7,
+            "unsupported": 1
+          }
+        }
+      },
+      "exclusion_reviews": 6,
+      "exclusion_failures": 2,
+      "unknown_calibration": {
+        "correct_unknown": 2
+      }
+    },
+    {
+      "model": "qwen3.5:27b-text-oracle",
+      "strategy": "validated_plan",
+      "attempted_turns": 16,
+      "expected_turns": 16,
+      "generation_errors": 0,
+      "reviewed_turns": 16,
+      "complete_for_quality": true,
+      "grounding_counts": {
+        "needs_review": 2,
+        "supported": 12,
+        "unsupported": 2
+      },
+      "quality_means": {
+        "directness": 4.9375,
+        "relevance": 4.375,
+        "instruction_following": 4.4375,
+        "context_retention": 4.9375,
+        "completeness": 4.8125,
+        "naturalness": 3.25
+      },
+      "latency_median_s": 12.719453122001141,
+      "latency_p95_s": 21.601463557977695,
+      "successful_latency_median_s": 12.719453122001141,
+      "successful_latency_p95_s": 21.601463557977695,
+      "mechanical_plan_rejects": 0,
+      "stripped_inline_reasoning_turns": 0,
+      "cohorts": {
+        "manual_exact": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "needs_review": 2,
+            "supported": 4,
+            "unsupported": 2
+          }
+        },
+        "independent_holdout": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "supported": 8
+          }
+        }
+      },
+      "exclusion_reviews": 6,
+      "exclusion_failures": 0,
+      "unknown_calibration": {
+        "correct_unknown": 2
+      }
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "direct",
+      "attempted_turns": 16,
+      "expected_turns": 16,
+      "generation_errors": 0,
+      "reviewed_turns": 16,
+      "complete_for_quality": true,
+      "grounding_counts": {
+        "unsupported": 4,
+        "supported": 9,
+        "needs_review": 3
+      },
+      "quality_means": {
+        "directness": 4.875,
+        "relevance": 4.3125,
+        "instruction_following": 4.5625,
+        "context_retention": 4.5625,
+        "completeness": 4.75,
+        "naturalness": 3.4375
+      },
+      "latency_median_s": 2.9421783479920123,
+      "latency_p95_s": 4.161688191990834,
+      "successful_latency_median_s": 2.9421783479920123,
+      "successful_latency_p95_s": 4.161688191990834,
+      "mechanical_plan_rejects": 0,
+      "stripped_inline_reasoning_turns": 0,
+      "cohorts": {
+        "manual_exact": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "unsupported": 4,
+            "supported": 4
+          }
+        },
+        "independent_holdout": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "needs_review": 3,
+            "supported": 5
+          }
+        }
+      },
+      "exclusion_reviews": 6,
+      "exclusion_failures": 0,
+      "unknown_calibration": {
+        "unknown_preserved": 2
+      }
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "generated_plan",
+      "attempted_turns": 16,
+      "expected_turns": 16,
+      "generation_errors": 0,
+      "reviewed_turns": 16,
+      "complete_for_quality": true,
+      "grounding_counts": {
+        "supported": 12,
+        "unsupported": 3,
+        "needs_review": 1
+      },
+      "quality_means": {
+        "directness": 4.9375,
+        "relevance": 4.5625,
+        "instruction_following": 4.625,
+        "context_retention": 4.625,
+        "completeness": 4.5625,
+        "naturalness": 3.5
+      },
+      "latency_median_s": 7.989771137479693,
+      "latency_p95_s": 16.34786111698486,
+      "successful_latency_median_s": 7.989771137479693,
+      "successful_latency_p95_s": 16.34786111698486,
+      "mechanical_plan_rejects": 5,
+      "stripped_inline_reasoning_turns": 0,
+      "cohorts": {
+        "manual_exact": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "supported": 6,
+            "unsupported": 2
+          }
+        },
+        "independent_holdout": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "supported": 6,
+            "needs_review": 1,
+            "unsupported": 1
+          }
+        }
+      },
+      "exclusion_reviews": 6,
+      "exclusion_failures": 0,
+      "unknown_calibration": {
+        "unknown_preserved": 1,
+        "unsupported_negative": 1
+      }
+    },
+    {
+      "model": "gpt-oss:20b",
+      "strategy": "validated_plan",
+      "attempted_turns": 16,
+      "expected_turns": 16,
+      "generation_errors": 0,
+      "reviewed_turns": 16,
+      "complete_for_quality": true,
+      "grounding_counts": {
+        "supported": 13,
+        "unsupported": 2,
+        "needs_review": 1
+      },
+      "quality_means": {
+        "directness": 5,
+        "relevance": 4.5625,
+        "instruction_following": 4.625,
+        "context_retention": 4.9375,
+        "completeness": 5,
+        "naturalness": 3.5625
+      },
+      "latency_median_s": 3.419022870482877,
+      "latency_p95_s": 4.369450306985527,
+      "successful_latency_median_s": 3.419022870482877,
+      "successful_latency_p95_s": 4.369450306985527,
+      "mechanical_plan_rejects": 0,
+      "stripped_inline_reasoning_turns": 0,
+      "cohorts": {
+        "manual_exact": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "supported": 6,
+            "unsupported": 2
+          }
+        },
+        "independent_holdout": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "needs_review": 1,
+            "supported": 7
+          }
+        }
+      },
+      "exclusion_reviews": 6,
+      "exclusion_failures": 0,
+      "unknown_calibration": {
+        "unknown_preserved": 2
+      }
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "direct",
+      "attempted_turns": 16,
+      "expected_turns": 16,
+      "generation_errors": 0,
+      "reviewed_turns": 16,
+      "complete_for_quality": true,
+      "grounding_counts": {
+        "unsupported": 7,
+        "supported": 5,
+        "needs_review": 4
+      },
+      "quality_means": {
+        "directness": 4.9375,
+        "relevance": 4.0625,
+        "instruction_following": 3.9375,
+        "context_retention": 4,
+        "completeness": 4.5,
+        "naturalness": 3.1875
+      },
+      "latency_median_s": 2.719785896013491,
+      "latency_p95_s": 4.93763341702288,
+      "successful_latency_median_s": 2.719785896013491,
+      "successful_latency_p95_s": 4.93763341702288,
+      "mechanical_plan_rejects": 0,
+      "stripped_inline_reasoning_turns": 16,
+      "cohorts": {
+        "manual_exact": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "unsupported": 5,
+            "supported": 2,
+            "needs_review": 1
+          }
+        },
+        "independent_holdout": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "supported": 3,
+            "needs_review": 3,
+            "unsupported": 2
+          }
+        }
+      },
+      "exclusion_reviews": 6,
+      "exclusion_failures": 0,
+      "unknown_calibration": {
+        "unsupported_negative": 1,
+        "categorical_negative": 1
+      }
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "generated_plan",
+      "attempted_turns": 16,
+      "expected_turns": 16,
+      "generation_errors": 0,
+      "reviewed_turns": 16,
+      "complete_for_quality": true,
+      "grounding_counts": {
+        "unsupported": 6,
+        "needs_review": 5,
+        "supported": 5
+      },
+      "quality_means": {
+        "directness": 4.6875,
+        "relevance": 3.625,
+        "instruction_following": 3.5625,
+        "context_retention": 3.1875,
+        "completeness": 4.5625,
+        "naturalness": 2.75
+      },
+      "latency_median_s": 4.9500695479800925,
+      "latency_p95_s": 7.973870751971845,
+      "successful_latency_median_s": 4.9500695479800925,
+      "successful_latency_p95_s": 7.973870751971845,
+      "mechanical_plan_rejects": 1,
+      "stripped_inline_reasoning_turns": 16,
+      "cohorts": {
+        "manual_exact": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "unsupported": 4,
+            "needs_review": 3,
+            "supported": 1
+          }
+        },
+        "independent_holdout": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "needs_review": 2,
+            "supported": 4,
+            "unsupported": 2
+          }
+        }
+      },
+      "exclusion_reviews": 6,
+      "exclusion_failures": 1,
+      "unknown_calibration": {
+        "categorical_negative": 2
+      }
+    },
+    {
+      "model": "qwen3:4b",
+      "strategy": "validated_plan",
+      "attempted_turns": 16,
+      "expected_turns": 16,
+      "generation_errors": 0,
+      "reviewed_turns": 16,
+      "complete_for_quality": true,
+      "grounding_counts": {
+        "needs_review": 4,
+        "unsupported": 4,
+        "supported": 8
+      },
+      "quality_means": {
+        "directness": 4.875,
+        "relevance": 4.1875,
+        "instruction_following": 4,
+        "context_retention": 4.3125,
+        "completeness": 4.875,
+        "naturalness": 3.0625
+      },
+      "latency_median_s": 3.428346735512605,
+      "latency_p95_s": 4.30064108298393,
+      "successful_latency_median_s": 3.428346735512605,
+      "successful_latency_p95_s": 4.30064108298393,
+      "mechanical_plan_rejects": 0,
+      "stripped_inline_reasoning_turns": 16,
+      "cohorts": {
+        "manual_exact": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "needs_review": 3,
+            "unsupported": 3,
+            "supported": 2
+          }
+        },
+        "independent_holdout": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "supported": 6,
+            "unsupported": 1,
+            "needs_review": 1
+          }
+        }
+      },
+      "exclusion_reviews": 6,
+      "exclusion_failures": 0,
+      "unknown_calibration": {
+        "unknown_preserved": 2
+      }
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "direct",
+      "attempted_turns": 16,
+      "expected_turns": 16,
+      "generation_errors": 0,
+      "reviewed_turns": 16,
+      "complete_for_quality": true,
+      "grounding_counts": {
+        "supported": 9,
+        "unsupported": 4,
+        "needs_review": 3
+      },
+      "quality_means": {
+        "directness": 5,
+        "relevance": 4.125,
+        "instruction_following": 4.3125,
+        "context_retention": 4.375,
+        "completeness": 4.3125,
+        "naturalness": 3.4375
+      },
+      "latency_median_s": 0.6299940079916269,
+      "latency_p95_s": 0.9520311779924668,
+      "successful_latency_median_s": 0.6299940079916269,
+      "successful_latency_p95_s": 0.9520311779924668,
+      "mechanical_plan_rejects": 0,
+      "stripped_inline_reasoning_turns": 0,
+      "cohorts": {
+        "manual_exact": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "supported": 4,
+            "unsupported": 3,
+            "needs_review": 1
+          }
+        },
+        "independent_holdout": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "needs_review": 2,
+            "supported": 5,
+            "unsupported": 1
+          }
+        }
+      },
+      "exclusion_reviews": 6,
+      "exclusion_failures": 0,
+      "unknown_calibration": {
+        "unsupported_negative": 2
+      }
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "generated_plan",
+      "attempted_turns": 16,
+      "expected_turns": 16,
+      "generation_errors": 0,
+      "reviewed_turns": 16,
+      "complete_for_quality": true,
+      "grounding_counts": {
+        "unsupported": 6,
+        "supported": 9,
+        "needs_review": 1
+      },
+      "quality_means": {
+        "directness": 4.875,
+        "relevance": 3.75,
+        "instruction_following": 3.6875,
+        "context_retention": 4.375,
+        "completeness": 4.375,
+        "naturalness": 3.1875
+      },
+      "latency_median_s": 3.7296772405097727,
+      "latency_p95_s": 5.450955796055496,
+      "successful_latency_median_s": 3.7296772405097727,
+      "successful_latency_p95_s": 5.450955796055496,
+      "mechanical_plan_rejects": 4,
+      "stripped_inline_reasoning_turns": 0,
+      "cohorts": {
+        "manual_exact": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "unsupported": 4,
+            "supported": 3,
+            "needs_review": 1
+          }
+        },
+        "independent_holdout": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "unsupported": 2,
+            "supported": 6
+          }
+        }
+      },
+      "exclusion_reviews": 6,
+      "exclusion_failures": 1,
+      "unknown_calibration": {
+        "correct_unknown": 1,
+        "categorical_negative": 1
+      }
+    },
+    {
+      "model": "qwen3.5:4b",
+      "strategy": "validated_plan",
+      "attempted_turns": 16,
+      "expected_turns": 16,
+      "generation_errors": 0,
+      "reviewed_turns": 16,
+      "complete_for_quality": true,
+      "grounding_counts": {
+        "needs_review": 4,
+        "unsupported": 3,
+        "supported": 9
+      },
+      "quality_means": {
+        "directness": 4.9375,
+        "relevance": 4.5625,
+        "instruction_following": 4.5,
+        "context_retention": 4.4375,
+        "completeness": 4.875,
+        "naturalness": 3.625
+      },
+      "latency_median_s": 0.5328214519831818,
+      "latency_p95_s": 0.8155958920251578,
+      "successful_latency_median_s": 0.5328214519831818,
+      "successful_latency_p95_s": 0.8155958920251578,
+      "mechanical_plan_rejects": 0,
+      "stripped_inline_reasoning_turns": 0,
+      "cohorts": {
+        "manual_exact": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "needs_review": 3,
+            "unsupported": 2,
+            "supported": 3
+          }
+        },
+        "independent_holdout": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "supported": 6,
+            "needs_review": 1,
+            "unsupported": 1
+          }
+        }
+      },
+      "exclusion_reviews": 6,
+      "exclusion_failures": 0,
+      "unknown_calibration": {
+        "unknown_preserved": 2
+      }
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "direct",
+      "attempted_turns": 16,
+      "expected_turns": 16,
+      "generation_errors": 0,
+      "reviewed_turns": 16,
+      "complete_for_quality": true,
+      "grounding_counts": {
+        "needs_review": 4,
+        "unsupported": 11,
+        "supported": 1
+      },
+      "quality_means": {
+        "directness": 4.625,
+        "relevance": 3.3125,
+        "instruction_following": 3.3125,
+        "context_retention": 3,
+        "completeness": 3.375,
+        "naturalness": 2.5
+      },
+      "latency_median_s": 0.47658851550659165,
+      "latency_p95_s": 0.8588966280221939,
+      "successful_latency_median_s": 0.47658851550659165,
+      "successful_latency_p95_s": 0.8588966280221939,
+      "mechanical_plan_rejects": 0,
+      "stripped_inline_reasoning_turns": 0,
+      "cohorts": {
+        "manual_exact": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "needs_review": 2,
+            "unsupported": 6
+          }
+        },
+        "independent_holdout": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "unsupported": 5,
+            "needs_review": 2,
+            "supported": 1
+          }
+        }
+      },
+      "exclusion_reviews": 6,
+      "exclusion_failures": 0,
+      "unknown_calibration": {
+        "unsupported_negative": 2
+      }
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "generated_plan",
+      "attempted_turns": 16,
+      "expected_turns": 16,
+      "generation_errors": 0,
+      "reviewed_turns": 16,
+      "complete_for_quality": true,
+      "grounding_counts": {
+        "unsupported": 8,
+        "supported": 6,
+        "needs_review": 2
+      },
+      "quality_means": {
+        "directness": 4.9375,
+        "relevance": 3.8125,
+        "instruction_following": 3.75,
+        "context_retention": 4,
+        "completeness": 4.1875,
+        "naturalness": 3.125
+      },
+      "latency_median_s": 2.7316820714913774,
+      "latency_p95_s": 4.600118183006998,
+      "successful_latency_median_s": 2.7316820714913774,
+      "successful_latency_p95_s": 4.600118183006998,
+      "mechanical_plan_rejects": 9,
+      "stripped_inline_reasoning_turns": 0,
+      "cohorts": {
+        "manual_exact": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "unsupported": 6,
+            "supported": 2
+          }
+        },
+        "independent_holdout": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "needs_review": 2,
+            "unsupported": 2,
+            "supported": 4
+          }
+        }
+      },
+      "exclusion_reviews": 6,
+      "exclusion_failures": 0,
+      "unknown_calibration": {
+        "unsupported_negative": 1,
+        "categorical_negative": 1
+      }
+    },
+    {
+      "model": "ministral-3:3b-instruct-2512-q4_K_M",
+      "strategy": "validated_plan",
+      "attempted_turns": 16,
+      "expected_turns": 16,
+      "generation_errors": 0,
+      "reviewed_turns": 16,
+      "complete_for_quality": true,
+      "grounding_counts": {
+        "unsupported": 10,
+        "needs_review": 2,
+        "supported": 4
+      },
+      "quality_means": {
+        "directness": 4.6875,
+        "relevance": 3.4375,
+        "instruction_following": 3.4375,
+        "context_retention": 3.1875,
+        "completeness": 3.8125,
+        "naturalness": 2.375
+      },
+      "latency_median_s": 0.39766221251920797,
+      "latency_p95_s": 0.7030577850528061,
+      "successful_latency_median_s": 0.39766221251920797,
+      "successful_latency_p95_s": 0.7030577850528061,
+      "mechanical_plan_rejects": 0,
+      "stripped_inline_reasoning_turns": 0,
+      "cohorts": {
+        "manual_exact": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "unsupported": 6,
+            "needs_review": 1,
+            "supported": 1
+          }
+        },
+        "independent_holdout": {
+          "turns": 8,
+          "reviewed": 8,
+          "grounding": {
+            "unsupported": 4,
+            "supported": 3,
+            "needs_review": 1
+          }
+        }
+      },
+      "exclusion_reviews": 6,
+      "exclusion_failures": 0,
+      "unknown_calibration": {
+        "unknown_preserved": 1,
+        "unsupported_negative": 1
+      }
+    }
+  ],
+  "limitations": [
+    "Qwen27 partial low-memory attempts are not a completed quality comparison.",
+    "Grounding is source-adjudicated by the development agent, not an independent human study.",
+    "Needs-review bindings are separate from clear unsupported examples.",
+    "Validated-plan rendering receives an upstream oracle advantage.",
+    "Per-model timings use the actual 15.4 GiB/4 GiB environment, not the pending prepared limits."
+  ]
+}

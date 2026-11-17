@@ -1,0 +1,145 @@
+[
+  {
+    "title": "Oregon coast vacation",
+    "contributor": "Sarah (synthetic example)",
+    "kind": "recording_note",
+    "content": "I remember going to the Oregon coast with Dad and Michael when we were little. I think it was summer 1986. We rented a tiny cottage near the beach. My strongest memory is building sandcastles together.",
+    "metadata": {
+      "events": [
+        "oregon-coast"
+      ],
+      "people": [
+        "sarah",
+        "michael",
+        "dad"
+      ],
+      "place": "Oregon coast",
+      "approximate_date": "1986 or 1987; disputed",
+      "uncertainty": "attributed recollection; not independently verified"
+    }
+  },
+  {
+    "title": "Oregon coast vacation",
+    "contributor": "Michael (synthetic example)",
+    "kind": "recording_note",
+    "content": "I remember a family trip to the Oregon coast. Dad took us crabbing but we caught nothing. He bought crab from a fisherman at the dock and joked that he had caught it himself. I'm not sure of the year, possibly 1987.",
+    "metadata": {
+      "events": [
+        "oregon-coast"
+      ],
+      "people": [
+        "sarah",
+        "michael",
+        "dad"
+      ],
+      "place": "Oregon coast",
+      "approximate_date": "1986 or 1987; disputed",
+      "uncertainty": "attributed recollection; not independently verified"
+    }
+  },
+  {
+    "title": "Family beach photograph",
+    "contributor": "Helen (synthetic example)",
+    "kind": "photo_note",
+    "content": "A faded photograph shows three children building a sandcastle on the Oregon coast. The back of the photograph is handwritten 'Summer 1986'. The children appear to be Sarah, Michael, and their cousin Lisa, based on Helen's identification.",
+    "metadata": {
+      "events": [
+        "oregon-coast"
+      ],
+      "people": [
+        "sarah",
+        "michael",
+        "dad"
+      ],
+      "place": "Oregon coast",
+      "approximate_date": "1986 or 1987; disputed",
+      "uncertainty": "attributed recollection; not independently verified"
+    }
+  },
+  {
+    "title": "Grandma's kitchen on Sundays",
+    "contributor": "Aunt Margaret (synthetic example)",
+    "kind": "story",
+    "content": "Mom made bread on Sundays. She always gave the children the first warm slices after church.",
+    "metadata": {
+      "events": [
+        "bread-baking"
+      ],
+      "people": [
+        "grandma"
+      ],
+      "place": "kitchen",
+      "approximate_date": "unknown",
+      "uncertainty": "attributed recollection; not independently verified"
+    }
+  },
+  {
+    "title": "Grandma's bread baking day",
+    "contributor": "Uncle James (synthetic example)",
+    "kind": "story",
+    "content": "I remember Mom baking bread on Saturday evenings, not Sundays. She put the bread on the kitchen windowsill to cool.",
+    "metadata": {
+      "events": [
+        "bread-baking"
+      ],
+      "people": [
+        "grandma"
+      ],
+      "place": "kitchen",
+      "approximate_date": "unknown",
+      "uncertainty": "attributed recollection; not independently verified"
+    }
+  },
+  {
+    "title": "Washington coast trip",
+    "contributor": "Alex Reed (synthetic)",
+    "kind": "story",
+    "content": "We visited the Washington coast in 1992. We stayed in a tent. No one went crabbing on that outing.",
+    "metadata": {
+      "events": [
+        "washington-coast"
+      ],
+      "people": [
+        "alex-reed"
+      ],
+      "place": "Washington coast",
+      "approximate_date": "1992"
+    }
+  },
+  {
+    "title": "Alex Morgan garden",
+    "contributor": "Alex Morgan (synthetic)",
+    "kind": "story",
+    "content": "I planted sunflowers in the garden in 2001.",
+    "metadata": {
+      "events": [
+        "garden"
+      ],
+      "people": [
+        "alex-morgan"
+      ]
+    }
+  },
+  {
+    "title": "Alex Reed train",
+    "contributor": "Alex Reed (synthetic)",
+    "kind": "recording_note",
+    "content": "I travelled by train to Denver in 1999. I remember the station clock.",
+    "metadata": {
+      "events": [
+        "train-denver"
+      ],
+      "people": [
+        "alex-reed"
+      ],
+      "relationships": [
+        {
+          "subject": "alex-reed",
+          "relation": "cousin",
+          "object": "sarah",
+          "certainty": "contributor account"
+        }
+      ]
+    }
+  }
+]

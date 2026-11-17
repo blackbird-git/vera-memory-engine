@@ -1,0 +1,863 @@
+{
+  "design": "Oracle evidence bypasses production retrieval, routing and SQLite. Controlled-plan facts are human/source-adjudicated evaluation inputs, not a deployable automatic verifier. Holdout is separately authored and frozen before outputs, not an independent human evaluation.",
+  "records": {
+    "1": {
+      "title": "Oregon coast vacation",
+      "contributor": "Sarah (synthetic example)",
+      "kind": "recording_note",
+      "content": "I remember going to the Oregon coast with Dad and Michael when we were little. I think it was summer 1986. We rented a tiny cottage near the beach. My strongest memory is building sandcastles together.",
+      "metadata": {
+        "events": [
+          "oregon-coast"
+        ],
+        "people": [
+          "sarah",
+          "michael",
+          "dad"
+        ],
+        "place": "Oregon coast",
+        "approximate_date": "1986 or 1987; disputed",
+        "uncertainty": "attributed recollection; not independently verified"
+      }
+    },
+    "2": {
+      "title": "Oregon coast vacation",
+      "contributor": "Michael (synthetic example)",
+      "kind": "recording_note",
+      "content": "I remember a family trip to the Oregon coast. Dad took us crabbing but we caught nothing. He bought crab from a fisherman at the dock and joked that he had caught it himself. I'm not sure of the year, possibly 1987.",
+      "metadata": {
+        "events": [
+          "oregon-coast"
+        ],
+        "people": [
+          "sarah",
+          "michael",
+          "dad"
+        ],
+        "place": "Oregon coast",
+        "approximate_date": "1986 or 1987; disputed",
+        "uncertainty": "attributed recollection; not independently verified"
+      }
+    },
+    "3": {
+      "title": "Family beach photograph",
+      "contributor": "Helen (synthetic example)",
+      "kind": "photo_note",
+      "content": "A faded photograph shows three children building a sandcastle on the Oregon coast. The back of the photograph is handwritten 'Summer 1986'. The children appear to be Sarah, Michael, and their cousin Lisa, based on Helen's identification.",
+      "metadata": {
+        "events": [
+          "oregon-coast"
+        ],
+        "people": [
+          "sarah",
+          "michael",
+          "dad"
+        ],
+        "place": "Oregon coast",
+        "approximate_date": "1986 or 1987; disputed",
+        "uncertainty": "attributed recollection; not independently verified"
+      }
+    },
+    "4": {
+      "title": "Grandma's kitchen on Sundays",
+      "contributor": "Aunt Margaret (synthetic example)",
+      "kind": "story",
+      "content": "Mom made bread on Sundays. She always gave the children the first warm slices after church.",
+      "metadata": {
+        "events": [
+          "bread-baking"
+        ],
+        "people": [
+          "grandma"
+        ],
+        "place": "kitchen",
+        "approximate_date": "unknown",
+        "uncertainty": "attributed recollection; not independently verified"
+      }
+    },
+    "5": {
+      "title": "Grandma's bread baking day",
+      "contributor": "Uncle James (synthetic example)",
+      "kind": "story",
+      "content": "I remember Mom baking bread on Saturday evenings, not Sundays. She put the bread on the kitchen windowsill to cool.",
+      "metadata": {
+        "events": [
+          "bread-baking"
+        ],
+        "people": [
+          "grandma"
+        ],
+        "place": "kitchen",
+        "approximate_date": "unknown",
+        "uncertainty": "attributed recollection; not independently verified"
+      }
+    },
+    "101": {
+      "title": "Canal bicycle afternoon",
+      "contributor": "Iris (synthetic)",
+      "kind": "story",
+      "content": "I remember cycling beside the canal in 2009. Leo got a puncture near the lock. We walked the bicycles to a repair shop. Leo called it our slowest cycling race.",
+      "metadata": {
+        "events": [
+          "canal-ride"
+        ],
+        "uncertainty": "attributed synthetic source, not independent historical proof"
+      }
+    },
+    "102": {
+      "title": "Canal photograph",
+      "contributor": "Nora (synthetic)",
+      "kind": "photo_note",
+      "content": "My photograph shows two bicycles beside a canal lock. The envelope is labeled May 2010. I cannot identify the riders, and the photograph itself has no date.",
+      "metadata": {
+        "events": [
+          "canal-ride"
+        ],
+        "uncertainty": "attributed synthetic source, not independent historical proof"
+      }
+    },
+    "103": {
+      "title": "Canal ride recollection",
+      "contributor": "Leo (synthetic)",
+      "kind": "story",
+      "content": "I think the canal ride was in 2010, though I am not certain. My bicycle got a puncture. Iris and I walked to the repair shop. I joked that we were in the slowest cycling race.",
+      "metadata": {
+        "events": [
+          "canal-ride"
+        ],
+        "uncertainty": "attributed synthetic source, not independent historical proof"
+      }
+    },
+    "104": {
+      "title": "Market cake stall",
+      "contributor": "Tessa (synthetic)",
+      "kind": "story",
+      "content": "At the town market I sold lemon cake with Priya. We sold every slice. The receipt says September 2016. I do not remember the price per slice.",
+      "metadata": {
+        "events": [
+          "market-cake"
+        ],
+        "uncertainty": "attributed synthetic source, not independent historical proof"
+      }
+    },
+    "105": {
+      "title": "Market stall recollection",
+      "contributor": "Priya (synthetic)",
+      "kind": "story",
+      "content": "I remember selling lemon cake with Tessa at the town market, possibly in 2017. Tessa forgot the napkins, so we used spare paper plates.",
+      "metadata": {
+        "events": [
+          "market-cake"
+        ],
+        "uncertainty": "attributed synthetic source, not independent historical proof"
+      }
+    },
+    "106": {
+      "title": "Kitchen herbs",
+      "contributor": "Uncle Martin (synthetic)",
+      "kind": "story",
+      "content": "I grew basil and mint on the kitchen windowsill in 2015.",
+      "metadata": {
+        "events": [
+          "kitchen-herbs"
+        ],
+        "uncertainty": "attributed synthetic source, not independent historical proof"
+      }
+    }
+  },
+  "cohorts": [
+    {
+      "id": "manual_exact",
+      "turns": [
+        {
+          "question": "Did Sarah and Michael play on the beach?",
+          "oracle_source_ids": [
+            1,
+            3
+          ],
+          "validated_plan": {
+            "status": "known",
+            "facts": [
+              {
+                "source_id": 1,
+                "claim": "Sarah remembers building sandcastles together.",
+                "supporting_quote": "My strongest memory is building sandcastles together."
+              },
+              {
+                "source_id": 3,
+                "claim": "Helen's photograph description shows children building a sandcastle; Helen tentatively identifies Sarah, Michael and cousin Lisa.",
+                "supporting_quote": "A faded photograph shows three children building a sandcastle on the Oregon coast. The back of the photograph is handwritten 'Summer 1986'. The children appear to be Sarah, Michael, and their cousin Lisa, based on Helen's identification."
+              }
+            ],
+            "caveats": [
+              "Photo identity is tentative, based on Helen; do not infer emotions."
+            ],
+            "excluded_topics": []
+          },
+          "rubric": {
+            "required_fact_groups": [
+              [
+                "sandcastle",
+                "sand castle"
+              ],
+              [
+                "Sarah"
+              ],
+              [
+                "Michael"
+              ]
+            ],
+            "excluded_topics": [],
+            "max_sentences_proxy": 4,
+            "status": "known",
+            "source_review_required": true
+          }
+        },
+        {
+          "question": "Tell me only about Dad going crabbing, not the rest of the vacation.",
+          "oracle_source_ids": [
+            2
+          ],
+          "validated_plan": {
+            "status": "known",
+            "facts": [
+              {
+                "source_id": 2,
+                "claim": "Michael recalls that Dad took them crabbing and they caught nothing.",
+                "supporting_quote": "Dad took us crabbing but we caught nothing."
+              },
+              {
+                "source_id": 2,
+                "claim": "Michael recalls Dad buying crab from a fisherman at the dock and joking that he had caught it himself.",
+                "supporting_quote": "He bought crab from a fisherman at the dock and joked that he had caught it himself."
+              }
+            ],
+            "caveats": [],
+            "excluded_topics": [
+              "cottage",
+              "sandcastles",
+              "general vacation",
+              "bread"
+            ]
+          },
+          "rubric": {
+            "required_fact_groups": [
+              [
+                "caught nothing",
+                "no crab",
+                "empty-handed"
+              ],
+              [
+                "bought",
+                "purchased"
+              ],
+              [
+                "fisherman"
+              ],
+              [
+                "joke",
+                "joked",
+                "pretend",
+                "claimed"
+              ]
+            ],
+            "excluded_topics": [
+              "cottage",
+              "sandcastles",
+              "general vacation",
+              "bread"
+            ],
+            "max_sentences_proxy": 4,
+            "status": "known",
+            "source_review_required": true
+          }
+        },
+        {
+          "question": "What was funny about that outing?",
+          "oracle_source_ids": [
+            2
+          ],
+          "validated_plan": {
+            "status": "known",
+            "facts": [
+              {
+                "source_id": 2,
+                "claim": "Michael recalls Dad buying crab from a fisherman at the dock and joking that he had caught it himself.",
+                "supporting_quote": "He bought crab from a fisherman at the dock and joked that he had caught it himself."
+              }
+            ],
+            "caveats": [],
+            "excluded_topics": [
+              "cottage",
+              "sandcastles",
+              "bread"
+            ]
+          },
+          "rubric": {
+            "required_fact_groups": [
+              [
+                "bought",
+                "purchased"
+              ],
+              [
+                "joke",
+                "joked",
+                "pretend",
+                "claimed"
+              ]
+            ],
+            "excluded_topics": [
+              "cottage",
+              "sandcastles",
+              "bread"
+            ],
+            "max_sentences_proxy": 4,
+            "status": "known",
+            "source_review_required": true
+          }
+        },
+        {
+          "question": "What did the children build at the beach?",
+          "oracle_source_ids": [
+            1,
+            3
+          ],
+          "validated_plan": {
+            "status": "known",
+            "facts": [
+              {
+                "source_id": 1,
+                "claim": "Sarah remembers building sandcastles together.",
+                "supporting_quote": "My strongest memory is building sandcastles together."
+              },
+              {
+                "source_id": 3,
+                "claim": "Helen's photograph description shows children building a sandcastle; Helen tentatively identifies Sarah, Michael and cousin Lisa.",
+                "supporting_quote": "A faded photograph shows three children building a sandcastle on the Oregon coast. The back of the photograph is handwritten 'Summer 1986'. The children appear to be Sarah, Michael, and their cousin Lisa, based on Helen's identification."
+              }
+            ],
+            "caveats": [
+              "Do not overstate Helen's tentative identity assessment."
+            ],
+            "excluded_topics": []
+          },
+          "rubric": {
+            "required_fact_groups": [
+              [
+                "sandcastle",
+                "sand castle"
+              ]
+            ],
+            "excluded_topics": [],
+            "max_sentences_proxy": 4,
+            "status": "known",
+            "source_review_required": true
+          }
+        },
+        {
+          "question": "Forget the cottage and the dates. Just tell me the story about Dad's joke.",
+          "oracle_source_ids": [
+            2
+          ],
+          "validated_plan": {
+            "status": "known",
+            "facts": [
+              {
+                "source_id": 2,
+                "claim": "Michael recalls that Dad took them crabbing and they caught nothing.",
+                "supporting_quote": "Dad took us crabbing but we caught nothing."
+              },
+              {
+                "source_id": 2,
+                "claim": "Michael recalls Dad buying crab from a fisherman at the dock and joking that he had caught it himself.",
+                "supporting_quote": "He bought crab from a fisherman at the dock and joked that he had caught it himself."
+              }
+            ],
+            "caveats": [],
+            "excluded_topics": [
+              "cottage",
+              "dates",
+              "sandcastles",
+              "bread"
+            ]
+          },
+          "rubric": {
+            "required_fact_groups": [
+              [
+                "bought",
+                "purchased"
+              ],
+              [
+                "joke",
+                "joked",
+                "pretend",
+                "claimed"
+              ]
+            ],
+            "excluded_topics": [
+              "cottage",
+              "dates",
+              "sandcastles",
+              "bread"
+            ],
+            "max_sentences_proxy": 3,
+            "status": "known",
+            "source_review_required": true
+          }
+        },
+        {
+          "question": "Was Michael certain which year the trip happened?",
+          "oracle_source_ids": [
+            2
+          ],
+          "validated_plan": {
+            "status": "uncertain",
+            "facts": [
+              {
+                "source_id": 2,
+                "claim": "Michael was not certain of the year; he suggested possibly 1987.",
+                "supporting_quote": "I'm not sure of the year, possibly 1987."
+              }
+            ],
+            "caveats": [],
+            "excluded_topics": []
+          },
+          "rubric": {
+            "required_fact_groups": [
+              [
+                "Michael"
+              ],
+              [
+                "1987"
+              ],
+              [
+                "uncertain",
+                "not sure",
+                "not certain",
+                "possibly",
+                "unsure"
+              ]
+            ],
+            "excluded_topics": [],
+            "max_sentences_proxy": 2,
+            "status": "uncertain",
+            "source_review_required": true
+          }
+        },
+        {
+          "question": "Tell me a short, entertaining story about that family vacation.",
+          "oracle_source_ids": [
+            1,
+            2,
+            3
+          ],
+          "validated_plan": {
+            "status": "known",
+            "facts": [
+              {
+                "source_id": 1,
+                "claim": "Sarah remembers a tiny cottage near the Oregon coast beach and building sandcastles.",
+                "supporting_quote": "We rented a tiny cottage near the beach. My strongest memory is building sandcastles together."
+              },
+              {
+                "source_id": 2,
+                "claim": "Michael recalls that Dad took them crabbing and they caught nothing.",
+                "supporting_quote": "Dad took us crabbing but we caught nothing."
+              },
+              {
+                "source_id": 2,
+                "claim": "Michael recalls Dad buying crab from a fisherman at the dock and joking that he had caught it himself.",
+                "supporting_quote": "He bought crab from a fisherman at the dock and joked that he had caught it himself."
+              }
+            ],
+            "caveats": [
+              "Do not invent reactions, dialogue, relationships or details. No need to give a year; accounts do not establish one certain outing."
+            ],
+            "excluded_topics": []
+          },
+          "rubric": {
+            "required_fact_groups": [
+              [
+                "sandcastle",
+                "sand castle"
+              ],
+              [
+                "bought",
+                "purchased"
+              ],
+              [
+                "joke",
+                "joked",
+                "pretend",
+                "claimed"
+              ]
+            ],
+            "excluded_topics": [],
+            "max_sentences_proxy": 4,
+            "status": "known",
+            "source_review_required": true
+          }
+        },
+        {
+          "question": "Did Uncle James go crabbing with them?",
+          "oracle_source_ids": [
+            2,
+            5
+          ],
+          "validated_plan": {
+            "status": "unknown",
+            "facts": [],
+            "caveats": [
+              "The supplied notes do not establish whether Uncle James attended the crabbing trip. Absence of evidence is not proof he did not attend. A bread account does not establish crabbing attendance."
+            ],
+            "excluded_topics": []
+          },
+          "rubric": {
+            "required_fact_groups": [],
+            "excluded_topics": [],
+            "max_sentences_proxy": 2,
+            "status": "unknown",
+            "source_review_required": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "independent_holdout",
+      "turns": [
+        {
+          "question": "Tell me about Iris and Leo cycling along the canal.",
+          "oracle_source_ids": [
+            101,
+            103
+          ],
+          "validated_plan": {
+            "status": "known",
+            "facts": [
+              {
+                "source_id": 101,
+                "claim": "Iris remembers cycling beside the canal; Leo got a puncture and they walked to a repair shop.",
+                "supporting_quote": "I remember cycling beside the canal in 2009. Leo got a puncture near the lock. We walked the bicycles to a repair shop. Leo called it our slowest cycling race."
+              },
+              {
+                "source_id": 103,
+                "claim": "Leo also recalls the puncture and walking with Iris to the repair shop.",
+                "supporting_quote": "I think the canal ride was in 2010, though I am not certain. My bicycle got a puncture. Iris and I walked to the repair shop. I joked that we were in the slowest cycling race."
+              }
+            ],
+            "caveats": [
+              "Iris recalls 2009; Leo tentatively recalls 2010. Do not merge dates into certainty."
+            ],
+            "excluded_topics": []
+          },
+          "rubric": {
+            "required_fact_groups": [
+              [
+                "puncture",
+                "flat"
+              ],
+              [
+                "walk",
+                "walked"
+              ],
+              [
+                "repair"
+              ]
+            ],
+            "excluded_topics": [],
+            "max_sentences_proxy": 4,
+            "status": "known",
+            "source_review_required": true
+          }
+        },
+        {
+          "question": "Leave out the years and the photograph. What happened after the puncture?",
+          "oracle_source_ids": [
+            101,
+            103
+          ],
+          "validated_plan": {
+            "status": "known",
+            "facts": [
+              {
+                "source_id": 101,
+                "claim": "Iris says they walked the bicycles to a repair shop.",
+                "supporting_quote": "We walked the bicycles to a repair shop."
+              },
+              {
+                "source_id": 103,
+                "claim": "Leo recalls walking with Iris to the repair shop.",
+                "supporting_quote": "Iris and I walked to the repair shop."
+              }
+            ],
+            "caveats": [],
+            "excluded_topics": [
+              "dates",
+              "photograph"
+            ]
+          },
+          "rubric": {
+            "required_fact_groups": [
+              [
+                "walk",
+                "walked"
+              ],
+              [
+                "repair"
+              ]
+            ],
+            "excluded_topics": [
+              "dates",
+              "photograph"
+            ],
+            "max_sentences_proxy": 2,
+            "status": "known",
+            "source_review_required": true
+          }
+        },
+        {
+          "question": "What was the joke, and who made it?",
+          "oracle_source_ids": [
+            101,
+            103
+          ],
+          "validated_plan": {
+            "status": "known",
+            "facts": [
+              {
+                "source_id": 101,
+                "claim": "Iris recalls Leo calling it their slowest cycling race.",
+                "supporting_quote": "Leo called it our slowest cycling race."
+              },
+              {
+                "source_id": 103,
+                "claim": "Leo remembers joking they were in the slowest cycling race.",
+                "supporting_quote": "I joked that we were in the slowest cycling race."
+              }
+            ],
+            "caveats": [],
+            "excluded_topics": []
+          },
+          "rubric": {
+            "required_fact_groups": [
+              [
+                "Leo"
+              ],
+              [
+                "slowest"
+              ],
+              [
+                "race"
+              ]
+            ],
+            "excluded_topics": [],
+            "max_sentences_proxy": 2,
+            "status": "known",
+            "source_review_required": true
+          }
+        },
+        {
+          "question": "Does the photograph prove the riders were Iris and Leo in May 2010?",
+          "oracle_source_ids": [
+            102
+          ],
+          "validated_plan": {
+            "status": "uncertain",
+            "facts": [
+              {
+                "source_id": 102,
+                "claim": "Nora cannot identify the riders and the photograph itself has no date.",
+                "supporting_quote": "I cannot identify the riders, and the photograph itself has no date."
+              },
+              {
+                "source_id": 102,
+                "claim": "May 2010 is an envelope label, not an established date or identity for the photograph.",
+                "supporting_quote": "The envelope is labeled May 2010."
+              }
+            ],
+            "caveats": [],
+            "excluded_topics": []
+          },
+          "rubric": {
+            "required_fact_groups": [
+              [
+                "envelope"
+              ],
+              [
+                "2010"
+              ],
+              [
+                "not",
+                "cannot",
+                "can't",
+                "uncertain"
+              ]
+            ],
+            "excluded_topics": [],
+            "max_sentences_proxy": 3,
+            "status": "uncertain",
+            "source_review_required": true
+          }
+        },
+        {
+          "question": "Switch to the market stall. What did Tessa and Priya sell?",
+          "oracle_source_ids": [
+            104,
+            105
+          ],
+          "validated_plan": {
+            "status": "known",
+            "facts": [
+              {
+                "source_id": 104,
+                "claim": "Tessa remembers selling lemon cake with Priya.",
+                "supporting_quote": "At the town market I sold lemon cake with Priya."
+              },
+              {
+                "source_id": 105,
+                "claim": "Priya also recalls selling lemon cake with Tessa.",
+                "supporting_quote": "I remember selling lemon cake with Tessa at the town market, possibly in 2017."
+              }
+            ],
+            "caveats": [],
+            "excluded_topics": [
+              "canal",
+              "bicycles"
+            ]
+          },
+          "rubric": {
+            "required_fact_groups": [
+              [
+                "lemon"
+              ],
+              [
+                "cake"
+              ]
+            ],
+            "excluded_topics": [
+              "canal",
+              "bicycles"
+            ],
+            "max_sentences_proxy": 2,
+            "status": "known",
+            "source_review_required": true
+          }
+        },
+        {
+          "question": "Tell me just how they handled the missing napkins; skip the sales totals and dates.",
+          "oracle_source_ids": [
+            105
+          ],
+          "validated_plan": {
+            "status": "known",
+            "facts": [
+              {
+                "source_id": 105,
+                "claim": "Priya recalls that Tessa forgot the napkins, so they used spare paper plates.",
+                "supporting_quote": "Tessa forgot the napkins, so we used spare paper plates."
+              }
+            ],
+            "caveats": [],
+            "excluded_topics": [
+              "dates",
+              "sales totals"
+            ]
+          },
+          "rubric": {
+            "required_fact_groups": [
+              [
+                "Tessa"
+              ],
+              [
+                "napkin",
+                "napkins"
+              ],
+              [
+                "paper plates"
+              ]
+            ],
+            "excluded_topics": [
+              "dates",
+              "sales totals"
+            ],
+            "max_sentences_proxy": 2,
+            "status": "known",
+            "source_review_required": true
+          }
+        },
+        {
+          "question": "Can we honestly give one certain year for that stall?",
+          "oracle_source_ids": [
+            104,
+            105
+          ],
+          "validated_plan": {
+            "status": "uncertain",
+            "facts": [
+              {
+                "source_id": 104,
+                "claim": "Tessa's receipt is dated September 2016.",
+                "supporting_quote": "The receipt says September 2016."
+              },
+              {
+                "source_id": 105,
+                "claim": "Priya recalls possibly 2017.",
+                "supporting_quote": "I remember selling lemon cake with Tessa at the town market, possibly in 2017."
+              }
+            ],
+            "caveats": [
+              "Receipt date and recollection do not establish one certain year or prove they describe the identical stall."
+            ],
+            "excluded_topics": []
+          },
+          "rubric": {
+            "required_fact_groups": [
+              [
+                "2016"
+              ],
+              [
+                "2017"
+              ],
+              [
+                "uncertain",
+                "not certain",
+                "conflict",
+                "differ",
+                "cannot",
+                "can't",
+                "not establish"
+              ]
+            ],
+            "excluded_topics": [],
+            "max_sentences_proxy": 4,
+            "status": "uncertain",
+            "source_review_required": true
+          }
+        },
+        {
+          "question": "Did Uncle Martin sell the cake with them, and what did each slice cost?",
+          "oracle_source_ids": [
+            104,
+            105,
+            106
+          ],
+          "validated_plan": {
+            "status": "unknown",
+            "facts": [],
+            "caveats": [
+              "These notes do not establish Martin's attendance. Tessa does not remember the price per slice; no price is recorded. Do not assert Martin did not attend or invent a price."
+            ],
+            "excluded_topics": []
+          },
+          "rubric": {
+            "required_fact_groups": [],
+            "excluded_topics": [],
+            "max_sentences_proxy": 3,
+            "status": "unknown",
+            "source_review_required": true
+          }
+        }
+      ]
+    }
+  ]
+}

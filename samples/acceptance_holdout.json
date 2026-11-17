@@ -1,0 +1,230 @@
+[
+  [
+    [
+      "Tell me about Oregon.",
+      null
+    ],
+    [
+      "Were the children having fun building things in the sand?",
+      {
+        "required": [
+          "sandcastle"
+        ],
+        "forbidden": [
+          "not implemented",
+          "bread"
+        ]
+      }
+    ]
+  ],
+  [
+    [
+      "Tell me about the coast.",
+      null
+    ],
+    [
+      "Focus exclusively on catching crab; leave out the cottage.",
+      {
+        "required": [
+          "caught nothing",
+          "fisherman",
+          "joked"
+        ],
+        "forbidden": [
+          "cottage",
+          "sandcastle",
+          "bread"
+        ]
+      }
+    ]
+  ],
+  [
+    [
+      "Tell me about Oregon.",
+      null
+    ],
+    [
+      "What made the crabbing expedition amusing?",
+      {
+        "required": [
+          "joked",
+          "fisherman",
+          "Michael"
+        ],
+        "forbidden": [
+          "bread",
+          "cottage"
+        ]
+      }
+    ]
+  ],
+  [
+    [
+      "Tell me about Grandma bread.",
+      null
+    ],
+    [
+      "Now focus on crabbing, without the beach games.",
+      {
+        "required": [
+          "fisherman",
+          "caught nothing"
+        ],
+        "forbidden": [
+          "bread",
+          "sandcastle"
+        ]
+      }
+    ]
+  ],
+  [
+    [
+      "Tell me about the Lake Rowan boat ride.",
+      null
+    ],
+    [
+      "What was the punchline to the boating mishap?",
+      {
+        "required": [
+          "rowing lesson",
+          "Nina"
+        ],
+        "forbidden": [
+          "sandwich",
+          "tag",
+          "pudding"
+        ]
+      }
+    ]
+  ],
+  [
+    [
+      "Tell me about Lake Rowan.",
+      null
+    ],
+    [
+      "Just the engine trouble please, skip the picnic.",
+      {
+        "required": [
+          "engine stopped",
+          "rowed"
+        ],
+        "forbidden": [
+          "sandwich",
+          "tag",
+          "picnic"
+        ]
+      }
+    ]
+  ],
+  [
+    [
+      "Tell me about the board game afternoon.",
+      null
+    ],
+    [
+      "Did Owen play chess with Lena?",
+      {
+        "required": [
+          "chess",
+          "Owen"
+        ],
+        "forbidden": [
+          "not implemented",
+          "cassette"
+        ]
+      }
+    ]
+  ],
+  [
+    [
+      "Tell me about the school concert.",
+      null
+    ],
+    [
+      "Who played piano?",
+      {
+        "required": [
+          "Dana",
+          "piano"
+        ],
+        "forbidden": [
+          "not implemented"
+        ]
+      }
+    ]
+  ],
+  [
+    [
+      "Tell me about Oregon.",
+      null
+    ],
+    [
+      "Would you send me the photograph?",
+      {
+        "required": [
+          "not implemented"
+        ],
+        "forbidden": [
+          "sent the photograph"
+        ]
+      }
+    ]
+  ],
+  [
+    [
+      "Tell me about the school concert.",
+      null
+    ],
+    [
+      "Please play that cassette.",
+      {
+        "required": [
+          "not implemented"
+        ],
+        "forbidden": [
+          "playing it now"
+        ]
+      }
+    ]
+  ],
+  [
+    [
+      "Tell me about the Lake Rowan boat ride.",
+      null
+    ],
+    [
+      "Anything lighthearted in the boat account?",
+      {
+        "required": [
+          "rowing lesson",
+          "Nina"
+        ],
+        "forbidden": [
+          "sandwich",
+          "pudding"
+        ]
+      }
+    ]
+  ],
+  [
+    [
+      "Tell me about the crabbing trip.",
+      null
+    ],
+    [
+      "Tell me only the humorous part, without the accommodation details.",
+      {
+        "required": [
+          "joked",
+          "Michael"
+        ],
+        "forbidden": [
+          "cottage",
+          "sandcastle",
+          "bread"
+        ]
+      }
+    ]
+  ]
+]

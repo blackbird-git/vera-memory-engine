@@ -1,0 +1,21 @@
+{
+  "publication_status": "sanitized derivative; not the original private artifact",
+  "private_source": {
+    "revision": "654505c",
+    "path": "experiments/conversation_architecture/holdout-manifest.json",
+    "sha256": "c86cc05adf70833aa81f73f15a11b4306351a44c06b513c54e892a07a960155a"
+  },
+  "transformation": "Removed operational timestamps/private backup references; revision-1 file paths map to included historical snapshot; original hash belongs to private input.",
+  "manifest": {
+    "holdout_sha256": "90d8f9f819557fc5777dbeeac3f338d14d721e996fb11aec03a706ea09c8d6a3",
+    "records": 16,
+    "cohorts": 4,
+    "questions": 20,
+    "outputs_seen": false,
+    "implementation_prompts_seen": false,
+    "authorship": "Separate architecture-audit development agent; not independent human study.",
+    "evaluation_input_boundary": "Only question/history and fixed cohort candidate_source_ids may enter engine. oracle_source_ids/reference_plan/rubric are hidden scoring metadata.",
+    "original_holdout_sha256": "ffb5bb00df881ced8ba0ef78809dd26586ac87037a6ffe32e4334eab69d0aa45",
+    "schema_correction": "Two document_note kinds normalized to existing other source kind before model inference; all substantive content and targets unchanged."
+  }
+}
